@@ -1,0 +1,119 @@
+// ============================================
+// Print Media Page Styles
+// ============================================
+@use "sass:color";
+
+.print-section {
+    background-color: #fcfcfc;
+    color: #333;
+
+    .print-hero-section {
+        height: 500px;
+        background: url('../img/newspaper/media-headera-bg.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .print-item-card {
+        .img-container {
+            max-height: 300px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    }
+
+    .print-main-card {
+        max-width: 1200px;
+        margin: -60px auto 40px;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        padding: 3rem;
+        overflow: hidden;
+
+        h1 {
+            border-left: 5px solid #ab0303;
+            padding-left: 20px;
+            margin-bottom: 2rem;
+            color: #222;
+            font-weight: 700;
+        }
+    }
+
+    // Media Grids (Logos/Brand Vertical)
+    .img-vertical {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 4rem;
+
+        img {
+            width: 140px;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+            opacity: 0.7;
+
+            &:hover {
+                filter: grayscale(0%);
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+    }
+
+    // Newspaper Clippings Grid
+    .news-vertical {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
+        margin-bottom: 3rem;
+
+        img {
+            width: calc(33.333% - 16px);
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .news-vertical img {
+            width: calc(50% - 12px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .print-main-card {
+            padding: 1.5rem;
+            margin: -40px 15px 30px;
+        }
+
+        .img-vertical img {
+            width: 110px;
+            gap: 20px;
+        }
+
+        .news-vertical img {
+            width: 100%;
+        }
+    }
+}

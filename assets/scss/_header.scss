@@ -1,0 +1,298 @@
+// ============================================
+// HEADER & NAVIGATION SCSS
+// ============================================
+@use 'variables' as *;
+
+// ── Top Bar ──────────────────────────────
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.top-bar {
+    background-color: $color-primary;
+    color: $color-white;
+    font-size: $font-size-xs;
+    padding: 8px 0 1px 0;
+    z-index: $z-fixed + 10;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: $spacing-sm;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: $spacing-md;
+
+        &-link {
+            color: rgba($color-white, 0.9);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color $transition-base;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+
+    &__registration {
+        font-size: 0.65rem;
+        opacity: 0.8;
+        text-align: center;
+        line-height: 1.4;
+
+        @media (max-width: $breakpoint-lg) {
+            display: none;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: $spacing-sm;
+
+        .btn-top {
+
+            background: rgba($color-white, 0.15);
+            color: $color-white;
+            font-size: 0.75rem;
+            font-weight: $font-weight-medium;
+            padding: 6px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background $transition-base, color $transition-base;
+
+            &:hover {
+                background: $color-white;
+                color: $color-primary;
+            }
+
+            &.active {
+                background: $color-white;
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+// ── Main Navbar ──────────────────────────
+.header-nav {
+    background-color: $color-bg-white;
+    box-shadow: $shadow-sm;
+    position: sticky;
+    top: 0;
+    padding-top: 0px;
+    z-index: $z-fixed;
+    transition: box-shadow $transition-base;
+
+    .fa-chevron-down:before {
+        content: "\25BE" !important;
+    }
+
+    .dropdown-toggle::after {
+        display: none !important;
+        border: none !important;
+    }
+
+    .dropdown-indicator {
+        font-size: 0.75em;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown:hover>.dropdown-toggle .fa-chevron-down,
+    .dropdown.show>.dropdown-toggle .fa-chevron-down {
+        transform: rotate(180deg);
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: $spacing-sm;
+        padding: $spacing-sm 0;
+
+        img {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
+
+            @media (max-width: $breakpoint-md) {
+                height: 48px;
+            }
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+
+            &__main {
+                font-size: 1.25rem;
+                font-weight: $font-weight-black;
+                color: $color-text-main;
+            }
+
+            &__sub {
+                font-size: $font-size-xs;
+                color: $color-text-muted;
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+
+    // Navigation Links
+    .navbar-nav {
+        .nav-item {
+            // padding: 0 4px;
+        }
+
+        .nav-link {
+            color: $color-text-main !important;
+            font-weight: $font-weight-regular;
+            font-size: 0.875rem;
+            padding: 0.5rem 0.7rem !important;
+            transition: color $transition-base;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background-color: $color-primary;
+                transition: width $transition-base;
+            }
+
+            &:hover,
+            &.active {
+                color: $color-primary !important;
+
+                &::after {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    // Dropdowns (Desktop Hover)
+    @media (min-width: 992px) {
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .dropdown-menu {
+            border: none;
+            box-shadow: $shadow-md;
+            border-radius: $radius-md;
+            padding: $spacing-xs 0;
+            margin-top: 0;
+            border-top: 3px solid $color-primary;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+
+            .dropdown-menu {
+                top: -3px;
+                left: 100%;
+                margin-left: .1rem;
+                border-top: none;
+                border-left: 3px solid $color-primary;
+            }
+
+            &:hover>.dropdown-menu {
+                display: block;
+            }
+        }
+    }
+
+    .dropdown-item {
+        font-size: 0.9rem;
+        font-weight: $font-weight-medium;
+        color: $color-text-light;
+        padding: 8px 20px;
+        transition: background $transition-base, color $transition-base;
+
+        &:hover,
+        &:focus {
+            background-color: rgba($color-primary, 0.05);
+            color: $color-primary;
+        }
+    }
+
+    // CTA Button in Nav
+    .nav-btn-donate {
+        background-color: $color-primary;
+        color: $color-white !important;
+        padding: 10px 24px !important;
+        border-radius: 50px;
+        font-weight: $font-weight-bold;
+        margin-left: $spacing-md;
+        transition: transform $transition-base, box-shadow $transition-base, background $transition-base;
+
+        &:hover {
+            background-color: $color-primary-dark;
+            color: $color-white !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba($color-primary, 0.3);
+
+            &::after {
+                display: none; // Disable underline
+            }
+        }
+
+        &::after {
+            display: none;
+        }
+
+        @media (max-width: $breakpoint-lg) {
+            margin-left: 0;
+            margin-top: $spacing-sm;
+            text-align: center;
+            display: inline-block;
+        }
+    }
+
+    // Mobile Toggler
+    .navbar-toggler {
+        border: none;
+        box-shadow: none !important;
+        padding: 4px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Utility wrapper padding
+body {
+    // We remove the old body padding-top that was for the fixed header
+    // because sticky pos on .header-nav handles it better. 
+    // Wait, if top-bar is relative and nav is sticky, it flows naturally.
+}

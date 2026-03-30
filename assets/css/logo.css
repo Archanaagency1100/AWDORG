@@ -1,0 +1,91 @@
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-card {
+  max-width: 170vh;
+  margin: -50px auto 0px;
+  background-color: #ab030a;
+  position: relative;
+  padding: 60px 40px;
+  z-index: 10;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0);
+  color: #fff;
+  border-radius: 0.3%;
+}
+
+/* 1. Hero Section (Background Image) */
+.hero-section {
+  height: 450px;
+  background: url("../img/logo-story.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  border-left: 4px solid #cc0000;
+  padding-left: 15px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.header-title h2 {
+  font-size: 24px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  margin: 0;
+}
+
+.logo-placeholder {
+  width: 100%;
+  max-width: 650px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.brand-section {
+  text-align: center;
+}
+
+.brand-name {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.foundation-name {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+}
+.tagline {
+  font-style: italic;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.content-text {
+  text-align: justify;
+  line-height: 1.8;
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.red-text {
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: none;
+}

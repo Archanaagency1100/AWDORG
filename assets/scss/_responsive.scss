@@ -1,0 +1,155 @@
+// ============================================
+// RESPONSIVE — AWD Org UI Breakpoint Styles
+// ============================================
+@use 'variables' as *;
+
+// ── Extra Large (≤ 1200px) ──────────────────
+@media (max-width: $breakpoint-xl) {
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .impact-grid {
+        gap: $spacing-xl $spacing-md;
+    }
+}
+
+// ── Large / Tablet Landscape (≤ 992px) ──────
+@media (max-width: $breakpoint-lg) {
+    .hero-content h1 {
+        font-size: $font-size-lg;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: $font-size-lg;
+    }
+
+    .num-wrapper {
+        font-size: $font-size-lg;
+    }
+
+    .gallery-container {
+        height: 280px;
+    }
+
+    .button-row {
+        flex-wrap: wrap;
+    }
+}
+
+// ── Tablet Portrait (≤ 768px) ───────────────
+@media (max-width: $breakpoint-md) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .content-section {
+        padding-top: $spacing-xl;
+        padding-right: $spacing-sm;
+        padding-left: $spacing-sm;
+    }
+
+    .centered-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .centered-content p {
+        font-size: $font-size-sm;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: $font-size-lg;
+    }
+
+    .num-wrapper {
+        font-size: $font-size-lg;
+    }
+
+    .activity-title {
+        font-size: $font-size-xl;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .gallery-container .card {
+        height: 200px;
+    }
+
+    .gallery-container .card:hover {
+        flex: 1;
+    }
+
+    .button-row {
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-sm;
+    }
+
+    .donate-sidebar {
+        padding: $spacing-xs $spacing-md;
+        font-size: $font-size-xs;
+    }
+}
+
+// ── Mobile (≤ 576px) ────────────────────────
+@media (max-width: $breakpoint-sm) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .centered-content h2 {
+        font-size: $font-size-md;
+    }
+
+    .impact-section {
+        padding: $spacing-xl 0;
+        background-attachment: scroll;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: $spacing-lg;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: $spacing-lg;
+    }
+
+    .num-wrapper {
+        font-size: 2rem;
+    }
+
+    .activity-title {
+        font-size: 2rem;
+    }
+
+    .campaign-title {
+        min-height: auto;
+    }
+
+    .button-row .btn {
+        width: 100%;
+        max-width: $btn-width;
+    }
+
+    .course-btn .enroll-btn {
+        width: 100%;
+        max-width: $btn-width;
+    }
+}

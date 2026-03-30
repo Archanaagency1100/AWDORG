@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Ration — AWDORG Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/scss/style.css" />
+</head>
+
+<body>
+    <section class="ourt-certificate-section">
+        <div id="header"></div>
+        <div class="ourt-certificate-hero-section"></div>
+
+        <div class="ourt-certificate-main-card">
+            <div class="container pt-5">
+                <h1>Our Certificates</h1>
+            </div>
+            <h5 class="pt-4"></h5>
+             <div class="container mt-5">
+                <div id="card-container" class="row g-4"></div>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="imageModalLabel">Certificate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-3 pt-1">
+                    <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded" id="carouselInner">
+                            <!-- Images injected here -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev" id="carouselPrevBtn" style="display: none;">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next" id="carouselNextBtn" style="display: none;">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/include.js"></script>
+    <script>
+        // 1. Certificate Data
+        const data = [
+          { 
+            "certificate": "FCRA Certificate",
+            "certificate_no": "231662112",
+            "issue_date": "30/07/2025",
+            "valid_upto": "30/07/2030",
+            "images": [
+                "assets/img/certificates/fcra1.webp",
+                "assets/img/certificates/fcra2.webp"
+            ]
+          },
+          { 
+            "certificate": "CSR1 Certificate",
+            "certificate_no": "CSR00056633",
+            "issue_date": "30/07/2020",
+            "valid_upto": "lifetime",
+            "images": [
+                "assets/img/certificates/csr.webp"
+            ]
+          },
+          { 
+            "certificate": "80G Certificate",
+            "certificate_no": "AATCA8551C23DL02",
+            "issue_date": "2027-28",
+            "valid_upto": "2031-32",
+            "images": [
+                "assets/img/certificates/80G-1.jpg",
+                "assets/img/certificates/80G-2.jpg",
+                "assets/img/certificates/80G-3.jpg",
+                "assets/img/certificates/80G-4.jpg"
+            ]
+          },
+           { 
+            "certificate": "12A Certificate",
+            "certificate_no": "AATCA8551C23DL02",
+            "issue_date": "2027-28",
+            "valid_upto": "2036-37",
+            "images": [
+                "assets/img/certificates/12A-1.jpg",
+                "assets/img/certificates/12A-2.jpg",
+                "assets/img/certificates/12A-3.jpg",
+                "assets/img/certificates/12A-4.jpg"
+            ]
+          },
+          { 
+            "certificate": "MCA Certificate",
+            "certificate_no": "367989",
+            "issue_date": "30/09/2022",
+            "valid_upto": "lifetime",
+            "images": [
+                "assets/img/certificates/mca-1.webp"
+            ]
+          },
+          { 
+            "certificate": "MSME Certificate",
+            "certificate_no": "UDYAM-DL-03-0017033",
+            "issue_date": "26/04/2022",
+            "valid_upto": "lifetime",
+            "images": [
+                "assets/img/certificates/msme-1.webp"
+            ]
+          },
+          { 
+            "certificate": "10AC Certificate",
+            "certificate_no": "AATCA8551CF2021401",
+            "issue_date": "28/05/2021",
+            "valid_upto": "2025",
+            "images": [
+                "assets/img/certificates/10AC-1.webp"
+            ]
+          },
+           { 
+            "certificate": "Incorporation Certificate",
+            "certificate_no": "U85300DL2020NPL367989",
+            "issue_date": "14/08/2020",
+            "valid_upto": "lifetime",
+            "images": [
+                "assets/img/certificates/incorporation-1.webp"
+            ]
+          },
+          { 
+            "certificate": "FORM 10BD ARN",
+            "certificate_no": "AATCA8551C",
+            "issue_date": "2022-23",
+            "valid_upto": "lifetime",
+            "images": [
+                "assets/img/certificates/10BD-1.webp"
+            ]
+          },
+          
+        ];
+
+        // 2. The function to build the cards
+        const container = document.getElementById('card-container');
+
+        data.forEach(item => {
+            const firstImage = item.images && item.images.length > 0 ? item.images[0] : '';
+            // Escape images array to pass as attribute
+            const imagesJson = JSON.stringify(item.images || []).replace(/"/g, '&quot;');
+            
+            const cardHTML = `
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm" style="border: none; border-radius: 12px; overflow: hidden; background-color: #fff; transition: transform 0.3s ease;">
+                        <div style="height: 250px; display: flex; align-items: center; justify-content: center; padding: 20px; background-color: #f8f9fa; border-bottom: 2px solid #ab0302;">
+                            <img src="${firstImage}" alt="${item.certificate}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                        </div>
+                        <div class="card-body p-4 position-relative">
+                            <h5 class="card-title fw-bold mb-3" style="color: #ab0302;">${item.certificate}</h5>
+                            <ul class="list-unstyled text-start mb-4 small text-muted">
+                                <li class="mb-2"><i class="fas fa-file-signature me-2" style="color: #ab0302;"></i><strong>Cert No:</strong> ${item.certificate_no}</li>
+                                <li class="mb-2"><i class="fas fa-calendar-alt me-2" style="color: #ab0302;"></i><strong>Issued:</strong> ${item.issue_date}</li>
+                                <li class="mb-0"><i class="fas fa-calendar-check me-2" style="color: #ab0302;"></i><strong>Valid Till:</strong> ${item.valid_upto}</li>
+                            </ul>
+                            <button onclick="openImageModal('${item.certificate}', '${imagesJson}')" class="btn w-100 py-2 mt-2" style="background-color: #ab0302; color: #fff; border-radius: 8px; font-weight: 500; border: none;">
+                                <i class="fas fa-eye me-1"></i> View Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += cardHTML;
+        });
+
+        function openImageModal(title, imagesStr) {
+            document.getElementById('imageModalLabel').innerText = title;
+            const images = JSON.parse(imagesStr);
+            const carouselInner = document.getElementById('carouselInner');
+            carouselInner.innerHTML = '';
+            
+            if (images && images.length > 0) {
+                images.forEach((imgSrc, idx) => {
+                    const activeClass = idx === 0 ? 'active' : '';
+                    carouselInner.innerHTML += `
+                        <div class="carousel-item ${activeClass}">
+                            <img src="${imgSrc}" class="d-block w-100" style="max-height: 70vh; object-fit: contain;" alt="Certificate Image ${idx + 1}">
+                        </div>
+                    `;
+                });
+                
+                // Show carousel controls only if multiple images
+                if (images.length > 1) {
+                    document.getElementById('carouselPrevBtn').style.display = 'block';
+                    document.getElementById('carouselNextBtn').style.display = 'block';
+                } else {
+                    document.getElementById('carouselPrevBtn').style.display = 'none';
+                    document.getElementById('carouselNextBtn').style.display = 'none';
+                }
+            } else {
+                carouselInner.innerHTML = '<p class="text-muted p-4">No image available</p>';
+                document.getElementById('carouselPrevBtn').style.display = 'none';
+                document.getElementById('carouselNextBtn').style.display = 'none';
+            }
+            
+            var modalEl = document.getElementById('imageModal');
+            var myModal = new bootstrap.Modal(modalEl);
+            myModal.show();
+        }
+    </script>
+</body>
+</html>
+

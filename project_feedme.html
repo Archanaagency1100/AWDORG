@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWDORG Foundation - contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/scss/style.css" />
+</head>
+
+<body>
+    <section class="feedme-section">
+        <div id="header"></div>
+        <div class="feedme-hero-section"></div>
+
+        <div class="feedme-main-card">
+            <div class="container pt-5">
+                <h1>"Animals Do Speak, But The Question Is” - Can We Hear Them?”</h1>
+            </div>
+            <h5 class="pt-4">Every living species matters. This project is based on the beautiful concept that helps us to reach the species who cannot reach us. Our aim is to reach the right place, at the right time and save lives. We feed abandoned animals, provide medical facility.<h5>
+            <div class="clearfix">
+                <button type="submit" class="btn btn-submit">How it Works</button>
+            </div>
+            <div class="my-5">
+                <div id="card-container" class="row g-4"></div>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/include.js"></script>
+    <script>
+        // 1. Your data - Just add more objects here!
+        const data = [
+  
+  {
+    "image": "/assets/img/feedme/feedme-campagin.jpg",
+    "title": "Free Vaccination to  Jagga & Titli",
+    "subtitle": "21st April 2024",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/1-4.jpg",
+    "title": "20 Camel identified & fed",
+    "subtitle": "(Sohna Rd.)",
+    "location": "April- May 2020"
+  },
+  {
+    "image": "/assets/img/feedme/2-4.jpg",
+    "title": "7 pups taken care & adopted",
+    "subtitle": "Gurgaon- Sohna Road",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/20-1.jpg",
+    "title": "28 Dogs Daily feeding",
+    "subtitle": "Shooting Range Tughalkabad",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/4-4.jpg",
+    "title": "Free Vaccination Camp Kalkaji",
+    "subtitle": "3rd May 2020 (Any stray spotted)",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/5-4.jpg",
+    "title": "Daily feedings to birds, crows & pigeons.",
+    "subtitle": "May- Sep 2020(7 places in Delhi & UP)",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/6-4.jpg",
+    "title": null,
+    "subtitle": "3 kittens spotted in delhi & adopted",
+    "location": "July 2020"
+  },
+  {
+    "image": "/assets/img/feedme/7-3.jpg",
+    "title": "Animal Drive Weekly Campaigns",
+    "subtitle": "NH8",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/8-3.jpg",
+    "title": null,
+    "subtitle": "600 kg Fodder distribution everyday",
+    "location": "Aravali Hills, Faridabad May- June 2020"
+  },
+  {
+    "image": "/assets/img/feedme/9-3.jpg",
+    "title": "2 Neelgai (Blue Bull) fed for a month",
+    "subtitle": "April 2020",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/10-2.jpg",
+    "title": "197 Stray Dogs are fed everyday",
+    "subtitle": "Sector 21 A,B,C,D & 46 Faridabad",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/11-2.jpg",
+    "title": "500 Kg Vegitables & Fodder Mix",
+    "subtitle": "July- Sep 2020",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/12-2.jpg",
+    "title": "Random Activities",
+    "subtitle": "Faridabad- Delhi Suburbs",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/13-2.jpg",
+    "title": "Lodhi Colony Campaign",
+    "subtitle": "May 2020",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/14-2.jpg",
+    "title": null,
+    "subtitle": "Feeding Wilds Campaign",
+    "location": "May 2020"
+  },
+  {
+    "image": "/assets/img/feedme/15-2.jpg",
+    "title": "Monkey Feed Drive",
+    "subtitle": "Sohna Road- 21st June 2020",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/16-2.jpg",
+    "title": null,
+    "subtitle": "Cattle Feeding Campaign",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/17-2.jpg",
+    "title": "School Campaign",
+    "subtitle": "(34 students)",
+    "location": "Faridabad"
+  },
+  {
+    "image": "/assets/img/feedme/18-2.jpg",
+    "title": null,
+    "subtitle": "Love for Abandoned,  Karnal",
+    "location": "July 2020"
+  },
+  
+  {
+    "image": "/assets/img/feedme/19-1.jpg",
+    "title": "30 Cows identified & fed",
+    "subtitle": "( Jhajjar.)",
+    "location": "January- February 2021"
+  },
+  {
+    "image": "/assets/img/feedme/20-1.jpg",
+    "title": "12 pups were fostered",
+    "subtitle": "Greater Noida",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/21-1.jpg",
+    "title": "1 Dog Daily feeding",
+    "subtitle": "(Feb-April 2021)",
+    "location": "Faridabad"
+  },
+  
+  {
+    "image": "/assets/img/feedme/22-1.jpg",
+    "title": null,
+    "subtitle": "cattle were rescued",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/23-1.jpg",
+    "title": "Daily feedings to cows",
+    "subtitle": "(4 places in Rajasthan)",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/24-1.jpg",
+    "title": "2 Puppies spotted at karnal bypass",
+    "subtitle": "& adopted ( July 2021)",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/25-1.jpg",
+    "title": "Vaccination camp",
+    "subtitle": "Alwar Rajasthan",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/26-1.jpg",
+    "title": "Fodder campaign",
+    "subtitle": "Palwal 2021",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/27-1.jpg",
+    "title": "Fodder campaign",
+    "subtitle": "Palwal 2021",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/28-1.jpg",
+    "title": null,
+    "subtitle": "cattle were rescued",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/29-1.jpg",
+    "title": "Feeding abandoned",
+    "subtitle": null,
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/30-1.jpg",
+    "title": null,
+    "subtitle": "Medical HelpShahdara",
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/31-1.jpg",
+    "title": "Hathi Gaun Campaign",
+    "subtitle": null,
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/32-1.jpg",
+    "title": null,
+    "subtitle": "Random Food DriveMay 2021",
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/33-1.jpg",
+    "title": "Cattle Feed Drive",
+    "subtitle": null,
+    "location": null
+  },
+  
+  {
+    "image": "/assets/img/feedme/34-1.jpg",
+    "title": "Random Drive Campaign",
+    "subtitle": null,
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/35-1.jpg",
+    "title": "Feeding Local Dogs",
+    "subtitle": null,
+    "location": null
+  },
+  {
+    "image": "/assets/img/feedme/36-1.jpg",
+    "title": null,
+    "subtitle": "Daily Meal DriveFaridabad",
+    "location": null
+  },
+];
+
+        // 2. The function to build the cards
+       const container = document.getElementById('card-container');
+
+        data.forEach(item => {
+            const cardHTML = `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <div class="card card-fixed bg-transparent">
+                        <div class="img-container shadow-sm">
+                            <img src="${item.image}" alt="${item.title}">
+                        </div>
+                        <div class="card-body p-0 pt-3">
+                            <h6 class="class-title">${item.title} ${item.subtitle || ''}</h6>
+                            <p class="text-muted mb-0 small">${item.location || 'Pan India'}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += cardHTML;
+        });
+    </script>
+</body>
+</html>

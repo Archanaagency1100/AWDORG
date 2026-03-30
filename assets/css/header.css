@@ -1,0 +1,347 @@
+:root {
+    --ngo-red: #ab0302;
+    --font: "Roboto", Sans-serif;
+
+    /* footer vars */
+    --text-light: #ffffff;
+    --text-dim: #cccccc;
+    --primary-red: #b30000;
+    --overlay-color: rgba(120, 0, 0, 0.85);
+}
+
+html, body {
+    overflow-x: hidden;
+    padding-top: 60px;
+    font-family: var(--font);
+} 
+
+.top-bar {
+    height: 50px;
+    background-color: var(--ngo-red);
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+}
+
+.top-bar .row {
+    margin: 0;
+}
+
+.top-bar * {
+    line-height: 1.2;
+}
+
+.top-bar .btn,
+.top-bar .sos-btn {
+    padding: 6px 14px;
+    white-space: nowrap;
+}
+
+
+/* Contact links */
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+/* FCRA text */
+.fcra-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 11px;
+    opacity: 0.9;
+}
+
+@keyframes blink {
+    0%, 100% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.sos-btn {
+    background-color: #fff;
+    color: var(--ngo-red);
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    animation: blink 2.5s ease-in-out infinite;
+}
+
+.navbar {
+    position: fixed;
+    top: 50px; /* below top-bar */
+    left: 0;
+    width: 100%;
+    z-index: 1040;
+    padding: 0 !important;
+}
+
+/* Logo */
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+}
+
+.brand-text-container {
+    margin-left: 12px;
+    line-height: 1.1;
+}
+
+.brand-main-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #545454;
+}
+
+.brand-sub-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #545454;
+}
+
+/* Nav links */
+.nav-link {
+    color: #7a7a7a !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+.dropdown-menu {
+    min-width: 220px;
+    padding: 0;
+    border-radius: 0;
+    border: 1px solid #fff;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+/* Dropdown items */
+.dropdown-item {
+    padding: 8px 18px;
+    color: #7a7a7a;
+    white-space: nowrap;
+}
+
+.dropdown-item i {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Hover dropdown (desktop only) */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown:hover > .dropdown-toggle::after {
+        transform: rotate(180deg);
+        transition: 0.3s;
+    }
+}
+
+.submenu,
+.dropdown-submenu {
+    position: relative;
+}
+
+.submenu > .child-menu,
+.dropdown-submenu > .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 220px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.submenu:hover > .child-menu,
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Remove arrow from inner submenu */
+.dropdown-submenu > .dropdown-toggle::after {
+    display: none !important;
+}
+
+/* --------------------- MOBILE FIX --------------------*/
+
+@media (max-width: 1024px) {
+    .dropdown-menu,
+    .submenu > .child-menu,
+    .dropdown-submenu > .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-nav {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 13px;
+        padding: 6px 8px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* Container side padding kam */
+    .navbar .container-fluid,
+    .top-bar .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .nav-link {
+        padding: 0.4rem 0.6rem !important;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-brand img {
+        height: 56px;
+    }
+
+    .brand-main-text {
+        font-size: 20px;
+    }
+
+    .brand-sub-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 620px) {
+    .topbar-buttons {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 335px) {
+
+    /* Navbar padding kam */
+    .navbar {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    /* Logo thoda chhota */
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    /* Brand text scale down */
+    .brand-main-text {
+        font-size: 16px;
+        line-height: 1.1;
+    }
+
+    .brand-sub-text {
+        font-size: 11px;
+    }
+
+    /* Extra margin remove */
+    .brand-text-container {
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 335px) {
+    .dropdown-menu {
+        min-width: 180px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .top-bar .d-flex {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 360px) {
+    .top-bar .col-md-4 {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto !important;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* Toggle ko top-bar ke upar le jao */
+    .navbar-toggler {
+        position: absolute;
+        top: -45px;          /* top-bar ke andar */
+        right: 12px;         /* hamesha right */
+        z-index: 1100;
+    }
+
+    /* Navbar height thodi kam */
+    .navbar {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /* Top bar & navbar buttons – large screens */
+    .top-bar a,
+    .navbar .btn,
+    .sos-btn {
+        padding: 12px 22px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    /* Fundraise button thoda highlight */
+    .sos-btn {
+        font-weight: 600;
+    }
+}
+
+

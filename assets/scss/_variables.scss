@@ -1,0 +1,88 @@
+// ============================================
+// VARIABLES — AWD Org UI Design Tokens
+// ============================================
+
+// ── Colors ──────────────────────────────────
+$color-primary: #ab0302;
+$color-primary-dark: #8b0000;
+$color-primary-darker: #8b2323;
+$color-primary-bright: #ff0200;
+$color-primary-bg: #b30000;
+
+// ── Text Colors ─────────────────────────────
+$color-text-main: #000000;
+$color-text-muted: #7a7a7a;
+$color-text-light: #666666;
+$color-white: #ffffff;
+
+// ── Background Colors ───────────────────────
+$color-bg-white: #ffffff;
+$color-bg-dark: rgba(0, 0, 0, 0.5);
+$color-bg-overlay: rgba(17, 9, 9, 0.55);
+$color-border: #ddd;
+
+// ── Typography ──────────────────────────────
+$font-primary: "Roboto", sans-serif;
+
+// ── Font Sizes ──────────────────────────────
+$font-size-xs: 0.875rem;
+$font-size-sm: 1rem;
+$font-size-base: 1.1rem;
+$font-size-md: 1.5rem;
+$font-size-lg: 2.5rem;
+$font-size-xl: 3.5rem;
+$font-size-hero: 4rem;
+
+// ── Font Weights ────────────────────────────
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi: 600;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+$font-weight-heavy: 900;
+
+// ── Spacing ─────────────────────────────────
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 40px;
+$spacing-2xl: 60px;
+$spacing-3xl: 80px;
+$spacing-4xl: 100px;
+
+// ── Border Radius ───────────────────────────
+$radius-none: 0;
+$radius-sm: 2px;
+$radius-md: 4px;
+$radius-lg: 8px;
+
+// ── Breakpoints ─────────────────────────────
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// ── Transitions ─────────────────────────────
+$transition-base: 0.3s ease;
+$transition-fast: 0.2s ease;
+$transition-smooth: 0.4s ease;
+$transition-slow: 0.6s ease;
+
+// ── Shadows ─────────────────────────────────
+$shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.6);
+$shadow-md: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+// ── Z-Index Scale ───────────────────────────
+$z-bg: -2;
+$z-overlay: -1;
+$z-content: 1;
+$z-sticky: 100;
+$z-fixed: 1000;
+$z-modal: 1050;
+
+// ── Component Sizes ─────────────────────────
+$btn-width: 200px;
+$btn-height: 45px;
+$gallery-height: 350px;

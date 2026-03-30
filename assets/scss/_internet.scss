@@ -1,0 +1,111 @@
+// ============================================
+// Internet Page Styles (Media & Social)
+// ============================================
+@use "sass:color";
+
+.internet-section {
+    background-color: #fcfcfc;
+    color: #333;
+
+    .internet-hero-section {
+        height: 500px;
+        background: url('../img/newspaper/media-headera-bg.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .internet-main-card {
+        max-width: 1200px;
+        margin: -60px auto 40px;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        padding: 3rem;
+        overflow: hidden;
+
+        h1 {
+            border-left: 5px solid #ab0303;
+            padding-left: 20px;
+            margin-bottom: 2rem;
+            color: #222;
+            font-weight: 700;
+        }
+    }
+
+    // Media Grids
+    .img-vertical {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 3rem;
+
+        img {
+            width: 140px;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                filter: grayscale(0%);
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .news-vertical {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+
+        img {
+            width: calc(33.333% - 14px);
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    // Twitter Embed container
+    .twitter-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2rem;
+
+        .twitter-tweet {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .internet-main-card {
+            padding: 1.5rem;
+            margin: -40px 15px 30px;
+        }
+
+        .img-vertical img {
+            width: 100px;
+        }
+
+        .news-vertical img {
+            width: 100%;
+        }
+    }
+}

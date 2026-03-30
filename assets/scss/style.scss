@@ -1,0 +1,50 @@
+// ============================================
+// AWD Org UI — Main SCSS Entry Point
+// ============================================
+
+// Partials
+@use 'variables' as *;
+@use 'responsive' as *;
+@use 'header' as *;
+@use 'footer' as *;
+@use 'activities' as *;
+@use 'supporters' as *;
+@use 'about' as *;
+@use 'logo' as *;
+@use 'executive_members' as *;
+@use 'executive_committee' as *;
+@use 'faculties' as *;
+@use 'volunteers' as *;
+@use 'contact' as *;
+@use 'project_educate' as *;
+@use 'project_elevate' as *;
+@use 'project_employ' as *;
+@use 'project_feedme' as *;
+@use 'project_life' as *;
+@use 'project_milkyway' as *;
+@use 'project_ration' as *;
+@use 'projectpro' as *;
+@use 'internet' as *;
+@use 'print' as *;
+@use 'students' as *;
+@use 'tv' as *;
+@use 'radio' as *;
+@use 'index' as *;
+@use 'partners' as *;
+@use 'anual_reports' as *;
+@use 'our_certificate' as *;
+@use 'privacy_policy' as *;
+
+//////////// INDEX PAGE SCSS ////////////////
+// ── Hero Section ────────────────────────────
+.main-card {
+    max-width: 80vw;
+    margin: -80px auto 40px;
+    background-color: #fff;
+    position: relative;
+    padding: 60px 100px;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    color: #414141;
+    border-radius: 12px;
+}
