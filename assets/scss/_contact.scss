@@ -14,16 +14,16 @@ $bg-light: #f9f9f9;
 }
 
 // HERO SECTION
-.contact-hero-section {
-  height: 480px;
+.hero-section {
+  // height: 480px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.4)
     ),
     url("../img/contactus-now-scaled.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   @media (max-width: 768px) {
     height: 300px;
@@ -35,27 +35,27 @@ $bg-light: #f9f9f9;
 }
 
 // HEADER TITLE
-.header-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: $text-dark;
-  position: relative;
-  margin-bottom: 10px;
+// .header-title {
+//   font-size: 2.2rem;
+//   font-weight: 700;
+//   color: $text-dark;
+//   position: relative;
+//   margin-bottom: 10px;
 
-  // &::before {
-  //   content: "";
-  //   width: 5px;
-  //   height: 100%;
-  //   background: $primary;
-  //   position: absolute;
-  //   left: -15px;
-  //   top: 0;
-  // }
+//   // &::before {
+//   //   content: "";
+//   //   width: 5px;
+//   //   height: 100%;
+//   //   background: $primary;
+//   //   position: absolute;
+//   //   left: -15px;
+//   //   top: 0;
+//   // }
 
-  @media (max-width: 576px) {
-    font-size: 1.6rem;
-  }
-}
+//   @media (max-width: 576px) {
+//     font-size: 1.6rem;
+//   }
+// }
 
 // DESCRIPTION TEXT
 .contact-section p {
