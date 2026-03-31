@@ -1,126 +1,141 @@
 // ============================================
-// Executive Members Page Styles
+// Executive Members Page Styles (Responsive)
 // ============================================
 
-.executive-members-section {
-    background-color: #fff;
-    color: #414141;
-    font-family: Arial, sans-serif;
-}
+.profile-row {
+  min-height: 300px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 
-.executive-main-card {
-    max-width: 1400px;
-    margin: -50px auto 40px;
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding-bottom: 2rem;
+  @media (max-width: 768px) {
+    min-height: auto;
+  }
 
-    .header-title {
-        border-left: 4px solid #b30000;
-        padding-left: 15px;
-        margin: 40px 0;
-        color: #444;
-        font-weight: 700;
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
+
+    @media (max-width: 768px) {
+      height: 250px;
     }
 
-    // Profile Row Styling
-    .profile-row {
-        min-height: 300px;
-        overflow: hidden;
-        margin-bottom: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-
-            &:hover {
-                filter: grayscale(0%);
-            }
-        }
-
-        .info-panel {
-            background-color: #b30000;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            z-index: 1;
-            padding: 2rem;
-
-            &::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background-size: cover;
-                background-position: center;
-                opacity: 0.15; // Watermark effect
-                z-index: -1;
-                mix-blend-mode: multiply;
-            }
-
-            .content {
-                h2 {
-                    font-size: 2rem;
-                    font-weight: 700;
-                    margin-bottom: 0.5rem;
-                }
-
-                .role {
-                    font-weight: 600;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    margin-bottom: 1.5rem;
-                    display: inline-block;
-                    color: rgba(255, 255, 255, 0.9);
-                    letter-spacing: 1px;
-                }
-
-                .quote {
-                    font-style: italic;
-                    font-weight: 300;
-                    font-size: 1.2rem;
-                    line-height: 1.6;
-                    opacity: 0.95;
-                }
-            }
-
-            // Individual backgrounds
-            &.bg-charanjeet::before {
-                background-image: url('../executive_members/cd-bg.webp');
-            }
-
-            &.bg-deeksha::before {
-                background-image: url('../executive_members/ds-bg.webp');
-            }
-
-            &.bg-nimesh::before {
-                background-image: url('../executive_members/nk-bg.webp');
-            }
-
-            &.bg-krishan::before {
-                background-image: url('../executive_members/km-bg.webp');
-            }
-
-            &.bg-nidhi::before {
-                background-image: url('../executive_members/ns-bg.webp');
-            }
-        }
+    &:hover {
+      filter: grayscale(0%);
+      transform: scale(1.03);
     }
-}
+  }
 
-.executive-hero-section {
-    height: 500px;
-    background: url('../executive_members/team-bg.webp') center/cover no-repeat;
+  .info-panel {
+    background-color: #b30000;
+    color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 2.5rem;
+
+    @media (max-width: 992px) {
+      padding: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 1.5rem;
+      text-align: center;
+      align-items: center;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.12;
+      z-index: -1;
+      mix-blend-mode: multiply;
+    }
+
+    .content {
+      max-width: 500px;
+
+      @media (max-width: 576px) {
+        max-width: 100%;
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 2.2vw, 2rem);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .role {
+        font-weight: 600;
+        font-size: clamp(0.8rem, 1vw, 1rem);
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 1px;
+      }
+
+      .quote {
+        font-style: italic;
+        font-weight: 300;
+        font-size: clamp(0.95rem, 1.2vw, 1.2rem);
+        line-height: 1.6;
+        opacity: 0.95;
+      }
+    }
+
+    // Background overlays
+    &.bg-navbair::before {
+      background-image: url('../img/executive_members/na-bg.jpg');
+    }
+
+    &.bg-ambrish::before {
+      background-image: url('../img/executive_members/ac-bg.jpg');
+    }
+
+    &.bg-kanchan::before {
+      background-image: url('../img/executive_members/kj-bg.jpg');
+    }
+
+    &.bg-dimple::before {
+      background-image: url('../img/executive_members/da-bg.jpg');
+    }
+
+    &.bg-cm::before {
+      background-image: url('../img/executive_members/kamini-m-bg.jpg');
+    }
+  }
+}
+
+// ============================================
+// HERO SECTION (Responsive)
+// ============================================
+
+.hero-section {
+  height: 500px;
+  background: url('../img/executive_members/team-bg.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 992px) {
+    height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+
+  @media (max-width: 576px) {
+    height: 220px;
+  }
 }

@@ -170,7 +170,7 @@
 
     .usp-accordion {
         flex: 1.2;
-        min-width: 350px;
+       width: fit-content;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -195,7 +195,7 @@
 
             span {
                 font-weight: 700;
-                font-size: 1rem;
+  font-size: clamp(0.8rem, 1vw, 1rem);
             }
 
             .plus-icon {

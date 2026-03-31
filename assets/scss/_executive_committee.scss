@@ -7,32 +7,11 @@
     color: #414141;
 }
 
-.committee-hero-section {
-    height: 600px;
-    background: url('../img/executive_committee/executive-members.webp') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero-section {
+    background: url('../img/executive_committee/executive-committee.webp') center/cover no-repeat;
 }
 
-.committee-main-card {
-    max-width: 1400px;
-    margin: -50px auto 40px;
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding-bottom: 2rem;
 
-    .header-title {
-        border-left: 4px solid #b30000;
-        padding-left: 15px;
-        margin: 40px 0 20px 0;
-        color: #444;
-        font-weight: 700;
-        font-size: 2.5rem;
-    }
 
     // Profile Row Styling
     .profile-row {
@@ -101,26 +80,25 @@
                 }
             }
 
-            // Individual backgrounds
-            &.bg-navbair::before {
-                background-image: url('../img/executive_committee/na-bg.jpg');
+          // Individual backgrounds
+            &.bg-charanjeet::before {
+                background-image: url('../executive_committee/cd-bg.webp');
             }
 
-            &.bg-ambrish::before {
-                background-image: url('../img/executive_committee/ac-bg.jpg');
+            &.bg-deeksha::before {
+                background-image: url('../executive_committee/ds-bg.webp');
             }
 
-            &.bg-kanchan::before {
-                background-image: url('../img/executive_committee/kj-bg.jpg');
+            &.bg-nimesh::before {
+                background-image: url('../executive_committee/nk-bg.webp');
             }
 
-            &.bg-dimple::before {
-                background-image: url('../img/executive_committee/da-bg.jpg');
+            &.bg-krishan::before {
+                background-image: url('../executive_committee/km-bg.webp');
             }
 
-            &.bg-cm::before {
-                background-image: url('../img/executive_committee/kamini-m-bg.jpg');
+            &.bg-nidhi::before {
+                background-image: url('../executive_committee/ns-bg.webp');
             }
         }
     }
-}

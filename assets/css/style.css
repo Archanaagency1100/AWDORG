@@ -601,6 +601,9 @@ a {
   font-size: 0.8rem;
   color: var(--text-light);
 }
+.bank-info p {
+  font-size: 0.8rem;
+}
 
 .qr-card {
   align-items: center;
@@ -1071,7 +1074,8 @@ a {
 }
 .about-usp-section .usp-accordion {
   flex: 1.2;
-  min-width: 350px;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1095,7 +1099,7 @@ a {
 }
 .about-usp-section .usp-accordion .usp-accordion-item span {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 .about-usp-section .usp-accordion .usp-accordion-item .plus-icon {
   font-size: 1.5rem;
@@ -1138,7 +1142,7 @@ a {
   margin-bottom: 40px;
 }
 .logo-main-card .logo-header-title h2 {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   text-decoration: underline;
   text-underline-offset: 8px;
   margin: 0;
@@ -1267,162 +1271,36 @@ a {
     /* Scale up to 140% of the original size */
   }
 }
-.executive-members-section {
-  background-color: #fff;
-  color: #414141;
-  font-family: Arial, sans-serif;
-}
-
-.executive-main-card {
-  max-width: 1400px;
-  margin: -50px auto 40px;
-  background-color: #fff;
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  padding-bottom: 2rem;
-}
-.executive-main-card .header-title {
-  border-left: 4px solid #b30000;
-  padding-left: 15px;
-  margin: 40px 0;
-  color: #444;
-  font-weight: 700;
-}
-.executive-main-card .profile-row {
+.profile-row {
   min-height: 300px;
   overflow: hidden;
   margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
-.executive-main-card .profile-row .profile-img {
+@media (max-width: 768px) {
+  .profile-row {
+    min-height: auto;
+  }
+}
+.profile-row .profile-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  transition: all 0.4s ease;
 }
-.executive-main-card .profile-row .profile-img:hover {
+@media (max-width: 768px) {
+  .profile-row .profile-img {
+    height: 250px;
+  }
+}
+.profile-row .profile-img:hover {
   filter: grayscale(0%);
+  transform: scale(1.03);
 }
-.executive-main-card .profile-row .info-panel {
-  background-color: #b30000;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-}
-.executive-main-card .profile-row .info-panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
-  z-index: -1;
-  mix-blend-mode: multiply;
-}
-.executive-main-card .profile-row .info-panel .content h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.executive-main-card .profile-row .info-panel .content .role {
-  font-weight: 600;
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.9);
-  letter-spacing: 1px;
-}
-.executive-main-card .profile-row .info-panel .content .quote {
-  font-style: italic;
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  opacity: 0.95;
-}
-.executive-main-card .profile-row .info-panel.bg-charanjeet::before {
-  background-image: url("../executive_members/cd-bg.webp");
-}
-.executive-main-card .profile-row .info-panel.bg-deeksha::before {
-  background-image: url("../executive_members/ds-bg.webp");
-}
-.executive-main-card .profile-row .info-panel.bg-nimesh::before {
-  background-image: url("../executive_members/nk-bg.webp");
-}
-.executive-main-card .profile-row .info-panel.bg-krishan::before {
-  background-image: url("../executive_members/km-bg.webp");
-}
-.executive-main-card .profile-row .info-panel.bg-nidhi::before {
-  background-image: url("../executive_members/ns-bg.webp");
-}
-
-.executive-hero-section {
-  height: 500px;
-  background: url("../executive_members/team-bg.webp") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.executive-committee-section {
-  background-color: #fff;
-  color: #414141;
-}
-
-.committee-hero-section {
-  height: 600px;
-  background: url("../img/executive_committee/executive-members.webp") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.committee-main-card {
-  max-width: 1400px;
-  margin: -50px auto 40px;
-  background-color: #fff;
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  padding-bottom: 2rem;
-}
-.committee-main-card .header-title {
-  border-left: 4px solid #b30000;
-  padding-left: 15px;
-  margin: 40px 0 20px 0;
-  color: #444;
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-.committee-main-card .profile-row {
-  min-height: 300px;
-  overflow: hidden;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-.committee-main-card .profile-row .profile-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-.committee-main-card .profile-row .profile-img:hover {
-  filter: grayscale(0%);
-}
-.committee-main-card .profile-row .info-panel {
+.profile-row .info-panel {
   background-color: #b30000;
   color: white;
   display: flex;
@@ -1432,7 +1310,134 @@ a {
   z-index: 1;
   padding: 2.5rem;
 }
-.committee-main-card .profile-row .info-panel::before {
+@media (max-width: 992px) {
+  .profile-row .info-panel {
+    padding: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .profile-row .info-panel {
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+}
+.profile-row .info-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.12;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+.profile-row .info-panel .content {
+  max-width: 500px;
+}
+@media (max-width: 576px) {
+  .profile-row .info-panel .content {
+    max-width: 100%;
+  }
+}
+.profile-row .info-panel .content h2 {
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.profile-row .info-panel .content .role {
+  font-weight: 600;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1px;
+}
+.profile-row .info-panel .content .quote {
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(0.95rem, 1.2vw, 1.2rem);
+  line-height: 1.6;
+  opacity: 0.95;
+}
+.profile-row .info-panel.bg-navbair::before {
+  background-image: url("../img/executive_members/na-bg.jpg");
+}
+.profile-row .info-panel.bg-ambrish::before {
+  background-image: url("../img/executive_members/ac-bg.jpg");
+}
+.profile-row .info-panel.bg-kanchan::before {
+  background-image: url("../img/executive_members/kj-bg.jpg");
+}
+.profile-row .info-panel.bg-dimple::before {
+  background-image: url("../img/executive_members/da-bg.jpg");
+}
+.profile-row .info-panel.bg-cm::before {
+  background-image: url("../img/executive_members/kamini-m-bg.jpg");
+}
+
+.hero-section {
+  height: 500px;
+  background: url("../img/executive_members/team-bg.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .hero-section {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section {
+    height: 220px;
+  }
+}
+
+.executive-committee-section {
+  background-color: #fff;
+  color: #414141;
+}
+
+.hero-section {
+  background: url("../img/executive_committee/executive-committee.webp") center/cover no-repeat;
+}
+
+.profile-row {
+  min-height: 300px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.profile-row .profile-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.profile-row .profile-img:hover {
+  filter: grayscale(0%);
+}
+.profile-row .info-panel {
+  background-color: #b30000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 2.5rem;
+}
+.profile-row .info-panel::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1442,12 +1447,12 @@ a {
   z-index: -1;
   mix-blend-mode: multiply;
 }
-.committee-main-card .profile-row .info-panel .content h2 {
+.profile-row .info-panel .content h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-.committee-main-card .profile-row .info-panel .content .role {
+.profile-row .info-panel .content .role {
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
@@ -1456,27 +1461,27 @@ a {
   color: rgba(255, 255, 255, 0.9);
   letter-spacing: 1px;
 }
-.committee-main-card .profile-row .info-panel .content .quote {
+.profile-row .info-panel .content .quote {
   font-style: italic;
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.6;
   opacity: 0.95;
 }
-.committee-main-card .profile-row .info-panel.bg-navbair::before {
-  background-image: url("../img/executive_committee/na-bg.jpg");
+.profile-row .info-panel.bg-charanjeet::before {
+  background-image: url("../executive_committee/cd-bg.webp");
 }
-.committee-main-card .profile-row .info-panel.bg-ambrish::before {
-  background-image: url("../img/executive_committee/ac-bg.jpg");
+.profile-row .info-panel.bg-deeksha::before {
+  background-image: url("../executive_committee/ds-bg.webp");
 }
-.committee-main-card .profile-row .info-panel.bg-kanchan::before {
-  background-image: url("../img/executive_committee/kj-bg.jpg");
+.profile-row .info-panel.bg-nimesh::before {
+  background-image: url("../executive_committee/nk-bg.webp");
 }
-.committee-main-card .profile-row .info-panel.bg-dimple::before {
-  background-image: url("../img/executive_committee/da-bg.jpg");
+.profile-row .info-panel.bg-krishan::before {
+  background-image: url("../executive_committee/km-bg.webp");
 }
-.committee-main-card .profile-row .info-panel.bg-cm::before {
-  background-image: url("../img/executive_committee/kamini-m-bg.jpg");
+.profile-row .info-panel.bg-nidhi::before {
+  background-image: url("../executive_committee/ns-bg.webp");
 }
 
 .faculties-section {
