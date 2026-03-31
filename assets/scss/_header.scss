@@ -38,7 +38,8 @@
             align-items: center;
             gap: 6px;
             transition: color $transition-base;
-
+margin-right: 100px;
+justify-content: center;
             &:hover {
                 color: $color-white;
             }
