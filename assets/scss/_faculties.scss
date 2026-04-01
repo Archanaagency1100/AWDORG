@@ -7,40 +7,40 @@
     color: #333;
 }
 
-.faculties-hero-section {
-    height: 500px;
+.hero-section {
+    // height: 500px;
     background: url('../img/faculties/faculties_banner.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
-.faculties-main-card {
-    max-width: 1400px;
-    margin: -50px auto 40px;
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding-bottom: 2rem;
+// .faculties-main-card {
+//     max-width: 1400px;
+//     margin: -50px auto 40px;
+//     background-color: #fff;
+//     position: relative;
+//     z-index: 10;
+//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+//     border-radius: 12px;
+//     padding-bottom: 2rem;
 
-    .header-title {
-        border-left: 4px solid #b30000;
-        padding-left: 15px;
-        margin: 40px 0 20px;
-        color: #444;
-        font-weight: 700;
-        font-size: 2rem;
+//     .header-title {
+//         border-left: 4px solid #b30000;
+//         padding-left: 15px;
+//         margin: 40px 0 20px;
+//         color: #444;
+//         font-weight: 700;
+//         font-size: 2rem;
 
-        h2 {
-            font-size: 24px;
-            // text-decoration: underline;
-            text-underline-offset: 8px;
-            margin: 0;
-            color: #222;
-        }
-    }
+//         h2 {
+//             font-size: 24px;
+//             // text-decoration: underline;
+//             text-underline-offset: 8px;
+//             margin: 0;
+//             color: #222;
+//         }
+//     }
 
     .team-grid {
         display: grid;

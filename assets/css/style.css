@@ -1489,12 +1489,8 @@ a {
   color: #333;
 }
 
-.faculties-hero-section {
-  height: 500px;
+.hero-section {
   background: url("../img/faculties/faculties_banner.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .faculties-main-card {
