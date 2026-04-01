@@ -27,8 +27,8 @@
         </div>
 
         <!-- Main Card -->
-        <div class="partners-main-card">
-            <div class="partners-content-header">
+        <div class="main-card">
+            <div class="header-title">
                 <h2>Collaboration for Change</h2>
                 <p>
                     We are immensely grateful to our corporate and community partners. Their unwavering support 
@@ -36,7 +36,7 @@
                 </p>
             </div>
 
-            <div class="partners-grid" id="partners-grid-container">
+            <div class="partners-grid row" id="partners-grid-container">
                 <!-- Data loaded dynamically -->
             </div>
         </div>
@@ -140,7 +140,7 @@
 
             supporter_company.forEach(partner => {
                 const card = document.createElement("div");
-                card.className = "partner-card";
+                card.className = "partner-card col-6 col-sm-6 col-md-4 col-lg-3 mb-4";
                 card.innerHTML = `
                     <div class="partner-card__image">
                         <img src="${partner.src}" alt="${partner.name}" loading="lazy">
