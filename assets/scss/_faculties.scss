@@ -42,33 +42,33 @@
 //         }
 //     }
 
-    .team-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(280px, 1fr));
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto 40px;
-        padding: 0 1rem;
+    // .team-grid {
+    //     display: grid;
+    //     grid-template-columns: repeat(3, minmax(280px, 1fr));
+    //     gap: 30px;
+    //     max-width: 1200px;
+    //     margin: 0 auto 40px;
+    //     padding: 0 1rem;
 
-        .member {
-            display: flex;
-            flex-direction: column;
-            border-radius: 12px;
-            overflow: hidden;
-            background: #fff;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(0, 0, 0, 0.04);
+        // .member {
+        //     display: flex;
+        //     flex-direction: column;
+        //     border-radius: 12px;
+        //     overflow: hidden;
+        //     background: #fff;
+        //     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        //     transition: transform 0.3s ease, box-shadow 0.3s ease;
+        //     border: 1px solid rgba(0, 0, 0, 0.04);
 
-            &:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        //     &:hover {
+        //         transform: translateY(-8px);
+        //         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 
-                .member-card img {
-                    transform: scale(1.05);
-                }
-            }
-        }
+        //         .member-card img {
+        //             transform: scale(1.05);
+        //         }
+        //     }
+        
 
         .member-card {
             position: relative;
@@ -127,5 +127,4 @@
                 margin-top: 10px;
             }
         }
-    }
-}
+    
