@@ -3474,7 +3474,6 @@ form .btn-submit:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -2;
 }
 .home .hero-section .hero-overlay {
   position: absolute;
