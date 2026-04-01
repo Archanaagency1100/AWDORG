@@ -126,3 +126,82 @@ p {
         -webkit-mask-size: 100% 100%;
     }
 }
+// -------CTA Strip Before Footer-------
+
+.cta-strip {
+    display: none;
+  background: linear-gradient(135deg, #ab0302 0%, #1a1a1a 100%);
+  padding: 40px 0;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+
+  // subtle red glow
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: #ab0302;
+    opacity: 0.15;
+    border-radius: 50%;
+    filter: blur(60px);
+  }
+
+  .cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .cta-text {
+    h3 {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .cta-action {
+    .btn-donate {
+      background: #fff;
+      color: #ab0302;
+      padding: 10px 22px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: none;
+      transition: 0.3s;
+
+      &:hover {
+        background: #8f0201;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 576px) {
+  .cta-strip {
+    text-align: center;
+
+    .cta-content {
+      flex-direction: column;
+    }
+
+    .cta-text h3 {
+      font-size: 20px;
+    }
+  }
+}

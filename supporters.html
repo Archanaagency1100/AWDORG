@@ -16,20 +16,38 @@
     <div id="header"></div>
     <section class="supporters-section">
 
-        <div class="supporters-hero-section"></div>
+        <div class="hero-section"></div>
 
-        <div class="supporters-main-card">
-            <div class="container pt-5 pb-4">
+        <div class="main-card">
+            <!-- <div class="container pt-5 pb-4"> -->
                 <div class="header-title">
                     <h2>Our Supporters</h2>
                 </div>
 
-                <div class="team-grid" id="card-container">
-                </div>
+                <div class="team-grid row g-4 text-center" id="card-container">
+                <!-- </div> -->
 
             </div>
 
     </section>
+
+<!-- Call of Action -->
+    <section class="cta-strip">
+  <div class="container">
+    <div class="cta-content">
+
+      <div class="cta-text">
+        <h3>Every single penny makes a difference</h3>
+        <p>Your small contribution can bring big change in someone's life.</p>
+      </div>
+
+      <div class="cta-action">
+        <a href="#" class="btn btn-donate">Donate Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <div id="footer"></div>
 
@@ -213,11 +231,11 @@
 
         masterclasses.forEach(item => {
             const cardHTML = `
-            <div class="member">
-                <div class="member-card p-2">
-                    <img src="${item.image}">
+            <div class="supporters col-sm-6 col-md-3 col-lg-3">
+                <div class="supporters-card p-2">
+                    <img class="img-fluid" src="${item.image}">
                 </div>
-                <div class="member-info">
+                <div class="supporters-info">
                     <h3>${item.profileTitle}</h3>
                     <p class="role">${item.profileDesignation}</p>
                 </div>

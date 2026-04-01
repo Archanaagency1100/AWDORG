@@ -22,8 +22,9 @@
 <section class="our-certificate-section">
 
     <div id="header"></div>
- <div class="hero-section"></div>
-    <!-- <div class="container my-5"> -->
+    <div class="hero-section"></div>
+
+    <div class="container my-5">
         <div class="main-card">
 
             <div class="header-title mb-4">
@@ -34,8 +35,26 @@
             <div id="certcontainer" class="row g-4"></div>
 
         </div>
-    <!-- </div> -->
+    </div>
 
+</section>
+
+<!-- ------------- Call to Action Strip--------------- -->
+    <section class="cta-strip">
+  <div class="container">
+    <div class="cta-content">
+
+      <div class="cta-text">
+        <h3>Every single penny makes a difference</h3>
+        <p>Your small contribution can bring big change in someone's life.</p>
+      </div>
+
+      <div class="cta-action">
+        <a href="#" class="btn btn-donate">Donate Now</a>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <div id="footer"></div>
@@ -43,20 +62,58 @@
 <!-- JS -->
 <script>
 const certificates = [
-  { title: "FCRA Certificate", number: "231662112", date: "30/07/2025 - 30/07/2030", link: "/assets/certificates/FCRA Registration-Certificate-AWDORG.pdf" },
-  { title: "CSR1 Certificate", number: "CSR00056633", date: "No Expiry" },
-  { title: "80G Certificate", number: "AATCA8551C23DL02", date: "(2027-28) - (2031-32)" },
-  { title: "12A Certificate", number: "AATCA8551C23DL02", date: "(2027-28) - (2036-37)" },
-  { title: "MCA Certificate", number: "367989", date: "30/09/2022 - No Expiry" },
-  { title: "MSME Certificate", number: "UDYAM-DL-03-0017033", date: "26/04/2022 - No Expiry" },
-  { title: "10AC Certificate", number: "AATCA8551CF2021401", date: "28/05/2021 - 2025" },
-  { title: "Incorporation Certificate", number: "U85300DL2020NPL367989", date: "14/08/2020 - No Expiry" }
+  {
+    title: "FCRA Certificate",
+    number: "231662112",
+    date: "30/07/2025 - 30/07/2030",
+    link: "assets/certificates/fcra-certificate.pdf"
+  },
+  {
+    title: "CSR1 Certificate",
+    number: "CSR00056633",
+    date: "No Expiry",
+    link: "assets/certificates/csr1-certificate.pdf"
+  },
+  {
+    title: "80G Certificate",
+    number: "AATCA8551C23DL02",
+    date: "(2027-28) - (2031-32)",
+    link: "assets/certificates/80g-certificate.pdf"
+  },
+  {
+    title: "12A Certificate",
+    number: "AATCA8551C23DL02",
+    date: "(2027-28) - (2036-37)",
+    link: "assets/certificates/12a-certificate.pdf"
+  },
+  {
+    title: "MCA Certificate",
+    number: "367989",
+    date: "30/09/2022 - No Expiry",
+    link: "assets/certificates/mca-certificate.pdf"
+  },
+  {
+    title: "MSME Certificate",
+    number: "UDYAM-DL-03-0017033",
+    date: "26/04/2022 - No Expiry",
+    link: "assets/certificates/msme-certificate.pdf"
+  },
+  {
+    title: "10AC Certificate",
+    number: "AATCA8551CF2021401",
+    date: "28/05/2021 - 2025",
+    link: "assets/certificates/10ac-certificate.pdf"
+  },
+  {
+    title: "Incorporation Certificate",
+    number: "U85300DL2020NPL367989",
+    date: "14/08/2020 - No Expiry",
+    link: "assets/certificates/incorporation-certificate.pdf"
+  }
 ];
 
-// FIXED ID
 const container = document.getElementById("certcontainer");
 
-// RENDER
 certificates.forEach(cert => {
   container.innerHTML += `
     <div class="col-md-6 col-lg-4">
@@ -67,7 +124,9 @@ certificates.forEach(cert => {
           <p class="cert-date">${cert.date}</p>
         </div>
         <div class="cert-right mt-3">
-          <a href="${cert.link}" class="btn btn-open">Open</a>
+          <a href="${cert.link}" target="_blank" class="btn btn-open">
+            <i class="fa fa-file-pdf me-1"></i> View
+          </a>
         </div>
       </div>
     </div>

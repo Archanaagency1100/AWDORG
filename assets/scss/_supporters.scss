@@ -7,50 +7,19 @@
     color: #333;
 }
 
-.supporters-hero-section {
-    height: 500px;
+.hero-section {
+    // height: 500px;
     background: url('../img/supporters/supporters-header-1.webp') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
-.supporters-main-card {
-    max-width: 1400px;
-    margin: -50px auto 40px;
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding-bottom: 2rem;
 
-    .header-title {
-        border-left: 4px solid #b30000;
-        padding-left: 15px;
-        margin: 40px 0 20px;
-        color: #444;
-        font-weight: 700;
-        font-size: 2rem;
 
-        h2 {
-            font-size: 24px;
-            text-decoration: underline;
-            text-underline-offset: 8px;
-            margin: 0;
-            color: #222;
-        }
-    }
+    
 
-    .team-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(280px, 1fr));
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto 40px;
-        padding: 0 1rem;
-
-        .member {
+        .supporters {
             display: flex;
             flex-direction: column;
             border-radius: 12px;
@@ -64,13 +33,13 @@
                 transform: translateY(-8px);
                 box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 
-                .member-card img {
+                .supporters-card img {
                     transform: scale(1.05);
                 }
             }
-        }
+        
 
-        .member-card {
+        .supporters-card {
             position: relative;
             overflow: hidden;
             background: #f8f9fa;
@@ -96,7 +65,7 @@
             }
         }
 
-        .member-info {
+        .supporters-info {
             padding: 24px 20px;
             text-align: center;
             background: #fff;
@@ -140,4 +109,6 @@
             grid-template-columns: 1fr;
         }
     }
-}
+
+
+    

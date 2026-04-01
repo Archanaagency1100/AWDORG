@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     images.forEach(file => {
 
         let name = file
-            .replace(/\.(webp|jpg|jpeg)$/i, "")
+            .replace(/\.(webp|jpg|jpeg|png)$/i, "")
             .replace(/_/g, " ")
             .replace(/\b\w/g, l => l.toUpperCase());
 
