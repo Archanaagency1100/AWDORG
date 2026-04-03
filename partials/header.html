@@ -167,3 +167,194 @@
     </div>
 </nav>
 
+<!-- Mobile header-------------- -->
+
+<!-- MOBILE HEADER -->
+<div class="m-header">
+
+    <!-- TOP BAR -->
+    <div class="m-top container">
+        <img src="/assets/img/awdorg-foundation-logo.png" class="m-logo" alt="Logo">
+
+        <button id="mToggle" class="m-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- OVERLAY -->
+    <div id="mOverlay" class="m-overlay"></div>
+
+    <!-- MENU -->
+    <div class="m-menu" id="mMenu">
+
+        <!-- WHO -->
+        <a href="#" class="m-link-toggle">Who we are <i class="fas fa-chevron-down"></i></a>
+        <div class="m-sub">
+            <a href="/logo_story.html">Our Logo Story</a>
+            <a href="/about.html">About Us</a>
+
+            <a href="#" class="m-link-toggle">Governing Bodies <i class="fas fa-chevron-down"></i></a>
+            <div class="m-sub">
+                <a href="/executive_committee.html">Executive Committee</a>
+                <a href="/executive_members.html">Executive Members</a>
+            </div>
+
+            <a href="/project-educate/faculties.html">Our Faculties</a>
+            <a href="/supporters.html">Our Supporters</a>
+            <a href="/partners.html">Our Partners</a>
+            <a href="/volunteers.html">Our Volunteers</a>
+        </div>
+
+        <!-- HELP -->
+        <a href="#" class="m-link-toggle">How To Help <i class="fas fa-chevron-down"></i></a>
+        <div class="m-sub">
+            <a href="https://sos.anythingwilldo.org/campaign">Fundraise With Us</a>
+            <a href="https://sos.anythingwilldo.org/campaign/list">Active Campaign</a>
+            <a href="https://sos.anythingwilldo.org/campaign/list">Recent Campaign</a>
+        </div>
+
+        <!-- INITIATIVES -->
+        <a href="#" class="m-link-toggle">Our Initiatives <i class="fas fa-chevron-down"></i></a>
+        <div class="m-sub">
+            <a href="#" class="m-link-toggle">PROJECT educate <i class="fas fa-chevron-down"></i></a>
+            <div class="m-sub">
+                <a href="/project-educate/centres.html">PEC</a>
+                <a href="/project-educate/students.html">Students</a>
+                <a href="/project-educate/master-classes.html">Master Classes</a>
+                <a href="/project-educate/individual-projects.html">Individual Projects</a>
+            </div>
+
+            <a href="/projectpro.html">PROJECT pro</a>
+            <a href="/project_life.html">PROJECT life</a>
+            <a href="/project_ration.html">PROJECT ration</a>
+            <a href="/project_milkyway.html">PROJECT Milkyway</a>
+            <a href="/project_feedme.html">PROJECT feedme</a>
+            <a href="/project_employ.html">PROJECT employ</a>
+            <a href="/project_elevate.html">PROJECT elevate</a>
+        </div>
+
+        <!-- NEWS -->
+        <a href="#" class="m-link-toggle">News & Stories <i class="fas fa-chevron-down"></i></a>
+        <div class="m-sub">
+            <a href="#">Photo Gallery</a>
+            <a href="#">Video Gallery</a>
+            <a href="#">Appreciation/Credential</a>
+
+            <a href="#" class="m-link-toggle">Media Release <i class="fas fa-chevron-down"></i></a>
+            <div class="m-sub">
+                <a href="/media-release/print.html">Print</a>
+                <a href="/media-release/internet.html">Internet</a>
+                <a href="/media-release/tv.html">TV</a>
+                <a href="/media-release/radio.html">Radio</a>
+            </div>
+        </div>
+
+        <!-- RESOURCE -->
+        <a href="#" class="m-link-toggle">Resource <i class="fas fa-chevron-down"></i></a>
+        <div class="m-sub">
+            <a href="/our-certification.html">Our Certificates</a>
+            <a href="/">Transparency</a>
+            <a href="#">Annual Reports</a>
+            <a href="/">Audit Reports</a>
+            <a href="/">Newsletters</a>
+            <a href="/">Main Catalog</a>
+            <a href="/">Blog</a>
+        </div>
+
+        <!-- CONTACT -->
+        <a href="/contact.html">Contact</a>
+
+        <!-- CTA -->
+        <div class="m-cta">
+            <a href="/volunteer.php" class="volunteer">Volunteer Now</a>
+            <a href="#" class="donate">Donate Now</a>
+        </div>
+
+    </div>
+</div>
+<script>
+    function initMobileMenu() {
+
+    const mToggle = document.getElementById("mToggle");
+    const mMenu = document.getElementById("mMenu");
+    const mOverlay = document.getElementById("mOverlay");
+
+    // 🛑 Safety check (important)
+    if (!mToggle || !mMenu || !mOverlay) return;
+
+    // ✅ HAMBURGER TOGGLE (WORKING)
+    mToggle.addEventListener("click", () => {
+        mMenu.classList.toggle("active");
+        mOverlay.classList.toggle("active");
+        mToggle.classList.toggle("active");
+    });
+
+    mOverlay.addEventListener("click", () => {
+        mMenu.classList.remove("active");
+        mOverlay.classList.remove("active");
+        mToggle.classList.remove("active");
+    });
+
+    // ✅ DROPDOWN FIXED
+    const toggles = document.querySelectorAll(".m-link-toggle");
+
+    toggles.forEach(item => {
+        item.addEventListener("click", function (e) {
+
+            e.preventDefault();
+            e.stopPropagation(); // 🔥 important
+
+            const currentSub = this.nextElementSibling;
+            if (!currentSub) return;
+
+            const parentSub = this.closest(".m-sub");
+
+            // ✅ CLOSE ONLY SAME LEVEL
+            let siblings;
+            if (parentSub) {
+                siblings = parentSub.querySelectorAll(":scope > .m-sub");
+            } else {
+                siblings = document.querySelectorAll(".m-menu > .m-sub");
+            }
+
+            siblings.forEach(sub => {
+                if (sub !== currentSub) {
+                    sub.style.maxHeight = null;
+                }
+            });
+
+            // ✅ REMOVE ACTIVE FROM SAME LEVEL
+            let siblingToggles;
+            if (parentSub) {
+                siblingToggles = parentSub.querySelectorAll(":scope > .m-link-toggle");
+            } else {
+                siblingToggles = document.querySelectorAll(".m-menu > .m-link-toggle");
+            }
+
+            siblingToggles.forEach(btn => {
+                if (btn !== this) {
+                    btn.classList.remove("active");
+                }
+            });
+
+            // ✅ TOGGLE CURRENT
+            this.classList.toggle("active");
+
+            if (currentSub.style.maxHeight) {
+                currentSub.style.maxHeight = null;
+            } else {
+                currentSub.style.maxHeight = currentSub.scrollHeight + "px";
+            }
+
+            // 🔥 UPDATE PARENT HEIGHTS (CRITICAL FIX)
+            let parent = this.parentElement.closest(".m-sub");
+            while (parent) {
+                parent.style.maxHeight = parent.scrollHeight + "px";
+                parent = parent.parentElement.closest(".m-sub");
+            }
+        });
+    });
+}
+</script>

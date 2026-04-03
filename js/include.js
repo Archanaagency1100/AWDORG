@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             document.getElementById("header").innerHTML = data;
             setActiveMenu();
+
+             initMobileMenu();
         });
 
     // FOOTER

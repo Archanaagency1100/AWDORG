@@ -8,7 +8,12 @@
     position: fixed;
     width: 100%;
     z-index: 99;
+    
 }
+// .m-header {
+//   display: block;
+
+// }
 
 .top-bar {
     background-color: $color-primary;
@@ -17,7 +22,9 @@
     padding: 8px 0 1px 0;
     z-index: $z-fixed + 10;
     position: relative;
-
+@media (max-width: 1000px) {
+      display: none;
+    }
     &__inner {
         display: flex;
         align-items: center;
@@ -95,6 +102,9 @@ justify-content: center;
     padding-top: 0px;
     z-index: $z-fixed;
     transition: box-shadow $transition-base;
+@media (max-width: 1000px) {
+      display: none;
+    }
 
     .fa-chevron-down:before {
         content: "\25BE" !important;
@@ -296,4 +306,206 @@ body {
     // We remove the old body padding-top that was for the fixed header
     // because sticky pos on .header-nav handles it better. 
     // Wait, if top-bar is relative and nav is sticky, it flows naturally.
+}
+
+
+
+
+
+// ---------Mobile Header & Menu SCSS------------------
+/* MOBILE HEADER */
+.m-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
+
+  .m-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .m-logo {
+    height: 2.8rem;
+    // width: 10vw;
+  }
+}
+
+/* HAMBURGER */
+.m-hamburger {
+    color: #ab0302;
+  width: 26px;
+  height: 18px;
+  position: relative;
+  border: none;
+  background: none;
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  span:nth-child(1) { top: 0; }
+  span:nth-child(2) { top: 8px; }
+  span:nth-child(3) { bottom: 0; }
+
+  &.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+}
+
+/* OVERLAY */
+.m-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 9998;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* MENU */
+.m-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 82%;
+  height: auto;
+  background: #fff;
+  z-index: 9999;
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
+&.active {
+  right: 0;
+  top: 0;
+    transform: scale(0.98);
+}
+}
+
+.m-menu::before {
+  content: "Menu";
+  font-weight: 600;
+  font-size: 18px;
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/* LINKS */
+.m-menu a {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #222;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+
+  &:hover {
+    background: #fafafa;
+    color: #ab0302;
+  }
+}
+
+/* SUBMENU */
+/* DROPDOWN CONTAINER */
+.m-sub {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #fafafa;
+  border-left: 2px solid #ab0302;
+  margin-left: 10px;
+
+  a {
+    padding: 12px 20px 12px 30px;
+    font-size: 14px;
+    color: #444;
+  }
+}
+
+/* TOGGLE STYLE */
+.m-link-toggle {
+  font-weight: 600;
+  position: relative;
+
+  i {
+    transition: transform 0.3s ease;
+  }
+
+  &.active {
+    color: #ab0302;
+
+    i {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+/* LEVEL 2 (INNER DROPDOWN) */
+.m-sub .m-sub {
+  background: #f4f4f4;
+  margin-left: 8px;
+  border-left: 2px dashed #ab0302;
+
+  a {
+    padding-left: 40px;
+    font-size: 13px;
+  }
+}
+
+/* CTA */
+.m-cta {
+  margin-top: auto;
+  padding: 20px;
+  border-top: 1px solid #eee;
+
+  a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 40px;
+    font-weight: 600;
+  }
+
+  .volunteer {
+    background: #fff;
+    border: 1px solid #ab0302;
+    color: #ab0302;
+  }
+
+  .donate {
+    background: #ab0302;
+    color: #fff;
+  }
 }

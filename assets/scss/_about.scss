@@ -2,16 +2,16 @@
 // About Page Styles
 // ============================================
 
-.about-hero-section {
-    position: relative;
-    height: 450px;
-    overflow: hidden;
+.hero-section {
+    // position: relative;
+    // height: 450px;
+    // overflow: hidden;
 
     .bg-video {
         position: absolute;
         inset: 0;
         width: 100%;
-        height: 100%;
+        height: 500px;
         object-fit: cover;
     }
 
@@ -29,24 +29,7 @@
     color: #414141;
     border-radius: 12px;
 
-    .header-title {
-        margin-bottom: 30px;
-
-        h2 {
-            border-left: 4px solid #cc0000;
-            padding-left: 15px;
-            text-align: left;
-            font-size: 28px;
-            text-underline-offset: 8px;
-            margin: 40px 0 20px 0;
-            color: #222;
-            font-weight: 700;
-
-            &:first-child {
-                margin-top: 0;
-            }
-        }
-    }
+    
 
     p {
         line-height: 1.8;
@@ -206,13 +189,27 @@
         }
     }
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
         flex-direction: column;
+        padding: 40px 15px;
+
+        .container {
+            flex-direction: column;
+            gap: 30px;
+        }
 
         .usp-accordion {
+            width: 100% !important;
             .usp-accordion-item {
                 padding: 14px 20px;
                 border-radius: 25px;
+                // flex-direction: column;
+                gap: 10px;
+                text-align: center;
+
+                span {
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -220,6 +217,100 @@
             h1 {
                 font-size: 2.2rem;
             }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 30px 10px;
+        min-height: 50vh;
+
+        .about-main-card {
+            margin-top: -50px;
+            padding: 30px 20px !important;
+        }
+
+        .header-title h2 {
+            font-size: 22px !important;
+            padding-left: 12px !important;
+        }
+
+        .about-main-card p, .about-main-card li {
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+            word-break: break-word;
+        }
+
+        .bullet-points {
+            padding-left: 15px !important;
+        }
+
+        .hero-section {
+            height: 300px !important;
+        }
+
+        .usp-accordion-item {
+            padding: 12px 15px !important;
+            font-size: 14px !important;
+        }
+    }
+
+    // Global responsive fixes for about page
+    .main-card {
+        @media (max-width: 768px) {
+            margin: -50px auto 30px !important;
+            padding: 40px 25px !important;
+
+            .header-title h2 {
+                font-size: 24px !important;
+                margin: 25px 0 15px !important;
+                padding-left: 12px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            padding: 30px 15px !important;
+            margin: -40px auto 20px !important;
+        }
+    }
+
+    .content-text {
+        @media (max-width: 768px) {
+            .bullet-points {
+                padding-left: 15px !important;
+                li {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+.hero-section {
+        position: relative;
+        height: 50vh;
+        min-height: 400px;
+        max-height: 60vh;
+        overflow: hidden;
+
+        @media (max-width: 768px) {
+            height: 40vh;
+            min-height: 300px;
+        }
+
+        @media (max-width: 480px) {
+            height: 35vh;
+            min-height: 250px;
+        }
+
+        .bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
         }
     }
 }
