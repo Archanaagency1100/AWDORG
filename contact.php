@@ -1,0 +1,139 @@
+<!DOCTYPE php>
+<php lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWDORG Foundation - contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/scss/style.css" />
+</head>
+
+<body>
+    <section class="contact-section">
+        <?php include 'includes/header.php'; ?>
+
+        <div class="hero-section"></div>
+
+        <div class="main-card">
+            <div class="header-title">
+                <h2>Write To Us</h2>
+            </div>
+            <h5 class="px-3">Come forward and share the love with the world. Step outside your comfort zone and help people in dire
+                need and experience the joy on their faces, that your deed has brought.</h5>
+
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-5 pe-md-5">
+                        <img src="assets/img/awd-black-logo.webp" alt="Logo" class="mb-4">
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-text">
+                                <strong>AWDORG Foundation</strong><br>
+                                9/18, Ground Floor, Nehru Enclave, New Delhi, INDIA
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="info-text">+91 98113 01101</div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info-text">info@anythingwilldo.org</div>
+                        </div>
+
+                        <div class="mt-4">
+                            <button class="btn btn-volunteer mb-3 w-100">Volunteer Now! <i
+                                    class="fas fa-hands-helping"></i></button><br>
+                            <button class="btn btn-donate w-100">Donate Now! <i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Name"></div>
+                                <div class="col-md-6"><input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-md-6"><input type="text" class="form-control"
+                                        placeholder="Phone Number"></div>
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Location">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Subject">
+                            <textarea class="form-control" rows="6" placeholder="Message..."></textarea>
+
+                            <div class="border p-3 mb-3 d-inline-block bg-light" style="width: 300px;">
+                                <input type="checkbox"> <small>I'm not a robot</small>
+                                <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width="30"
+                                    class="float-end">
+                            </div>
+
+                            <div class="clearfix">
+                                <button type="submit" class="btn btn-submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr class="mt-5 mb-4">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-3">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>All our efforts are made possible only because of your support</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Your donations are tax exempted under 80G of the Indian Income Tax Act</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Your donation transactions are completely safe and secure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+
+    <!-- ------------- Call to Action Strip--------------- -->
+    <section class="cta-strip">
+  <div class="container">
+    <div class="cta-content">
+
+      <div class="cta-text">
+        <h3>Every single penny makes a difference</h3>
+        <p>Your small contribution can bring big change in someone's life.</p>
+      </div>
+
+      <div class="cta-action">
+        <a href="#" class="btn btn-donate">Donate Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        <?php include 'includes/footer.php'; ?>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</php>

@@ -1,0 +1,560 @@
+<!doctype php>
+<php lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWDORG Foundation - contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/scss/style.css" />
+  </head>
+
+  <body>
+    <section class="ration-section">
+      <?php include 'includes/header.php'; ?>
+      <div class="ration-hero-section"></div>
+
+      <div class="ration-main-card">
+        <div class="container pt-5">
+          <h1>"Individual Projects”</h1>
+        </div>
+        <h5 class="pt-4">
+          This is an initiative to create and spread awareness about basic
+          hygiene especially during the difficult phase of COVID pandemic. Under
+          this project we counsel people about the importance of clean
+          surroundings, personal hygiene and maintaining social distancing to
+          ensure safety
+        </h5>
+        <div class="container mt-5">
+          <div id="card-container" class="row g-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------- Call to Action Strip--------------- -->
+    <section class="cta-strip">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h3>Every single penny makes a difference</h3>
+            <p>
+              Your small contribution can bring big change in someone's life.
+            </p>
+          </div>
+
+          <div class="cta-action">
+            <a href="#" class="btn btn-donate">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <?php include 'includes/footer.php'; ?>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/include.js"></script>
+    <script>
+      // 1. Your data - Just add more objects here!
+      const masterclasses = [
+        {
+          title: "Parul",
+          description:
+            "Anything Will Do foundation has donated 3,875 for her fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-16.jpg",
+        },
+        {
+          title: "shyana",
+          description:
+            "Anything Will Do foundation has donated 3,875 for her fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-17.jpg",
+        },
+        {
+          title: "Vipasha",
+          description:
+            "Anything Will Do foundation has donated 3,875 for her fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-18.jpg",
+        },
+        {
+          title: "Lavisha",
+          description:
+            "Anything Will Do foundation has donated 3,875 for her fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-19.jpg",
+        },
+        {
+          title: "Rajni",
+          description:
+            "Anything Will Do foundation has donated 3,875 for her fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-20.jpg",
+        },
+        {
+          title: "Tanishka",
+          description:
+            "Anything Will Do foundation has donated 2,100 for Tanishka's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-10.jpg",
+        },
+        {
+          title: "Riya Arya",
+          description:
+            "Anything Will Do foundation has donated 2,550 for Riya's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-09.jpg",
+        },
+        {
+          title: "lakshya",
+          description:
+            "Anything Will Do foundation has donated 2,550 for Lakshya's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-08.jpg",
+        },
+        {
+          title: "Nikhil Mehra",
+          description:
+            "Anything Will Do foundation has donated 2,550 for Nikhil's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-07.jpg",
+        },
+        {
+          title: "Harshika Bisht",
+          description:
+            "Anything Will Do foundation has donated 2,550 for Harshika's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-06.jpg",
+        },
+        {
+          title: "Manvi Adhikari",
+          description:
+            "Anything Will Do foundation has donated 2,550 for Manvi's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-05.jpg",
+        },
+        {
+          title: "Nidhi",
+          description:
+            "Anything Will Do foundation has donated 2,100 for Nidhi's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-04.jpg",
+        },
+        {
+          title: "Madhvi Upadhyay",
+          description:
+            "Anything Will Do foundation has donated 2,100 for Madhvi's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-03.jpg",
+        },
+        {
+          title: "Pallavi Upadhyay",
+          description:
+            "Anything Will Do foundation has donated 2,100 for Pallavi's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-02.jpg",
+        },
+        {
+          title: "Riddhi",
+          description:
+            "Anything Will Do foundation has donated 2,100 for riddhi's 3 month school fee.",
+          imageUrl: "/assets/img/individual-project/child-fees-sleep-01.jpg",
+        },
+        {
+          title: "Taingaihjoy Gangte",
+          description:
+            "A student from Manipur received financial assistance of ₹6,000 from AWDORG Foundation to help pay her college fees.",
+          imageUrl: "/assets/img/individual-project/Student-fees-Sleep.png",
+        },
+        {
+          title: "Anshu",
+          description:
+            "AnythingWillDo helped Anshu fulfill her dream of becoming a doctor.",
+          imageUrl:
+            "/assets/img/individual-project/WhatsApp-Image-2026-01-19-at-12.43.20-PM.jpeg",
+        },
+        {
+          title: "Angel, Kajal, Bhoomika & Riya",
+          description:
+            "AnythingWillDo awarded ₹1,000 to all students who scored 90% or more",
+          imageUrl: "/assets/img/individual-project/reward.png",
+        },
+        {
+          title: "Jaspreet Kaur",
+          description:
+            "AWDorg Foundation helped jaspreet kaur to continue his education by providing a Laptop.",
+          imageUrl: "/assets/img/individual-project/jaspreet-2.png",
+        },
+        {
+          title: "Mayank Pant",
+          description:
+            "AWDORG has completed the support—Mayank Pant's school fees are now fully paid.",
+          imageUrl: "/assets/img/individual-project/mayank-pant.png",
+        },
+        {
+          title: "Aarav Sharma",
+          description:
+            "Aarav Sharma can continue his studies thanks to a laptop from AWDorg Foundation & Cashify.",
+          imageUrl:
+            "/assets/img/individual-project/Aarav-sharma-campain-laptop-.jpg",
+        },
+        {
+          title: "Angel",
+          description:
+            "NEET prep books have reached Class 12th students in need. Your donation is helping future doctors chase their dreams.",
+          imageUrl: "/assets/img/individual-project/neet-book-donation.webp",
+        },
+        {
+          title: "Gunjan",
+          description:
+            "Anything Will Do foundation has donated 13,680 for school fee.",
+          imageUrl: "/assets/img/individual-project/gunjan.webp",
+        },
+        {
+          title: "Sonia",
+          description:
+            "Anything Will Do foundation has donated 20,400 for school fee.",
+          imageUrl: "/assets/img/individual-project/sonia-1.webp",
+        },
+        {
+          title: "Vivek Bist",
+          description:
+            "Anything Will Do foundation has donated 9,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/vivek-bist-1.webp",
+        },
+        {
+          title: "Vnugsawli",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/vnugsawli.webp",
+        },
+        {
+          title: "Anish",
+          description:
+            "Anything Will Do foundation has donated 10,8 00 for school fee.",
+          imageUrl: "/assets/img/individual-project/anish.webp",
+        },
+        {
+          title: "Vijay Fatiyal;",
+          description:
+            "Anything Will Do foundation has donated 15,600 for school fee.",
+          imageUrl: "/assets/img/individual-project/vijay-fatiyal.webp",
+        },
+        {
+          title: "Sameer",
+          description:
+            "Anything Will Do foundation has donated 12,540 for school fee.",
+          imageUrl: "/assets/img/individual-project/sameer.webp",
+        },
+        {
+          title: "Sanjana",
+          description:
+            "Anything Will Do foundation has donated 15,180 for school fee.",
+          imageUrl: "/assets/img/individual-project/sanjana.webp",
+        },
+        {
+          title: "Sanjana",
+          description:
+            "Anything Will Do foundation has donated 13,680 for school fee.",
+          imageUrl: "/assets/img/individual-project/sanjana-2nd.webp",
+        },
+        {
+          title: "siddhi Bist",
+          description:
+            "Anything Will Do foundation has donated 7,200 for school fee.",
+          imageUrl: "/assets/img/individual-project/siddhi-bist-1.webp",
+        },
+        {
+          title: "Simran Devi",
+          description:
+            "Anything Will Do foundation has donated 15,300 for school fee.",
+          imageUrl: "/assets/img/individual-project/simran-devi-1.webp",
+        },
+        {
+          title: "ngakchoihoih",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/ngakchoihoih.webp",
+        },
+        {
+          title: "Pankaj Singh",
+          description:
+            "Anything Will Do foundation has donated 15,600 for school fee.",
+          imageUrl: "/assets/img/individual-project/pankaj-singh.webp",
+        },
+        {
+          title: "Prachi Bist",
+          description:
+            "Anything Will Do foundation has donated 9,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/prachi-bist.webp",
+        },
+        {
+          title: "Priyanshu",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/priyanshu.webp",
+        },
+        {
+          title: "Radhika",
+          description:
+            "Anything Will Do foundation has donated 15,000 for college fee.",
+          imageUrl: "/assets/img/individual-project/radhika.webp",
+        },
+        {
+          title: "kimmuonthiem",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/kimmuonthiem.webp",
+        },
+        {
+          title: "Komal",
+          description:
+            "Anything Will Do foundation has donated 15,500 for college fee.",
+          imageUrl: "/assets/img/individual-project/komal.webp",
+        },
+        {
+          title: "Manas Fatiyal",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/manas-fatiyal.webp",
+        },
+        {
+          title: "Mayank Negi",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/mayank-negi.webp",
+        },
+        {
+          title: "melody hoihnunching",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/melody-hoihnunching.webp",
+        },
+        {
+          title: "Hathoih",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/hathoih.webp",
+        },
+        {
+          title: "Kamal Singh",
+          description:
+            "Anything Will Do foundation has donated 15,600 for school fee.",
+          imageUrl: "/assets/img/individual-project/kamal-mehra.webp",
+        },
+        {
+          title: "Kanchan",
+          description:
+            "Anything Will Do foundation has donated 15,5 00 for college fee.",
+          imageUrl: "/assets/img/individual-project/kanchan.webp",
+        },
+        {
+          title: "Kheem Singh",
+          description:
+            "Anything Will Do foundation has donated 15,600 for school fee.",
+          imageUrl: "/assets/img/individual-project/kheem-singh.webp",
+        },
+        {
+          title: "kimmuoni",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/kimmuoni.webp",
+        },
+        {
+          title: "Gaytri Joshi",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/gaytri-joshi.webp",
+        },
+        {
+          title: "Gitanjali Joshi",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/gitanjali-joshi.webp",
+        },
+        {
+          title: "Priyanshi",
+          description:
+            "Anything Will Do foundation has donated 9,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/gunjan.webp",
+        },
+        {
+          title: "Hanshika Bist",
+          description:
+            "Anything Will Do foundation has donated 9,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/hansika-bist.webp",
+        },
+        {
+          title: "Harshit Bist",
+          description:
+            "Anything Will Do foundation has donated 9,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/harshit-bist.webp",
+        },
+        {
+          title: "Anoop",
+          description:
+            "Anything Will Do foundation has donated 10,800 for school fee.",
+          imageUrl: "/assets/img/individual-project/ayush.webp",
+        },
+        {
+          title: "Ayush",
+          description:
+            "Anything Will Do foundation has donated 20,600 for school fee.",
+          imageUrl: "/assets/img/individual-project/ayush-anil-kumar.webp",
+        },
+        {
+          title: "Chinneihjem",
+          description:
+            "Anything Will Do foundation has donated 12,000 for school fee.",
+          imageUrl: "/assets/img/individual-project/chinneihjem.webp",
+        },
+        {
+          title: "Deepika Negi",
+          description:
+            "Anything Will Do foundation has donated 15,600 for school fee.",
+          imageUrl: "/assets/img/individual-project/deepika-negi.webp",
+        },
+        {
+          title: "Dimple",
+          description:
+            "Anything Will Do foundation has donated 15,500 for college fee.",
+          imageUrl: "/assets/img/individual-project/dimple.webp",
+        },
+        {
+          title: "Mission Inter College",
+          description:
+            "Anything Will Do foundation has donated 60 chairs to Mission Inter college.",
+          imageUrl: "/assets/img/individual-project/chair-donation.webp",
+        },
+        {
+          title: "Suman",
+          description:
+            "Suman is preparing for the SSC CGL exam but doesn’t have access to a laptop for his studies. The AWDORG Foundation stepped in to ensure that nothing hinders his preparation.",
+          imageUrl: "/assets/img/individual-project/suman.jpg",
+        },
+        {
+          title: "Pari",
+          description:
+            "Anything will do foundation donated laptop to Pari, a bright 5th grader, to support her education and help her soar towards her dreams.",
+          imageUrl: "/assets/img/individual-project/pari.webp",
+        },
+        {
+          title: "Kiran Jeet Kaur",
+          description:
+            "We have supported Kiran Jeet Kaur, a bright and ambitious student facing financial hurdles in pursuing her education.",
+          imageUrl: "/assets/img/individual-project/kiran.webp",
+        },
+        {
+          title: "Sonia",
+          description:
+            "We believe education opens doors to a brighter future, and every child deserves that chance. By contributing to Sonia's school fees, you're not just supporting her education but also empowering her dreams.",
+          imageUrl: "/assets/img/individual-project/sonia.webp",
+        },
+        {
+          title: "Subhpreet kaur",
+          description:
+            "Subhpreet kaur BA first year student was recently helped with her fee, a bright student from an underprivileged background with a lot of hopes for the future, thanksgiving to our volunteers who helped.",
+          imageUrl: "/assets/img/individual-project/Subhpreet.jpg",
+        },
+        {
+          title: "Tapan",
+          description: "AWDORG Foundation donated a laptop to Tapan .",
+          imageUrl: "/assets/img/individual-project/laptop-dona.jpg",
+        },
+        {
+          title: "Shrimati Fuladevi Rajkiye Uchh Madhyamik Vidyalaya",
+          description:
+            "A Laptop is donated to Shrimati Fuladevi Rajkiye Uchh Madhyamik Vidyalaya school principal for official use.",
+          imageUrl: "/assets/img/individual-project/laptop-donation.jpg",
+        },
+        {
+          title: "Anshu",
+          description:
+            "Anyhing Will Do Foundation donated a laptop to Anshu who is on the way to achieve her dreams.",
+          imageUrl: "/assets/img/individual-project/anshu-laptop-donated.jpg",
+        },
+        {
+          title: "Tisha",
+          description:
+            "A class 11th student was recently helped with her annual admission fee, a bright student from an underprivileged background with a lot of hopes for the future, thanksgiving to our volunteers who helped.",
+          imageUrl: "/assets/img/individual-project/new-case.jpg",
+        },
+        {
+          title: "Mohit Joshi",
+          description:
+            "AWDORG Foundation donated a laptop to Mohit Joshi Who has a dream of serving his country through a government job, but faced a major obstacle in achieving his goal – he did not have access to a laptop.",
+          imageUrl: "/assets/img/individual-project/laptopdistribution1.jpg",
+        },
+        {
+          title: "Shashank",
+          description:
+            "Shashank, class 4 student from Delhi wanted to study and learn coding. He is studying in government school and inspired by one of the video he saw on YouTube once. Under #PROJECTeducate we provided him laptop and arranged a volunteer who will teach him coding at his capacity.",
+          imageUrl:
+            "/assets/img/individual-project/shashanklaptopdistribution.jpg",
+        },
+        {
+          title: "Tisha",
+          description:
+            "A class 10th student was recently helped with her annual admission fee, a bright student from an underprivileged background with a lot of hopes for the future, thanksgiving to our volunteers who helped.",
+          imageUrl: "/assets/img/individual-project/tisha-fee-2.jpg",
+        },
+        {
+          title: "Vikas",
+          description:
+            "Vikas is preparing for competitive exams.He needed a laptop for it and not able to afford one. AWDORG Foundation donated a laptop to vikas to help him fullfil his dreams.",
+          imageUrl: "/assets/img/individual-project/vikas-disribution.jpg",
+        },
+        {
+          title: "Akash",
+          description:
+            "Akash is preparing for UPSC he wants to become an IAS and couldn't afford his fee for preparation through a private institute. Anything Will Do (AWDORG Foundation) did its best to assure that nothing comes in between his studies.",
+          imageUrl: "/assets/img/individual-project/akash-awd.jpg",
+        },
+        {
+          title: "Vansh Sehrawat",
+          description:
+            "Vansh Sehrawat is a brilliant child and currently studying in 7th standard. His father is an auto driver and couldn’t afford a new laptop or computer for studies during lockdown. Thanksgiving to Sunny Goel who donated his good condition running laptop.",
+          imageUrl: "/assets/img/individual-project/7-5.jpg",
+        },
+        {
+          title: "Sagar Pundhir",
+          description:
+            "Sagar Pundhir, a 9th standard student in Delhi whose father couldn’t pay his fee for entire year approached us. In less than 2 days Sagar’s entire fee was paid. Sagar is now in 10th standard and studying very hard. Gratitude to our donors.",
+          imageUrl: "/assets/img/individual-project/8-5.jpg",
+        },
+        {
+          title: "Water Dispensers to Special Children Schools",
+          description:
+            "Few schools with special needs were helped during lockdown and the aid is still on for them. One of the school in Faridabad was helped with water dispenser.",
+          imageUrl: "/assets/img/individual-project/9-5.jpg",
+        },
+      ];
+
+      // 2. The function to build the cards
+      const container = document.getElementById("card-container");
+
+      masterclasses.forEach((item) => {
+        const cardphp = `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card card-fixed bg-transparent">
+                        <div class="img-container shadow-sm">
+                            <img src="${item.imageUrl}" alt="${item.title}">
+                        </div>
+                        <div class="card-body p-0 pt-3">
+                            <h6 class="class-title">${item.title}</h6>
+                            <p class="text-muted mb-0 small">${item.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        container.innerphp += cardphp;
+      });
+    </script>
+  </body>
+</php>

@@ -1852,40 +1852,11 @@ a {
   color: #414141;
 }
 
-.volunteers-hero-section {
-  height: 500px;
-  background: url("../img/volunteers/volunteers-banner-1-1.webp") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main-card {
+  position: relative;
 }
 
-.volunteers-main-card {
-  max-width: 1400px;
-  margin: -50px auto 40px;
-  background-color: #fff;
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  padding-bottom: 2rem;
-}
-.volunteers-main-card .header-title {
-  border-left: 4px solid #b30000;
-  padding-left: 15px;
-  margin: 40px 0 20px 0;
-  color: #444;
-  font-weight: 700;
-  font-size: 2rem;
-}
-.volunteers-main-card .header-title h2 {
-  font-size: 24px;
-  text-decoration: underline;
-  text-underline-offset: 8px;
-  margin: 0;
-  color: #222;
-}
-.volunteers-main-card .team-container {
+.team-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 15px;
@@ -1893,7 +1864,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
-.volunteers-main-card .team-container .member-card {
+.team-container .member-card {
   position: relative;
   aspect-ratio: 1/1.1;
   overflow: hidden;
@@ -1901,7 +1872,7 @@ a {
   background-color: #f8f9fa;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
-.volunteers-main-card .team-container .member-card img {
+.team-container .member-card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1910,7 +1881,7 @@ a {
   filter: grayscale(100%);
   transition: transform 0.4s ease, filter 0.4s ease;
 }
-.volunteers-main-card .team-container .member-card .overlay {
+.team-container .member-card .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(179, 0, 0, 0.9), rgba(179, 0, 0, 0.3));
@@ -1923,7 +1894,7 @@ a {
   padding: 15px 10px;
   text-align: center;
 }
-.volunteers-main-card .team-container .member-card .overlay h6 {
+.team-container .member-card .overlay h6 {
   margin: 0;
   font-size: 0.95rem;
   font-weight: 600;
@@ -1933,29 +1904,29 @@ a {
   transform: translateY(10px);
   transition: transform 0.3s ease;
 }
-.volunteers-main-card .team-container .member-card:hover img {
+.team-container .member-card:hover img {
   transform: scale(1.1);
   filter: grayscale(0%);
 }
-.volunteers-main-card .team-container .member-card:hover .overlay {
+.team-container .member-card:hover .overlay {
   opacity: 1;
 }
-.volunteers-main-card .team-container .member-card:hover .overlay h6 {
+.team-container .member-card:hover .overlay h6 {
   transform: translateY(0);
 }
 @media (max-width: 1024px) {
-  .volunteers-main-card .team-container {
+  .team-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 768px) {
-  .volunteers-main-card .team-container {
+  .team-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
 }
 @media (max-width: 480px) {
-  .volunteers-main-card .team-container {
+  .team-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }

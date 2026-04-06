@@ -1,0 +1,199 @@
+<!doctype php>
+<php lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Ration — AWDORG Foundation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="anual-reports-section">
+      <?php include 'includes/header.php'; ?>
+      <div class="anual-reports-hero-section"></div>
+
+      <div class="main-card">
+        <div class="container pt-5">
+          <h1>Anual Reports</h1>
+        </div>
+        <h5 class="pt-4">
+          This is an initiative to create and spread awareness about basic
+          hygiene especially during the difficult phase of COVID pandemic. Under
+          this project we counsel people about the importance of clean
+          surroundings, personal hygiene and maintaining social distancing to
+          ensure safety
+        </h5>
+        <div class="container mt-5">
+          <div id="card-container" class="row g-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------- Call to Action Strip--------------- -->
+    <section class="cta-strip">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h3>Every single penny makes a difference</h3>
+            <p>
+              Your small contribution can bring big change in someone's life.
+            </p>
+          </div>
+
+          <div class="cta-action">
+            <a href="#" class="btn btn-donate">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <?php include 'includes/footer.php'; ?>
+
+
+    <!-- PDF Modal -->
+    <div
+      class="modal fade"
+      id="pdfModal"
+      tabindex="-1"
+      aria-labelledby="pdfModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pdfModalLabel">Annual Report</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0" style="height: 80vh">
+            <iframe
+              id="pdfIframe"
+              src=""
+              width="100%"
+              height="100%"
+              style="border: none"
+            ></iframe>
+          </div>
+          <div class="modal-footer">
+            <a
+              id="pdfDownloadBtn"
+              href=""
+              download
+              class="btn btn-primary"
+              target="_blank"
+            >
+              <i class="fas fa-download me-1"></i> Download PDF
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/header.js"></script>
+    <script>
+      // 1. Your data - Just add more objects here!
+      const data = [
+        {
+          image: "assets/img/anual-reports/2024-2025.jpg",
+          title: "2024-2025 Annual Report",
+          pdf: "assets/img/anual-reports/Annual-Report-2024-2025.pdf",
+        },
+        {
+          image: "assets/img/anual-reports/2023-2024.jpg",
+          title: "2023-2024 Annual Report",
+          pdf: "assets/img/anual-reports/2023-2024-AWDORG-Annual-Report.pdf",
+        },
+        {
+          image: "assets/img/anual-reports/2022-2023.jpg",
+          title: "2022-2023 Annual Report",
+          pdf: "assets/img/anual-reports/2022-2023-AWDORG-Annual-Report.pdf",
+        },
+        {
+          image: "assets/img/anual-reports/2021-2022.jpg",
+          title: "2021-2022 Annual Report",
+          pdf: "assets/img/anual-reports/2021-22-AWDORG-Annual-report.pdf",
+        },
+        {
+          image: "assets/img/anual-reports/2020-2021.jpg",
+          title: "2020-2021 Annual Report",
+          pdf: "assets/img/anual-reports/2020-2021-AWDORG-Annual-Report.pdf",
+        },
+      ];
+
+      // 2. The function to build the cards
+      const container = document.getElementById("card-container");
+
+      data.forEach((item) => {
+        const cardphp = `
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100 bg-transparent border-0">
+                        <div class="shadow-sm text-center bg-white" style="height: 350px; display: flex; align-items: center; justify-content: center; padding: 10px; border: 1px solid #eee; border-radius: 8px;">
+                            <img src="${item.image}" alt="${item.title}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                        </div>
+                        <div class="card-body p-0 pt-3 text-center">
+                            <h6 class="card-title fw-bold text-dark mb-2">${item.title}</h6>
+                            <button onclick="openPdfModal('${item.pdf}', '${item.title}')" class="btn btn-outline-primary btn-sm mt-1 px-3 py-2" style="border-radius: 20px;">
+                                <i class="fas fa-file-pdf me-1"></i> View PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        container.innerphp += cardphp;
+      });
+
+      function openPdfModal(pdfUrl, title) {
+        document.getElementById("pdfModalLabel").innerText = title;
+        document.getElementById("pdfIframe").src = pdfUrl;
+        document.getElementById("pdfDownloadBtn").href = pdfUrl;
+        // The download attribute is handled by php5 when href is set, but some browsers
+        // might still open it depending on settings if it's an iframe. A direct link is best.
+
+        var myModal = new bootstrap.Modal(document.getElementById("pdfModal"));
+        myModal.show();
+      }
+
+      // Clear iframe src when closed so it doesn't keep loading in background
+      document
+        .getElementById("pdfModal")
+        .addEventListener("hidden.bs.modal", function () {
+          document.getElementById("pdfIframe").src = "";
+        });
+    </script>
+  </body>
+</php>

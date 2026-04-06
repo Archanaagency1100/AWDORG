@@ -1,0 +1,152 @@
+<!DOCTYPE php>
+<php lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWDORG Foundation - In TV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <section class="tv-section">
+        <?php include 'includes/header.php'; ?>
+        <div class="tv-hero-section"></div>
+
+        <div class="tv-main-card">
+            <div class="container pt-5">
+
+                <div class="img-vertical mb-5">
+                    <img src="../assets/img/tv/sadhna-plus.webp" alt="Hindustan Times">
+                    <img src="../assets/img/tv/1st-news.webp" alt="Hindustan">
+                    <img src="../assets/img/tv/narad-news.webp" alt="Dainik Jagran">
+                    <img src="../assets/img/tv/vande-bharat.webp" alt="Amar Ujala">
+                </div>
+
+                <div class="content-container row" id="content-container">
+                    <!-- Dynamic TV Content will be loaded here -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <?php include 'includes/footer.php'; ?>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/include.js"></script>
+     <script src="../js/header.js"></script>
+    <script>
+        const data = [
+            // Currently using newspaper data as placeholder until user provides TV data
+            {
+                "url": "https://youtu.be/5KffCCVU8hY",
+                "title": "Trianz and AWDORG Empower India's Underprivileged Children with Digital Literacy Centers",
+                "date": "",
+                "author": ""
+            },
+            {
+                "url": "https://youtu.be/bZE3vZX3nvs",
+                "title": "Saraswati Shishu Vidya Mandir Rudraprayag Garhwal - Uttarakhand",
+                "date": "",
+                "author": "Tehelka UK"
+            },
+            {
+                "url": "https://youtu.be/ywLOuxR_UYo",
+                "title": "Tilakdhari Vindhyavasini TBC College Banwaripur, Chhanbey, Mirzapur - Uttar Pradesh",
+                "date": "",
+                "author": "Vande bharat"
+            },
+            {
+                "url": "https://youtu.be/RfzxOJuSvRI",
+                "title": "Tilakdhari Vindhyavasini TBC College Banwaripur, Chhanbey, Mirzapur - Uttar Pradesh",
+                "date": "",
+                "author": "Lokmanch Bharat"
+            },
+            {
+                "url": "https://youtu.be/AgCz8kPXD0k",
+                "title": "Shrimati Fuladevi Rajkiye Uchh Madhyamik Vidyalaya, Mahwa, Dausa - Rajasthan",
+                "date": "",
+                "author": "1ST India News"
+            },
+            {
+                "url": "https://youtu.be/QeGG1l1aRJQ",
+                "title": "Saraswati Shishu Vidya Mandir Sisona, Udham Singh Nagar - Uttarakhand",
+                "date": "",
+                "author": "Sadhna Plus News"
+            },
+            {
+                "url": "https://youtu.be/eCIwKxTp2iU",
+                "title": "Rajkiya Utkrisht Uchch Prathmik Vidya, Beekroo(Nadbai) – Bharatpur, Rajasthan",
+                "date": "",
+                "author": "Naarad News"
+            },
+            {
+                "url": "https://youtu.be/yRmmJSWNms0",
+                "title": "Swami Nityananda Saraswati Shishu Mandir – Rishikesh, Uttrakhand",
+                "date": "",
+                "author": "Sadhna Plus News"
+            },
+            {
+                "url": "https://youtu.be/bWjHEkSieVU",
+                "title": "Saraswati Shishu Vidya Mandir Sisona, Udham Singh Nagar - Uttarakhand",
+                "date": "",
+                "author": "Faiz News"
+            }
+
+        ];
+
+        function getYoutubeEmbedUrl(url) {
+            if (!url) return "";
+            let videoId = "";
+            if (url.includes("youtube.com/watch?v=")) {
+                videoId = url.split("v=")[1].split("&")[0];
+            } else if (url.includes("youtu.be/")) {
+                videoId = url.split("youtu.be/")[1].split("?")[0];
+            }
+            return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("content-container");
+            
+            data.forEach(item => {
+                const card = document.createElement("div");
+                card.className = "col-12 col-md-6 col-lg-4 mb-4";
+
+                let mediaContent = "";
+                if (item.url) {
+                    mediaContent = `
+                        <div class="video-wrapper">
+                            <iframe src="${getYoutubeEmbedUrl(item.url)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>`;
+                } else {
+                    mediaContent = `
+                        <div class="img-container mb-3" style="aspect-ratio: 16/9; overflow: hidden; background: #eee;">
+                            <img src="${item.image}" alt="${item.title}" class="img-fluid" style="width:100%; height:100%; object-fit:cover;">
+                        </div>`;
+                }
+
+                card.innerphp = `
+                    <div class="print-item-card">
+                        ${mediaContent}
+                        <div class="item-details">
+                            <h5>${item.title}</h5>
+                            <div class="meta">
+                                <span class="author">${item.author}</span>
+                                <span class="date">${item.date}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        });
+    </script>
+</body>
+
+</php>

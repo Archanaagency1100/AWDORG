@@ -279,7 +279,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <div id="header"></div>
+    <?php include 'includes/header.php'; ?>
     <section>
         <div class="volunteer-hero-section">
             <video autoplay muted loop playsinline class="bg-video">
@@ -548,10 +548,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </section>
 
-    <div id="footer"></div>
+        <?php include 'includes/footer.php'; ?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/include.js"></script>
+    <script src="/js/header.js"></script>
     <script>
         document.querySelector('textarea[name="join_reason"]').addEventListener('input', function () {
             let text = this.value.trim();
