@@ -16,22 +16,19 @@
     <div class="hero-section"></div>
     <div class="main-card volunteers-section">
         <!-- <div class="container pt-5 pb-4"> -->
-            <div class="header-title">
-                <h2>Our Volunteers</h2>
-            </div>
-            <div class="team-container" id="team"></div>
+        <div class="header-title">
+            <h2>Our Volunteers</h2>
+        </div>
+        <div class="team-container" id="team"></div>
         <!-- </div> -->
     </div>
 
 
-        <?php include 'includes/footer.php'; ?>
-
+    <?php include 'includes/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/include.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/volunteers.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/volunteers.js"></script>
 </body>
 
 </html>

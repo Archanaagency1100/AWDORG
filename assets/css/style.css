@@ -3313,7 +3313,8 @@ form .btn-submit:hover {
 .main-card {
   position: relative;
 }
-.main-card .students-grid {
+
+.students-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
@@ -3321,7 +3322,7 @@ form .btn-submit:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-.main-card .students-grid .student-card {
+.students-grid .student-card {
   position: relative;
   background-color: #fff;
   border-radius: 10px;
@@ -3331,23 +3332,23 @@ form .btn-submit:hover {
   display: flex;
   flex-direction: column;
 }
-.main-card .students-grid .student-card .img-wrapper {
+.students-grid .student-card .img-wrapper {
   aspect-ratio: 1/1.1;
   overflow: hidden;
 }
-.main-card .students-grid .student-card .img-wrapper img {
+.students-grid .student-card .img-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.5s ease;
 }
-.main-card .students-grid .student-card .student-info {
+.students-grid .student-card .student-info {
   padding: 12px;
   text-align: center;
   background: #fff;
 }
-.main-card .students-grid .student-card .student-info h6 {
+.students-grid .student-card .student-info h6 {
   margin: 0;
   font-size: 0.9rem;
   font-weight: 600;
@@ -3356,19 +3357,20 @@ form .btn-submit:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.main-card .students-grid .student-card .student-info p {
+.students-grid .student-card .student-info p {
   margin: 4px 0 0;
   font-size: 0.75rem;
   color: #777;
 }
-.main-card .students-grid .student-card:hover {
+.students-grid .student-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
-.main-card .students-grid .student-card:hover .img-wrapper img {
+.students-grid .student-card:hover .img-wrapper img {
   transform: scale(1.1);
 }
-.main-card .pagination-container {
+
+.pagination-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3376,7 +3378,7 @@ form .btn-submit:hover {
   margin-top: 3rem;
   flex-wrap: wrap;
 }
-.main-card .pagination-container .page-btn {
+.pagination-container .page-btn {
   padding: 8px 16px;
   border: 1px solid #ddd;
   background: #fff;
@@ -3386,36 +3388,36 @@ form .btn-submit:hover {
   transition: all 0.3s ease;
   font-size: 0.9rem;
 }
-.main-card .pagination-container .page-btn:hover:not(:disabled) {
+.pagination-container .page-btn:hover:not(:disabled) {
   background-color: #f8f9fa;
   border-color: #ab0303;
   color: #ab0303;
 }
-.main-card .pagination-container .page-btn.active {
+.pagination-container .page-btn.active {
   background-color: #ab0303;
   border-color: #ab0303;
   color: #fff;
 }
-.main-card .pagination-container .page-btn:disabled {
+.pagination-container .page-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-.main-card .pagination-container .page-info {
+.pagination-container .page-info {
   font-size: 0.9rem;
   color: #666;
   margin: 0 15px;
 }
+
 @media (max-width: 768px) {
-  .main-card .students-grid {
+  .students-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 15px;
     padding: 15px;
   }
-  .main-card .header-title h2 {
+  .header-title h2 {
     font-size: 1.5rem;
   }
 }
-
 .tv-section {
   background-color: #fcfcfc;
   color: #333;
@@ -4920,4 +4922,4 @@ form .btn-submit:hover {
   color: #ff0000;
   font-weight: bold;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}

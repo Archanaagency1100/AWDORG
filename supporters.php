@@ -13,43 +13,43 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <?php include 'includes/header.php'; ?>
     <section class="supporters-section">
 
         <div class="hero-section"></div>
 
         <div class="main-card">
             <!-- <div class="container pt-5 pb-4"> -->
-                <div class="header-title">
-                    <h2>Our Supporters</h2>
-                </div>
+            <div class="header-title">
+                <h2>Our Supporters</h2>
+            </div>
 
-                <div class="team-grid row g-4 text-center" id="card-container">
+            <div class="team-grid row g-4 text-center" id="card-container">
                 <!-- </div> -->
 
             </div>
 
     </section>
 
-<!-- Call of Action -->
+    <!-- Call of Action -->
     <section class="cta-strip">
-  <div class="container">
-    <div class="cta-content">
+        <div class="container">
+            <div class="cta-content">
 
-      <div class="cta-text">
-        <h3>Every single penny makes a difference</h3>
-        <p>Your small contribution can bring big change in someone's life.</p>
-      </div>
+                <div class="cta-text">
+                    <h3>Every single penny makes a difference</h3>
+                    <p>Your small contribution can bring big change in someone's life.</p>
+                </div>
 
-      <div class="cta-action">
-        <a href="#" class="btn btn-donate">Donate Now</a>
-      </div>
+                <div class="cta-action">
+                    <a href="#" class="btn btn-donate">Donate Now</a>
+                </div>
 
-    </div>
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
 
-        <?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -59,17 +59,17 @@
     <script>
         // 1. Your data - Just add more objects here!
         const masterclasses = [
-              {
+            {
                 "image": "/assets/img/supporters/5.png",
                 "profileTitle": "Eish Singhal",
                 "profileDesignation": "New Delhi"
             },
-              {
+            {
                 "image": "/assets/img/supporters/3.png",
                 "profileTitle": "Anjitha Chepyala",
                 "profileDesignation": "Telangana"
             },
-              {
+            {
                 "image": "/assets/img/supporters/9.png",
                 "profileTitle": "Pragya Anand",
                 "profileDesignation": "Delhi"
@@ -84,22 +84,22 @@
                 "profileTitle": "Vartika Srivastava",
                 "profileDesignation": "USA"
             },
-              {
+            {
                 "image": "/assets/img/supporters/28.png",
                 "profileTitle": "Andrea Syrtash",
                 "profileDesignation": "New York"
             },
-               {
+            {
                 "image": "/assets/img/supporters/23.png",
                 "profileTitle": "Dr. Prerna Kohli",
                 "profileDesignation": "Gurgaon"
             },
-              {
+            {
                 "image": "/assets/img/supporters/22.png",
                 "profileTitle": "Rj Simran K Sethi",
                 "profileDesignation": "BIG FM"
             },
-             {
+            {
                 "image": "/assets/img/supporters/18.png",
                 "profileTitle": "Rj Divya",
                 "profileDesignation": "Radio City"
@@ -109,17 +109,17 @@
                 "profileTitle": "Rj Ginnie",
                 "profileDesignation": "Radio City"
             },
-             {
+            {
                 "image": "/assets/img/supporters/16.png",
                 "profileTitle": "Shibani Kashyap",
                 "profileDesignation": "Mumbai"
             },
-              {
+            {
                 "image": "/assets/img/supporters/15.png",
                 "profileTitle": "Shreya Narayan",
                 "profileDesignation": "Mumbai"
             },
-             {
+            {
                 "image": "/assets/img/supporters/4.png",
                 "profileTitle": "Vikrant Prasher",
                 "profileDesignation": "Jodhpur IPS deepak yadav"
@@ -129,7 +129,7 @@
                 "profileTitle": "Dr. Kanika Monga",
                 "profileDesignation": "USA"
             },
-          
+
             {
                 "image": "/assets/img/supporters/27.png",
                 "profileTitle": "Dr. Nilay Nirupam",
@@ -150,7 +150,7 @@
                 "profileTitle": "Vipul Pandhi",
                 "profileDesignation": "INDIA"
             },
-         
+
             {
                 "image": "/assets/img/supporters/22.png",
                 "profileTitle": "Rj Simran K Sethi",
@@ -196,7 +196,7 @@
                 "profileTitle": "Raj Sharma",
                 "profileDesignation": "Gurgaon"
             },
-          
+
             {
                 "image": "/assets/img/supporters/8.png",
                 "profileTitle": "Rudrani Chettri",
@@ -227,14 +227,14 @@
                 "profileTitle": "Rj Nitin",
                 "profileDesignation": "BIG FM"
             }
-            ];
+        ];
 
         // 2. The function to build the cards
         const container = document.getElementById('card-container');
 
         masterclasses.forEach(item => {
             const cardHTML = `
-            <div class="supporters col-sm-6 col-md-3 col-lg-3">
+            <div class="supporters col-sm-6 col-md-4 col-xxl-3">
                 <div class="supporters-card p-2">
                     <img class="img-fluid" src="${item.image}">
                 </div>

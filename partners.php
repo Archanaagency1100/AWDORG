@@ -31,8 +31,9 @@
             <div class="header-title">
                 <h2>Collaboration for Change</h2>
                 <p>
-                    We are immensely grateful to our corporate and community partners. Their unwavering support 
-                    fuels our mission to empower underprivileged communities and create sustainable transformation across India.
+                    We are immensely grateful to our corporate and community partners. Their unwavering support
+                    fuels our mission to empower underprivileged communities and create sustainable transformation
+                    across India.
                 </p>
             </div>
 
@@ -44,33 +45,33 @@
 
     <!-- ------------- Call to Action Strip--------------- -->
     <section class="cta-strip">
-  <div class="container">
-    <div class="cta-content">
+        <div class="container">
+            <div class="cta-content">
 
-      <div class="cta-text">
-        <h3>Every single penny makes a difference</h3>
-        <p>Your small contribution can bring big change in someone's life.</p>
-      </div>
+                <div class="cta-text">
+                    <h3>Every single penny makes a difference</h3>
+                    <p>Your small contribution can bring big change in someone's life.</p>
+                </div>
 
-      <div class="cta-action">
-        <a href="#" class="btn btn-donate">Donate Now</a>
-      </div>
+                <div class="cta-action">
+                    <a href="#" class="btn btn-donate">Donate Now</a>
+                </div>
 
-    </div>
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
 
-        <?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/include.js"></script>
     <script src="js/header.js"></script>
-    
+
     <script>
         const supporter_company = [
-            { "src": "assets/img/partners/Omega.jpg", "name": "Omega Hotel" },
+            { "src": "/assets/img/partners/Omega.jpg", "name": "Omega Hotel" },
             { "src": "assets/img/partners/Nehru-World-School.png", "name": "Nehru World School" },
             { "src": "assets/img/partners/Taj-hotel-logo.png", "name": "Taj Hotel" },
             { "src": "assets/img/partners/ms.jpg", "name": "Microsoft" },
@@ -125,15 +126,7 @@
             { "src": "assets/img/partners/srijannaturals.jpg", "name": "Srijan Naturals" },
             { "src": "assets/img/partners/visa-altrav-awd.jpg", "name": "Visa Waltrav" },
             { "src": "assets/img/partners/Siec-logo.png", "name": "Siec india" },
-            { "src": "assets/img/partners/Adfactors-PR.png", "name": "Adfactors-PR" },
-            { "src": "assets/img/partners/Omega.jpg", "name": "Omega Hotel" },
-            { "src": "assets/img/partners/Nehru-World-School.png", "name": "Nehru World School" },
-            { "src": "assets/img/partners/Taj-hotel-logo.png", "name": "Taj Hotel" },
-            { "src": "assets/img/partners/ms.jpg", "name": "Microsoft" },
-            { "src": "assets/img/partners/adobe.jpg", "name": "Adobe" },
-            { "src": "assets/img/partners/twilio.webp", "name": "Twilio" },
-            { "src": "assets/img/partners/premas.webp", "name": "Premas Life Sciences" },
-            { "src": "assets/img/partners/awd-appsoleut.jpg", "name": "Appsoleut Games" }
+            { "src": "assets/img/partners/Adfactors-PR.png", "name": "Adfactors-PR" }
         ];
 
         document.addEventListener("DOMContentLoaded", () => {
@@ -142,7 +135,7 @@
 
             supporter_company.forEach(partner => {
                 const card = document.createElement("div");
-                card.className = "partner-card col-6 col-sm-6 col-md-4 col-lg-3 mb-4";
+                card.className = "partner-card col-6 col-sm-6 col-md-4 col-lg-3 mb-4 w-100";
                 card.innerHTML = `
                     <div class="partner-card__image">
                         <img src="${partner.src}" alt="${partner.name}" loading="lazy">
