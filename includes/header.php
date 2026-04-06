@@ -1,5 +1,5 @@
 <!-- TOP BAR -->
-<div class="top-bar">
+<div class="top-bar sticky-top">
     <div class="container-fluid px-lg-5">
         <div class="top-bar__inner">
             <div><img id="header-logo" height="40" style="padding-left: 47px;" src="/assets/logo-white-hand.svg" alt="AWDORG Foundation Logo" /></div>
@@ -37,7 +37,7 @@
     <div class="container-fluid px-lg-5">
         
         <!-- BRAND -->
-         <a  href="../index.php">
+         <a  href="/index.php">
         <div><img src="/assets/logo-text-black.svg" alt="AWDORG Foundation Logo" height="28"  style="padding-left: 8px;"/></div></a>
         <!-- <a class="navbar-brand d-none" href="../index.php">
             <img src="/assets/img/awdorg-foundation-logo.png" alt="AWDORG Foundation Logo" width="60" height="60" />

@@ -14,7 +14,7 @@
 
 <body>
     <section class="pec-section">
-        <?php include 'includes/header.php'; ?>
+        <?php include '../includes/header.php'; ?>
         <div class="pec-hero-section"></div>
 
         <div class="pec-main-card">
@@ -203,7 +203,7 @@
 
     </section>
 
-        <?php include 'includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
 
 
     <!-- Video Modal -->

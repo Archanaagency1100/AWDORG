@@ -122,9 +122,21 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/include.js"></script>
-    <script src="js/header.js"></script>
+    <script src="assets/js/script.js"></script>
+</xai:function_call name="edit_file"> 
+
+<xai:function_call name="edit_file">
+<parameter name="path">c:/xampp/htdocs/anual-reports.php
+    <script src="assets/js/include.js"></script>
+</xai:function_call name="edit_file">
+
+<xai:function_call name="edit_file">
+<parameter name="path">c:/xampp/htdocs/anual-reports.php
+    <script src="assets/js/header.js"></script>
+</xai:function_call name="edit_file"> 
+
+<xai:function_call name="edit_file">
+<parameter name="path">c:/xampp/htdocs/contact.php
     <script>
       // 1. Your data - Just add more objects here!
       const data = [

@@ -13,7 +13,7 @@
 
 <body>
     <section class="internet-section">
-        <?php include 'includes/header.php'; ?>
+        <?php include '../includes/header.php'; ?>
         <div class="internet-hero-section"></div>
 
         <div class="internet-main-card">
@@ -28,7 +28,7 @@
         </div>
     </section>
 
-        <?php include 'includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
 
 
     <!-- Twitter Embed Script -->

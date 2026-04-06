@@ -1,5 +1,5 @@
-<!doctype php>
-<php lang="en">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,16 +17,16 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/assets/scss/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
 
   <body>
-    <?php include 'includes/header.php'; ?>
+    <?php include '../includes/header.php'; ?>
 
     <section class="students-section">
-      <div class="students-hero-section"></div>
-      <div class="students-main-card">
-        <div class="container pt-5">
+      <div class="hero-section"></div>
+      <div class="main-card">
+        <!-- <div class="container pt-5"> -->
           <div class="header-title">
             <h2>Our Students</h2>
           </div>
@@ -39,7 +39,7 @@
             <!-- Pagination buttons will be loaded here -->
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </section>
 
     <!-- ------------- Call to Action Strip--------------- -->
@@ -60,11 +60,11 @@
       </div>
     </section>
 
-        <?php include 'includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/include.js"></script>
-    <script src="/js/students.js"></script>
+  
+    <script src="/assets/js/students.js"></script>
   </body>
-</php>
+</html>

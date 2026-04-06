@@ -13,7 +13,7 @@
 
 <body>
     <section class="radio-section">
-        <?php include 'includes/header.php'; ?>
+        <?php include '../includes/header.php'; ?>
         <div class="radio-hero-section"></div>
 
         <div class="radio-main-card">
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-        <?php include 'includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -73,9 +73,9 @@
 
         function getYoutubeEmbedUrl(url) {
             let videoId = "";
-            if (url.includes("youtube.com/watch?v=")) {
+            if (url.../includes("youtube.com/watch?v=")) {
                 videoId = url.split("v=")[1].split("&")[0];
-            } else if (url.includes("youtu.be/")) {
+            } else if (url.../includes("youtu.be/")) {
                 videoId = url.split("youtu.be/")[1].split("?")[0];
             }
             return videoId ? `https://www.youtube.com/embed/${videoId}` : url;

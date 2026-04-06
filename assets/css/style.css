@@ -3310,36 +3310,10 @@ form .btn-submit:hover {
   color: #414141;
 }
 
-.students-hero-section {
-  height: 500px;
-  background: url("../img/volunteers/volunteers-banner-1-1.webp") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.students-main-card {
-  max-width: 1400px;
-  margin: -50px auto 40px;
-  background-color: #fff;
+.main-card {
   position: relative;
-  z-index: 10;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  padding-bottom: 3rem;
 }
-.students-main-card .header-title {
-  border-left: 5px solid #ab0303;
-  padding-left: 20px;
-  margin: 40px 0 30px 0;
-}
-.students-main-card .header-title h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
-  color: #222;
-}
-.students-main-card .students-grid {
+.main-card .students-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
@@ -3347,7 +3321,7 @@ form .btn-submit:hover {
   max-width: 1200px;
   margin: 0 auto;
 }
-.students-main-card .students-grid .student-card {
+.main-card .students-grid .student-card {
   position: relative;
   background-color: #fff;
   border-radius: 10px;
@@ -3357,23 +3331,23 @@ form .btn-submit:hover {
   display: flex;
   flex-direction: column;
 }
-.students-main-card .students-grid .student-card .img-wrapper {
+.main-card .students-grid .student-card .img-wrapper {
   aspect-ratio: 1/1.1;
   overflow: hidden;
 }
-.students-main-card .students-grid .student-card .img-wrapper img {
+.main-card .students-grid .student-card .img-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.5s ease;
 }
-.students-main-card .students-grid .student-card .student-info {
+.main-card .students-grid .student-card .student-info {
   padding: 12px;
   text-align: center;
   background: #fff;
 }
-.students-main-card .students-grid .student-card .student-info h6 {
+.main-card .students-grid .student-card .student-info h6 {
   margin: 0;
   font-size: 0.9rem;
   font-weight: 600;
@@ -3382,19 +3356,19 @@ form .btn-submit:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.students-main-card .students-grid .student-card .student-info p {
+.main-card .students-grid .student-card .student-info p {
   margin: 4px 0 0;
   font-size: 0.75rem;
   color: #777;
 }
-.students-main-card .students-grid .student-card:hover {
+.main-card .students-grid .student-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
-.students-main-card .students-grid .student-card:hover .img-wrapper img {
+.main-card .students-grid .student-card:hover .img-wrapper img {
   transform: scale(1.1);
 }
-.students-main-card .pagination-container {
+.main-card .pagination-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3402,7 +3376,7 @@ form .btn-submit:hover {
   margin-top: 3rem;
   flex-wrap: wrap;
 }
-.students-main-card .pagination-container .page-btn {
+.main-card .pagination-container .page-btn {
   padding: 8px 16px;
   border: 1px solid #ddd;
   background: #fff;
@@ -3412,32 +3386,32 @@ form .btn-submit:hover {
   transition: all 0.3s ease;
   font-size: 0.9rem;
 }
-.students-main-card .pagination-container .page-btn:hover:not(:disabled) {
+.main-card .pagination-container .page-btn:hover:not(:disabled) {
   background-color: #f8f9fa;
   border-color: #ab0303;
   color: #ab0303;
 }
-.students-main-card .pagination-container .page-btn.active {
+.main-card .pagination-container .page-btn.active {
   background-color: #ab0303;
   border-color: #ab0303;
   color: #fff;
 }
-.students-main-card .pagination-container .page-btn:disabled {
+.main-card .pagination-container .page-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-.students-main-card .pagination-container .page-info {
+.main-card .pagination-container .page-info {
   font-size: 0.9rem;
   color: #666;
   margin: 0 15px;
 }
 @media (max-width: 768px) {
-  .students-main-card .students-grid {
+  .main-card .students-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 15px;
     padding: 15px;
   }
-  .students-main-card .header-title h2 {
+  .main-card .header-title h2 {
     font-size: 1.5rem;
   }
 }
@@ -4874,7 +4848,7 @@ form .btn-submit:hover {
 }
 
 .privacy_policy .hero-section {
-  background: url("../img/privacy-policy/privacy-policy.jpg") center/cover no-repeat;
+  background: url("/img/privacy-policy/privacy-policy.jpg") center/cover no-repeat;
 }
 .privacy_policy .logo-placeholder {
   width: 100%;

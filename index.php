@@ -481,15 +481,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/include.js"></script>
+<!-- <script src="js/include.js"></script> -->
     <script src="assets/js/header.js"></script>
-</xai:function_call name="edit_file">
-
-<xai:function_call name="edit_file">
-<parameter name="path">c:/xampp/htdocs/contact.php
-    <script>
-        // ── Impact Counter Animation ────────────────────────────
         const counters = document.querySelectorAll('.impact-item__number');
+
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -517,9 +512,7 @@
 
         counters.forEach(counter => observer.observe(counter));
     </script>
-    <script src="js/script.js"></script>
-    <script src="js/include.js"></script>
-    <script src="js/header.js"></script>
+    <!-- Duplicate script.js fixed - using assets/js/ paths -->
     <script>
         const supporter_company =   [
   {

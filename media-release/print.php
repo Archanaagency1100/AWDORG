@@ -13,18 +13,18 @@
 
 <body>
     <section class="print-section">
-        <?php include 'includes/header.php'; ?>
+        <?php include '../includes/header.php'; ?>
         <div class="print-hero-section"></div>
 
         <div class="print-main-card">
             <div class="container pt-5">
 
                 <div class="img-vertical mb-5">
-                    <img src="../assets/img/newspaper/hindustan-times.webp" alt="Hindustan Times">
-                    <img src="../assets/img/newspaper/hindustan.webp" alt="Hindustan">
-                    <img src="../assets/img/newspaper/dainik-jagran.webp" alt="Dainik Jagran">
-                    <img src="../assets/img/newspaper/amar-ujala.webp" alt="Amar Ujala">
-                    <img src="../assets/img/newspaper/dainik-jag.webp" alt="Dainik Jag">
+                    <img src="/assets/img/newspaper/hindustan-times.webp" alt="Hindustan Times">
+                    <img src="/assets/img/newspaper/hindustan.webp" alt="Hindustan">
+                    <img src="/assets/img/newspaper/dainik-jagran.webp" alt="Dainik Jagran">
+                    <img src="/assets/img/newspaper/amar-ujala.webp" alt="Amar Ujala">
+                    <img src="/assets/img/newspaper/dainik-jag.webp" alt="Dainik Jag">
                 </div>
 
                 <div class="content-container row" id="content-container">
@@ -35,12 +35,12 @@
         </div>
     </section>
 
-        <?php include 'includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/include.js"></script>
-    <script src="../js/header.js"></script>
+    <script src="/assets/js/include.js"></script>
+    <script src="/assets/js/header.js"></script>
 
     <script>
         data = [
@@ -424,7 +424,7 @@
             
             data.forEach(item => {
                 // Skip if it's just the logo placeholder and has N/A title
-                if (item.title === "N/A" && item.author === "N/A" && item.image.includes("logo")) return;
+                if (item.title === "N/A" && item.author === "N/A" && item.image.../includes("logo")) return;
 
                 const card = document.createElement("div");
                 card.className = "print-item-card col-12 col-md-6 col-lg-4 mb-5 p-3";

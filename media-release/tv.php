@@ -13,7 +13,7 @@
 
 <body>
     <section class="tv-section">
-        <?php include 'includes/header.php'; ?>
+        <?php include '../includes/header.php'; ?>
         <div class="tv-hero-section"></div>
 
         <div class="tv-main-card">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-        <?php include 'includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
