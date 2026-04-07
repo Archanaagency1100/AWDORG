@@ -4,80 +4,78 @@
 @use "sass:color";
 
 .our-certificate-section {
-    background-color: #fcfcfc;
-    color: #333;
+  background-color: #fcfcfc;
+  color: #333;
 
-    .hero-section {
-        // height: 500px;
-        background: url('../img/project_ration/project-ration-1-1.jpg') center/cover no-repeat;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-    }
-
-    
-.cert-card {
-  background: #f7f7f7;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
-  padding: 18px 20px;
-  margin-bottom: 15px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-
-  transition: all 0.25s ease;
-
-  &:hover {
-    background: #f1f1f1;
-    border-color: #cfcfcf;
+  .hero-section {
+    // height: 500px;
+    background: url('../img/project_ration/project-ration-1-1.jpg') center/cover no-repeat;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
   }
 
-  .cert-left {
-    h5 {
-      font-size: 17px;
-      font-weight: 600;
-      color: #111;
-      margin-bottom: 4px;
+
+  .cert-card {
+    background: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: #f1f1f1;
+      border-color: #cfcfcf;
     }
 
-    .cert-no {
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 2px;
+    .cert-left {
+      h5 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #111;
+        margin-bottom: 4px;
+      }
+
+      .cert-no {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 2px;
+      }
+
+      .cert-date {
+        font-size: 13px;
+        color: #444;
+      }
     }
 
-    .cert-date {
-      font-size: 13px;
-      color: #444;
-    }
-  }
+    .cert-right {
+      .btn-open {
+        background: transparent;
+        color: #ab0302;
+        border: 1px solid #ab0302;
+        padding: 5px 14px;
+        font-size: 13px;
+        border-radius: 4px;
+        transition: 0.25s;
 
-  .cert-right {
-    .btn-open {
-      background: transparent;
-      color: #ab0302;
-      border: 1px solid #ab0302;
-      padding: 5px 14px;
-      font-size: 13px;
-      border-radius: 4px;
-      transition: 0.25s;
-
-      &:hover {
-        background: #ab0302;
-        color: #fff;
+        &:hover {
+          background: #ab0302;
+          color: #fff;
+        }
       }
     }
   }
-}
 
-@media (max-width: 576px) {
-  .cert-card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  @media (max-width: 576px) {
+    .cert-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
   }
-}
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/assets/scss/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <h2>Our Supporters</h2>
             </div>
 
-            <div class="team-grid row g-4 text-center" id="card-container">
+            <div class="team-grid row g-2 text-center" id="card-container">
                 <!-- </div> -->
 
             </div>
@@ -234,7 +234,7 @@
 
         masterclasses.forEach(item => {
             const cardHTML = `
-            <div class="supporters col-sm-6 col-md-4 col-xxl-3">
+            <div class="supporters col-sm-6 col-md-4 col-xxl-3 p-0">
                 <div class="supporters-card p-2">
                     <img class="img-fluid" src="${item.image}">
                 </div>

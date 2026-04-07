@@ -1,94 +1,97 @@
 <!DOCTYPE php>
 <php lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWDORG Foundation - In Radio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AWDORG Foundation - In Radio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+    </head>
 
-<body>
-    <section class="radio-section">
-        <?php include '../includes/header.php'; ?>
-        <div class="radio-hero-section"></div>
+    <body>
+        <section class="radio-section">
+            <?php include '../includes/header.php'; ?>
+            <div class="radio-hero-section"></div>
 
-        <div class="radio-main-card">
-            <div class="container pt-5">
+            <div class="main-card">
+                <div class="container pt-5">
 
-                <div class="img-vertical mb-5">
-                    <img src="../assets/img/radio/92.7.webp" alt="92.7 Big FM">
-                    <img src="../assets/img/radio/fever-104.webp" alt="Fever 104">
-                    <img src="../assets/img/radio/punjabi-fever.webp" alt="Punjabi Fever">
-                    <img src="../assets/img/radio/radio-city.webp" alt="Radio City">
+                    <div class="img-vertical mb-5">
+                        <img src="../assets/img/radio/92.7.webp" alt="92.7 Big FM">
+                        <img src="../assets/img/radio/fever-104.webp" alt="Fever 104">
+                        <img src="../assets/img/radio/punjabi-fever.webp" alt="Punjabi Fever">
+                        <img src="../assets/img/radio/radio-city.webp" alt="Radio City">
+                    </div>
+
+                    <div class="content-container row" id="content-container">
+                        <div class="col-12 col-md-6 col-lg-4" style="max-height: 320px; overflow-y: scroll;">
+                            <iframe class="w-100 print-item-card"
+                                src="https://www.instagram.com/reel/CnzcGmfALLq/embed/captioned/?cr=1&v=14&wp=674&rd=https%3A%2F%2Fwww.anythingwilldo.org&rp=%2Fradio%2F#%7B%22ci%22%3A0%2C%22os%22%3A2115.39999999851%2C%22ls%22%3A1846.7000000029802%2C%22le%22%3A1921.1000000014901%7D"
+                                width="674" height="842" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        </div>
+                        <!-- Dynamic Radio Content will be loaded here -->
+                    </div>
+
                 </div>
-
-                <div class="content-container row" id="content-container">
-                  <div class="col-12 col-md-6 col-lg-4" style="max-height: 320px; overflow-y: scroll;">
-                    <iframe class="w-100 print-item-card" src="https://www.instagram.com/reel/CnzcGmfALLq/embed/captioned/?cr=1&v=14&wp=674&rd=https%3A%2F%2Fwww.anythingwilldo.org&rp=%2Fradio%2F#%7B%22ci%22%3A0%2C%22os%22%3A2115.39999999851%2C%22ls%22%3A1846.7000000029802%2C%22le%22%3A1921.1000000014901%7D" width="674" height="842" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                  </div>  
-                  <!-- Dynamic Radio Content will be loaded here -->
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
         <?php include '../includes/footer.php'; ?>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/include.js"></script>
-     <script src="../js/header.js"></script>
-    <script>
-        const data = [
-            {
-                "url": "https://www.youtube.com/watch?v=3PYH2iSgv1s",
-                "title": "Hands for Humanity with Rj Simran on Big FM",
-                "date": "May 11, 2021",
-                "author": "on 92.7 Big FM"
-            },
-            {
-                "url": "https://youtu.be/fdx5HVJVqjE",
-                "title": "Interview with Rj Khurafati Nitin in Dilli Tadka Marke on Big FM",
-                "date": "May 06, 2021",
-                "author": "on 92.7 Big FM"
-            },
-            {
-                "url": "https://youtu.be/cQErCnsVYic",
-                "title": "Interview with Rj Simran in Dil Se Duniya Tak Ki Kahani on Big FM",
-                "date": "April 07, 2021",
-                "author": "on 92.7 Big FM"
-            },
-            {
-                "url": "https://youtu.be/BpE_tsdBBDs",
-                "title": "Suno Na Dilli with Rj Ginnie on Radio City",
-                "date": "July 16, 2020",
-                "author": "on Radio City"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="../js/include.js"></script>
+        <script src="../js/header.js"></script> -->
+        <script>
+            const data = [
+                {
+                    "url": "https://www.youtube.com/watch?v=3PYH2iSgv1s",
+                    "title": "Hands for Humanity with Rj Simran on Big FM",
+                    "date": "May 11, 2021",
+                    "author": "on 92.7 Big FM"
+                },
+                {
+                    "url": "https://youtu.be/fdx5HVJVqjE",
+                    "title": "Interview with Rj Khurafati Nitin in Dilli Tadka Marke on Big FM",
+                    "date": "May 06, 2021",
+                    "author": "on 92.7 Big FM"
+                },
+                {
+                    "url": "https://youtu.be/cQErCnsVYic",
+                    "title": "Interview with Rj Simran in Dil Se Duniya Tak Ki Kahani on Big FM",
+                    "date": "April 07, 2021",
+                    "author": "on 92.7 Big FM"
+                },
+                {
+                    "url": "https://youtu.be/BpE_tsdBBDs",
+                    "title": "Suno Na Dilli with Rj Ginnie on Radio City",
+                    "date": "July 16, 2020",
+                    "author": "on Radio City"
+                }
+            ];
+
+            function getYoutubeEmbedUrl(url) {
+                let videoId = "";
+                if (url.includes("youtube.com/watch ? v = ")) {
+                    videoId = url.split("v=")[1].split("&")[0];
+                } else if (url.includes("youtu.be/")) {
+                    videoId = url.split("youtu.be/")[1].split("?")[0];
+                }
+                return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
             }
-        ];
 
-        function getYoutubeEmbedUrl(url) {
-            let videoId = "";
-            if (url.../includes("youtube.com/watch?v=")) {
-                videoId = url.split("v=")[1].split("&")[0];
-            } else if (url.../includes("youtu.be/")) {
-                videoId = url.split("youtu.be/")[1].split("?")[0];
-            }
-            return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
-        }
+            document.addEventListener("DOMContentLoaded", () => {
+                const container = document.getElementById("content-container");
 
-        document.addEventListener("DOMContentLoaded", () => {
-            const container = document.getElementById("content-container");
-            
-            data.forEach(item => {
-                const card = document.createElement("div");
-                card.className = "col-12 col-md-6 col-lg-4 mb-4";
+                data.forEach(item => {
+                    const card = document.createElement("div");
+                    card.className = "col-12 col-md-6 col-lg-4 mb-4";
 
-                card.innerphp = `
+                    card.innerphp = `
                     <div class="print-item-card">
                         <div class="video-wrapper">
                             <iframe src="${getYoutubeEmbedUrl(item.url)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -102,10 +105,10 @@
                         </div>
                     </div>
                 `;
-                container.appendChild(card);
+                    container.appendChild(card);
+                });
             });
-        });
-    </script>
-</body>
+        </script>
+    </body>
 
 </php>

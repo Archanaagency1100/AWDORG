@@ -2,417 +2,420 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWDORG Foundation - contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWDORG Foundation - contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="assets/scss/style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
-    <section class="life-section">
-        <?php include 'includes/header.php'; ?>
-        <div class="life-hero-section"></div>
+  <section class="life-section">
+    <?php include 'includes/header.php'; ?>
+    <div class="life-hero-section"></div>
 
-        <div class="life-main-card">
-            <div class="container pt-5 text-center">
-                <h5>This is an initiative to create and spread awareness about basic hygiene especially during the difficult phase of COVID pandemic. Under this project we counsel people about the importance of clean surroundings, personal hygiene and maintaining social distancing to ensure safety</h5>
-            </div>
-             <div class="container my-5">
-            <div id="card-container" class="row g-4"></div>
-        </div>
-        </div>
-
-       
-    </section>
-
-        <?php include 'includes/footer.php'; ?>
+    <div class="main-card">
+      <div class="header-title pt-5 text-center">
+        <h2>PROJECT<i>life</i></h2>
+        <p>This is an initiative to create and spread awareness about basic hygiene especially during the difficult
+          phase of COVID pandemic. Under this project we counsel people about the importance of clean surroundings,
+          personal hygiene and maintaining social distancing to ensure safety</p>
+      </div>
+      <div class="container my-5">
+        <div id="card-container" class="row g-4"></div>
+      </div>
+    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/include.js"></script>
-    <script src="js/header.js"></script>
-    <script>
-        // 1. Your data - Just add more objects here!
-        const data = [
+  </section>
 
-  {
-    "image": "/assets/img/projectlife/Untitled-7.png",
-    "title": "contributed wedding essentials to support the rupa's marriage.",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/cloth-donation.jpg",
-    "title": "Neki Ki Diwar",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/aarna-case.webp",
-    "title": "Money provided for test for arna's critical health condition",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/akash-couple.jpg",
-    "title": "Empowering a Specially-Abled Couple to Reunite with Their Roots",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/blood-donation.jpg",
-    "title": "Blood Donation (2024)",
-    "subtitle": null,
-    "location": null
-  },
-  
-  
-  {
-    "image": "/assets/img/projectlife/blood-donation.jpg",
-    "title": "Blood Donation For 14 Year Old Child(2024)",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/anmol-case-2.jpg",
-    "title": "Anmol Special Child Multiple Stone in Gallbladder Case(2023)",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/neki-ki-diwar.jpg",
-    "title": "Neki Ki Deewar(2023)",
-    "subtitle": "Laxmi Nagar, Shakkarpur",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/blooddonationyvolunteer.jpg",
-    "title": "Blood Donation (2023)",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/cyber-awarness-program.jpg",
-    "title": "Cyber Awareness Programme(2023)",
-    "subtitle": "New Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/sanitary-pads.jpg",
-    "title": "Sanitary Pads Distribution(2023)",
-    "subtitle": "New Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/blood-donation.jpg",
-    "title": "Blood Donation(2023)",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/ramcharanji.jpg",
-    "title": "Provided Mortuary Van(2023)",
-    "subtitle": "New Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/cyclegiven.jpg",
-    "title": "Cycle Given to Guard(2023)",
-    "subtitle": "New Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/life.jpg",
-    "title": "Money Provided for Medical Test to Santosh Kumar(2023)",
-    "subtitle": "Kalkaji, New Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/blanket-distribution.jpg",
-    "title": "Blanket Distribution",
-    "subtitle": "(23-12-2022)",
-    "location": "New Delhi"
-  },
-  {
-    "image": "/assets/img/projectlife/tricycle-donation.jpg",
-    "title": "Provided Tricycle to Two specially-abled People",
-    "subtitle": "(03-12-2022)",
-    "location": "New Delhi"
-  },
-  {
-    "image": "/assets/img/projectlife/blanket2.jpg",
-    "title": "Blanket Distribution(2022)",
-    "subtitle": "Kalkaji, New Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/campaign-blanket.jpg",
-    "title": "Sanitary Pads Distribution(2022)",
-    "subtitle": "Construction Site, Noida",
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/clothdistribution.jpg",
-    "title": "Neki Ki Diwar(2022)",
-    "subtitle": "Geeta Colony, Rani Garden",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/awd-10.jpg",
-    "title": "Sanitary Pads Distribution(2022)",
-    "subtitle": "Yamuna Ghat Slums, ITO New Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/awd-10-.jpg",
-    "title": "Woolen Clothes Distribution(2022)",
-    "subtitle": "School for Underprivileged, Red Fort (Backyard - Delhi)",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/CD-Sir.jpg",
-    "title": "Access to Justice",
-    "subtitle": "(22-02-2022)",
-    "location": "Sanjay Camp, Chanakyapuri"
-  },
-  
-  {
-    "image": "/assets/img/projectlife/L4-2.jpg",
-    "title": "Majdoor Campaign ,",
-    "subtitle": "(Snacks & Water)",
-    "location": "New Delhi Railway Station"
-  },
-  {
-    "image": "/assets/img/projectlife/L1.jpg",
-    "title": "Sanitary Pads Distribution",
-    "subtitle": "Chattarpur",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L2.jpg",
-    "title": "Self Safety Campaign",
-    "subtitle": "(Face Mask Distribution)",
-    "location": "Naraina Industrial Area, Delhi"
-  },
-  {
-    "image": "/assets/img/projectlife/L3.jpg",
-    "title": null,
-    "subtitle": "Sikandarpur",
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/L5-2.jpg",
-    "title": "Free Covi19 Tests",
-    "subtitle": "Kalkaji",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L6-2.jpg",
-    "title": "Sonu- Free Dental Treatment",
-    "subtitle": "Preet Vihar",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L7-2.jpg",
-    "title": "Sanitization of Red Zone Areas",
-    "subtitle": "Faridabad, Gurgaon & S Delhi",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L10-1.jpg",
-    "title": "Medical Camp with Physicians",
-    "subtitle": "Sadar Bazar- Delhi",
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/L9-1.jpg",
-    "title": "Sanitary Pads Distribution",
-    "subtitle": "",
-    "location": "Sikandarpur"
-  },
-  {
-    "image": "/assets/img/projectlife/L8-3.jpg",
-    "title": "176 Migrants sent safely",
-    "subtitle": "Nizamuddin to Bihar",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L11-3.jpg",
-    "title": "Face Masks Distribution-",
-    "subtitle": "Rohtak",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/8-2.jpg",
-    "title": "Sanitary Pad Making Project",
-    "subtitle": "Jaitpur",
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/L12-3.jpg",
-    "title": "Health Camp",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/7-2.jpg",
-    "title": "Essential Kit for entire Delhi Police",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/6-2.jpg",
-    "title": "Medical Camp for Slums",
-    "subtitle": "Ajmer",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/5-2.jpg",
-    "title": "Medical Camp with Physicians",
-    "subtitle": "Sadar Bazar- Delhi",
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/4-2.jpg",
-    "title": "Free Rapid & RTPCR Test Camp",
-    "subtitle": "Delhi- Haryana Borders",
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/3-2.jpg",
-    "title": "Vaccination Camp for Sweepers",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L1-3.jpg",
-    "title": "Cancer Treatment",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L2-3.jpg",
-    "title": "Blood Donation",
-    "subtitle": null,
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/L6-3.jpg",
-    "title": "HIV Positive family Help",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L3-3.jpg",
-    "title": "Ambulance",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L4-3.jpg",
-    "title": "Medication",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L5-3.jpg",
-    "title": "Oxygen Concentrators",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/1-2.jpg",
-    "title": "Face Mask Campaign- Roadshow",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L7-3.jpg",
-    "title": null,
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L8-4.jpg",
-    "title": "Oxygen Beds & Hospital Admission",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/2-2.jpg",
-    "title": "Sanitary Pads Distribution",
-    "subtitle": null,
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/L11-4.jpg",
-    "title": "Free Treatment of a 2 Year Baby",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L12-4.jpg",
-    "title": "Psychological Help",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L13-2.jpg",
-    "title": "Face Mask Distribution",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L14-2.jpg",
-    "title": "Crowd Funding for Surgery",
-    "subtitle": null,
-    "location": null
-  },
-  
-  {
-    "image": "/assets/img/projectlife/L15-1.jpg",
-    "title": "Sanitary Pads Distribution",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L16-1.jpg",
-    "title": "Women Hygiene Awareness",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/L17-2.jpg",
-    "title": "General Health Checkup Camp",
-    "subtitle": null,
-    "location": null
-  },
-  {
-    "image": "/assets/img/projectlife/9-2.jpg",
-    "title": "Vehicles Sanitization Activity",
-    "subtitle": null,
-    "location": null
-  },
-]
+  <?php include 'includes/footer.php'; ?>
 
-        // 2. The function to build the cards
-        const container = document.getElementById('card-container');
 
-       data.forEach(item => {
-            const cardHTML = `
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/include.js"></script>
+  <script src="js/header.js"></script>
+  <script>
+    // 1. Your data - Just add more objects here!
+    const data = [
+
+      {
+        "image": "/assets/img/projectlife/Untitled-7.png",
+        "title": "contributed wedding essentials to support the rupa's marriage.",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/cloth-donation.jpg",
+        "title": "Neki Ki Diwar",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/aarna-case.webp",
+        "title": "Money provided for test for arna's critical health condition",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/akash-couple.jpg",
+        "title": "Empowering a Specially-Abled Couple to Reunite with Their Roots",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/blood-donation.jpg",
+        "title": "Blood Donation (2024)",
+        "subtitle": null,
+        "location": null
+      },
+
+
+      {
+        "image": "/assets/img/projectlife/blood-donation.jpg",
+        "title": "Blood Donation For 14 Year Old Child(2024)",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/anmol-case-2.jpg",
+        "title": "Anmol Special Child Multiple Stone in Gallbladder Case(2023)",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/neki-ki-diwar.jpg",
+        "title": "Neki Ki Deewar(2023)",
+        "subtitle": "Laxmi Nagar, Shakkarpur",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/blooddonationyvolunteer.jpg",
+        "title": "Blood Donation (2023)",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/cyber-awarness-program.jpg",
+        "title": "Cyber Awareness Programme(2023)",
+        "subtitle": "New Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/sanitary-pads.jpg",
+        "title": "Sanitary Pads Distribution(2023)",
+        "subtitle": "New Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/blood-donation.jpg",
+        "title": "Blood Donation(2023)",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/ramcharanji.jpg",
+        "title": "Provided Mortuary Van(2023)",
+        "subtitle": "New Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/cyclegiven.jpg",
+        "title": "Cycle Given to Guard(2023)",
+        "subtitle": "New Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/life.jpg",
+        "title": "Money Provided for Medical Test to Santosh Kumar(2023)",
+        "subtitle": "Kalkaji, New Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/blanket-distribution.jpg",
+        "title": "Blanket Distribution",
+        "subtitle": "(23-12-2022)",
+        "location": "New Delhi"
+      },
+      {
+        "image": "/assets/img/projectlife/tricycle-donation.jpg",
+        "title": "Provided Tricycle to Two specially-abled People",
+        "subtitle": "(03-12-2022)",
+        "location": "New Delhi"
+      },
+      {
+        "image": "/assets/img/projectlife/blanket2.jpg",
+        "title": "Blanket Distribution(2022)",
+        "subtitle": "Kalkaji, New Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/campaign-blanket.jpg",
+        "title": "Sanitary Pads Distribution(2022)",
+        "subtitle": "Construction Site, Noida",
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/clothdistribution.jpg",
+        "title": "Neki Ki Diwar(2022)",
+        "subtitle": "Geeta Colony, Rani Garden",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/awd-10.jpg",
+        "title": "Sanitary Pads Distribution(2022)",
+        "subtitle": "Yamuna Ghat Slums, ITO New Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/awd-10-.jpg",
+        "title": "Woolen Clothes Distribution(2022)",
+        "subtitle": "School for Underprivileged, Red Fort (Backyard - Delhi)",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/CD-Sir.jpg",
+        "title": "Access to Justice",
+        "subtitle": "(22-02-2022)",
+        "location": "Sanjay Camp, Chanakyapuri"
+      },
+
+      {
+        "image": "/assets/img/projectlife/L4-2.jpg",
+        "title": "Majdoor Campaign ,",
+        "subtitle": "(Snacks & Water)",
+        "location": "New Delhi Railway Station"
+      },
+      {
+        "image": "/assets/img/projectlife/L1.jpg",
+        "title": "Sanitary Pads Distribution",
+        "subtitle": "Chattarpur",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L2.jpg",
+        "title": "Self Safety Campaign",
+        "subtitle": "(Face Mask Distribution)",
+        "location": "Naraina Industrial Area, Delhi"
+      },
+      {
+        "image": "/assets/img/projectlife/L3.jpg",
+        "title": null,
+        "subtitle": "Sikandarpur",
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/L5-2.jpg",
+        "title": "Free Covi19 Tests",
+        "subtitle": "Kalkaji",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L6-2.jpg",
+        "title": "Sonu- Free Dental Treatment",
+        "subtitle": "Preet Vihar",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L7-2.jpg",
+        "title": "Sanitization of Red Zone Areas",
+        "subtitle": "Faridabad, Gurgaon & S Delhi",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L10-1.jpg",
+        "title": "Medical Camp with Physicians",
+        "subtitle": "Sadar Bazar- Delhi",
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/L9-1.jpg",
+        "title": "Sanitary Pads Distribution",
+        "subtitle": "",
+        "location": "Sikandarpur"
+      },
+      {
+        "image": "/assets/img/projectlife/L8-3.jpg",
+        "title": "176 Migrants sent safely",
+        "subtitle": "Nizamuddin to Bihar",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L11-3.jpg",
+        "title": "Face Masks Distribution-",
+        "subtitle": "Rohtak",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/8-2.jpg",
+        "title": "Sanitary Pad Making Project",
+        "subtitle": "Jaitpur",
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/L12-3.jpg",
+        "title": "Health Camp",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/7-2.jpg",
+        "title": "Essential Kit for entire Delhi Police",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/6-2.jpg",
+        "title": "Medical Camp for Slums",
+        "subtitle": "Ajmer",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/5-2.jpg",
+        "title": "Medical Camp with Physicians",
+        "subtitle": "Sadar Bazar- Delhi",
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/4-2.jpg",
+        "title": "Free Rapid & RTPCR Test Camp",
+        "subtitle": "Delhi- Haryana Borders",
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/3-2.jpg",
+        "title": "Vaccination Camp for Sweepers",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L1-3.jpg",
+        "title": "Cancer Treatment",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L2-3.jpg",
+        "title": "Blood Donation",
+        "subtitle": null,
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/L6-3.jpg",
+        "title": "HIV Positive family Help",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L3-3.jpg",
+        "title": "Ambulance",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L4-3.jpg",
+        "title": "Medication",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L5-3.jpg",
+        "title": "Oxygen Concentrators",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/1-2.jpg",
+        "title": "Face Mask Campaign- Roadshow",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L7-3.jpg",
+        "title": null,
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L8-4.jpg",
+        "title": "Oxygen Beds & Hospital Admission",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/2-2.jpg",
+        "title": "Sanitary Pads Distribution",
+        "subtitle": null,
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/L11-4.jpg",
+        "title": "Free Treatment of a 2 Year Baby",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L12-4.jpg",
+        "title": "Psychological Help",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L13-2.jpg",
+        "title": "Face Mask Distribution",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L14-2.jpg",
+        "title": "Crowd Funding for Surgery",
+        "subtitle": null,
+        "location": null
+      },
+
+      {
+        "image": "/assets/img/projectlife/L15-1.jpg",
+        "title": "Sanitary Pads Distribution",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L16-1.jpg",
+        "title": "Women Hygiene Awareness",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/L17-2.jpg",
+        "title": "General Health Checkup Camp",
+        "subtitle": null,
+        "location": null
+      },
+      {
+        "image": "/assets/img/projectlife/9-2.jpg",
+        "title": "Vehicles Sanitization Activity",
+        "subtitle": null,
+        "location": null
+      },
+    ]
+
+    // 2. The function to build the cards
+    const container = document.getElementById('card-container');
+
+    data.forEach(item => {
+      const cardHTML = `
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
                     <div class="card card-fixed bg-transparent">
                         <div class="img-container shadow-sm">
@@ -425,8 +428,9 @@
                     </div>
                 </div>
             `;
-            container.innerHTML += cardHTML;
-        });
-    </script>
+      container.innerHTML += cardHTML;
+    });
+  </script>
 </body>
+
 </html>

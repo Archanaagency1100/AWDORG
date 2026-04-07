@@ -23,25 +23,6 @@
         }
     }
 
-    .print-main-card {
-        max-width: 1200px;
-        margin: -60px auto 40px;
-        background-color: #fff;
-        position: relative;
-        z-index: 10;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        border-radius: 12px;
-        padding: 3rem;
-        overflow: hidden;
-
-        h1 {
-            border-left: 5px solid #ab0303;
-            padding-left: 20px;
-            margin-bottom: 2rem;
-            color: #222;
-            font-weight: 700;
-        }
-    }
 
     // Media Grids (Logos/Brand Vertical)
     .img-vertical {
@@ -102,10 +83,6 @@
     }
 
     @media (max-width: 768px) {
-        .print-main-card {
-            padding: 1.5rem;
-            margin: -40px 15px 30px;
-        }
 
         .img-vertical img {
             width: 110px;

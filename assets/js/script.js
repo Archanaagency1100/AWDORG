@@ -135,5 +135,5 @@ dates.forEach(date => {
 });
 
 // ✅ DEFAULT LOAD
-loadActivity(document.querySelector(".date-item.active").dataset.date);
+loadActivity(document.querySelector(".date-item.active")?.dataset.date);
 

@@ -15,54 +15,6 @@
         justify-content: center;
     }
 
-    .feedme-main-card {
-        max-width: 1200px;
-        margin: -60px auto 40px;
-        background-color: #fff;
-        position: relative;
-        z-index: 10;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        border-radius: 12px;
-        padding: 3rem;
-
-        h1 {
-            border-left: 5px solid #ab0303;
-            padding-left: 20px;
-            margin-bottom: 2rem;
-            color: #222;
-            font-weight: 700;
-            font-size: 2.2rem;
-        }
-
-        h5 {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            font-weight: 400;
-            font-size: 1.15rem;
-        }
-
-        .btn-submit {
-            background-color: #ab0303 !important;
-            color: white !important;
-            padding: 12px 40px;
-            border-radius: 6px;
-            border: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-
-            &:hover {
-                background-color: color.adjust(#ab0303, $lightness: -10%) !important;
-                box-shadow: 0 5px 15px rgba(171, 3, 3, 0.3);
-                transform: translateY(-2px);
-            }
-        }
-    }
-
     // Fixed card styling for dynamic content
     .card-fixed {
         border: none;

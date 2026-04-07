@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentPage = 1;
 
     // Fetch student data
-    fetch("/js/students.json")
+    fetch("/assets/js/students.json")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");

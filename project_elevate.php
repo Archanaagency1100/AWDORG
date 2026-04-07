@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/scss/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
@@ -16,26 +16,36 @@
         <?php include 'includes/header.php'; ?>
         <div class="elevate-hero-section"></div>
 
-        <div class="elevate-main-card">
-            <h1>"Bridging the Gap between Problem and Solution”</h1>
-            
-            <h5>Everyone deserves a shot of redemption. Every life matters & we are committed to help everyone around. One stop solution for all issues related to any sort of paperwork that is required during & post lockdown. Our volunteers are working round the clock to help people resettle in the new normal environment by clearing all obstacles related to administrative matters & its paper work. We helped over 200 people getting the Ration Card/Adhaar Card made.</h5>
+        <div class="main-card">
+            <div class="header-title">
+                <h2>"Bridging the Gap between Problem and Solution”</h2>
 
-            <h5>PROJECTelevate is all about uplifting the soul, we welcome you all here to bring change in atleast one person’s life.</h5>
-            
+                <h5>Everyone deserves a shot of redemption. Every life matters & we are committed to help everyone around.
+                    One stop solution for all issues related to any sort of paperwork that is required during & post
+                    lockdown. Our volunteers are working round the clock to help people resettle in the new normal
+                    environment by clearing all obstacles related to administrative matters & its paper work. We helped over
+                    200 people getting the Ration Card/Adhaar Card made.</h5>
+
+                <h5>PROJECTelevate is all about uplifting the soul, we welcome you all here to bring change in atleast one
+                    person’s life.</h5>
+            </div>
+
             <div class="clearfix">
                 <button type="submit" class="btn btn-submit">How it Works</button>
             </div>
-            
+
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/eH-_P2LcpNg" title="Help Provided to Neha Giri under *Project Elevate*" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                <iframe src="https://www.youtube.com/embed/eH-_P2LcpNg"
+                    title="Help Provided to Neha Giri under *Project Elevate*"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            
+
             <p class="video-caption">Help Provided to Neha Giri for Her Daughter’s Wedding</p>
-            
+
             <div class="row pt-4" id="card-container"></div>
         </div>
-        
+
         <div class="cta-banner py-5 px-4 mb-5">
             <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <h2 class="text-white fw-bold mb-4 mb-md-0">
@@ -48,25 +58,25 @@
         </div>
     </section>
 
-<!-- ------------- Call to Action Strip--------------- -->
+    <!-- ------------- Call to Action Strip--------------- -->
     <section class="cta-strip">
-  <div class="container">
-    <div class="cta-content">
+        <div class="container">
+            <div class="cta-content">
 
-      <div class="cta-text">
-        <h3>Every single penny makes a difference</h3>
-        <p>Your small contribution can bring big change in someone's life.</p>
-      </div>
+                <div class="cta-text">
+                    <h3>Every single penny makes a difference</h3>
+                    <p>Your small contribution can bring big change in someone's life.</p>
+                </div>
 
-      <div class="cta-action">
-        <a href="#" class="btn btn-donate">Donate Now</a>
-      </div>
+                <div class="cta-action">
+                    <a href="#" class="btn btn-donate">Donate Now</a>
+                </div>
 
-    </div>
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
 
-        <?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -104,4 +114,5 @@
         });
     </script>
 </body>
+
 </html>

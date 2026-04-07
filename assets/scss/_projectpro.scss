@@ -15,24 +15,6 @@
         justify-content: center;
     }
 
-    .projectpro-main-card {
-        max-width: 1200px;
-        margin: -60px auto 40px;
-        background-color: #fff;
-        position: relative;
-        z-index: 10;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        border-radius: 12px;
-        padding: 3rem;
-
-        h5 {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 0;
-            font-weight: 400;
-            font-size: 1.15rem;
-        }
-    }
 
     // Fixed card styling for dynamic content
     .card-fixed {

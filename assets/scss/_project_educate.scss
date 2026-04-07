@@ -16,51 +16,6 @@
     justify-content: center;
 }
 
-.pec-main-card {
-    max-width: 1400px;
-    margin: -50px auto 40px;
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding-bottom: 2rem;
-
-    .header-title {
-        border-left: 4px solid #ab0303;
-        padding-left: 15px;
-        margin: 40px 0 20px 0;
-        color: #444;
-        font-weight: 700;
-        font-size: 2.2rem;
-    }
-
-    h5 {
-        color: #555;
-        line-height: 1.6;
-        margin-bottom: 2rem;
-        font-weight: 400;
-        font-size: 1.1rem;
-    }
-
-    .btn-submit {
-        background-color: #ab0303 !important;
-        color: white !important;
-        padding: 12px 50px;
-        border-radius: 6px;
-        border: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-
-        &:hover {
-            background-color: color.adjust(#ab0303, $lightness: -10%) !important;
-            box-shadow: 0 5px 15px rgba(171, 3, 3, 0.3);
-            transform: translateY(-2px);
-        }
-    }
-}
 
 // Main Content Section
 .main-section {

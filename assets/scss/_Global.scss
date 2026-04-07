@@ -1,135 +1,168 @@
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-*{
-    // border: 2px solid rgb(145, 255, 0);
+
+* {
+  // border: 2px solid rgb(145, 255, 0);
 }
+
 h1 {
-    font-size: clamp(1.75rem, 2.5vw, 2.625rem);
+  font-size: clamp(1.75rem, 2.5vw, 2.625rem);
 }
 
 h2 {
-    font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 p {
-    font-size: clamp(0.95rem, 1vw, 1rem);
+  font-size: clamp(0.95rem, 1vw, 1rem);
 }
 
 .main-card {
-    max-width: 80vw;
-    margin: -80px auto 40px;
-    background-color: #fff;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding: 30px 80px;
+  max-width: 80vw;
+  margin: -80px auto 40px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 30px 80px;
 
-    @media (max-width: 992px) {
-        max-width: 90%;
-        padding: 30px 40px;
-    }
+  .btn-submit {
+    background-color: #ab0303 !important;
+    color: white !important;
+    padding: 12px 40px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 
-    @media (max-width: 768px) {
-        margin-top: -50px;
-        padding: 25px;
+    &:hover {
+      background-color: #ab0303, !important;
+      box-shadow: 0 5px 15px rgba(171, 3, 3, 0.3);
+      transform: translateY(-2px);
     }
+  }
 
-    @media (max-width: 576px) {
-        padding: 20px;
-        margin-top: -30px;
-    }
+  @media (max-width: 992px) {
+    max-width: 90%;
+    padding: 30px 40px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: -50px;
+    padding: 25px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px;
+    margin-top: -30px;
+  }
+
 }
 
 .hero-section {
-    height: 600px;
-    // background: url('../img/privacy-policy/privacy-policy.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 600px;
+  // background: url('../img/privacy-policy/privacy-policy.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    .hero-title {
-        font-size: 3rem;
-        font-weight: bold;
-        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-    }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  }
 }
 
 .header-title {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    h2 {
-        border-left: 4px solid #ab0302;
-        padding-left: 15px;
-        text-align: left;
-        font-size: clamp(1.5rem, 2vw, 2rem);
-        text-underline-offset: 8px;
-        margin: 40px 0 20px 0;
-        color: #222;
-        font-weight: 700;
-    }
+  h2 {
+    border-left: 4px solid #ab0302;
+    padding-left: 15px;
+    text-align: left;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    text-underline-offset: 8px;
+    margin: 40px 0 20px 0;
+    color: #222;
+    font-weight: 700;
+  }
+
+  h5 {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1.15rem;
+  }
+
 }
 
 .sub-title {
-    font-size: 1.3rem;
-    color: #000000;
-    margin-bottom: 20px;
-    margin-top: 50px;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 p {
-    line-height: 1.8;
-    font-size: 16px;
-    margin-bottom: 20px;
-    font-weight: 400;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .content-text {
-    text-align: justify;
-    line-height: 1.8;
+  text-align: justify;
+  line-height: 1.8;
 
-    .bullet-points {
-        padding-left: 20px;
-        margin-bottom: 20px;
-        font-weight: 500;
+  .bullet-points {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
 
-        li {
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: 500;
-        }
+    li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 500;
     }
+  }
 }
 
 .hand-drawn-underline {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 8px;
-        background-color: #a30000;
-        mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 2, 50 5 T 100 5" stroke="black" stroke-width="5" fill="none" stroke-linecap="round"/></svg>');
-        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 2, 50 5 T 100 5" stroke="black" stroke-width="5" fill="none" stroke-linecap="round"/></svg>');
-        mask-size: 100% 100%;
-        -webkit-mask-size: 100% 100%;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #a30000;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 2, 50 5 T 100 5" stroke="black" stroke-width="5" fill="none" stroke-linecap="round"/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 2, 50 5 T 100 5" stroke="black" stroke-width="5" fill="none" stroke-linecap="round"/></svg>');
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+  }
 }
+
 // -------CTA Strip Before Footer-------
 
 .cta-strip {
-    display: none;
+  display: none;
   background: linear-gradient(135deg, #ab0302 0%, #1a1a1a 100%);
   padding: 40px 0;
   margin: 20px 0;

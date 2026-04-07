@@ -1,130 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    
-</head>
-<body>
-    <section class="footer">
-        <div class="footer-wrapper">
-            <div class="row  bottom-grid">
-      
+<section class="footer">
+    <div class="footer-wrapper">
+        <div class="row  bottom-grid">
+
             <div class="text-start mt-3 col-sm-12 col-lg-9">
-               <a href="mailto:info@anythingwilldo.org" class="contact-link me-3">
+                <a href="mailto:info@anythingwilldo.org" class="contact-link me-3">
                     <i class="fas fa-envelope"></i> info@anythingwilldo.org
                 </a>
                 <a href="tel:+919811301101" class="contact-link">
                     <i class="fas fa-mobile-alt"></i> +91-98113 01101
                 </a>
             </div>
-       
-  <div class="col-lg-3  col-sm-12 d-flex justify-content-end">
+
+            <div class="col-lg-3  col-sm-12 d-flex justify-content-end">
                 <div class="footer__socials">
                     <a href="https://www.facebook.com/awdorg" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://x.com/awdorg" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/awdorg/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.youtube.com/@awdorg" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.linkedin.com/company/awdorg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div></div>
-           </div>
-    <div class="footer-grid">
-
-        <!-- QUICK LINKS -->
-        <div class="column">
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="/about.html">About us</a></li>
-                <li><a href="../"></a>Our Vision and Mission</li>
-                <li> <a href="../"></a>PROJECTeducate</li>
-                <li><a href="../"> Sponser a Centre</a> </li>
-                <li><a href="../"></a>Sponsor a Kid</li>
-                <li><a href="../"></a>Become a Volunteer</li>
-                <li><a href="../">Blog/</a><a href="../">Newsletter</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-            
-        </div>
-
-      
-        
-                <!-- QR -->
-        <div class="column qr-container">
-            <h2>Donate Now</h2><br>
-            <i>Scan & Donate</i>
-            <div class="qr-card">
-                <img src="..\assets\img\paytm-1-raj7mhkr2r7dff5vfidhv0hudby18ptftk7inlwcbg.jpg" alt="QR">
-                <div>
-                    Awdorg Foundation<br>
-                    <strong>+91 98113 01101</strong>
+                    <a href="https://www.linkedin.com/company/awdorg/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
-           
+        </div>
+        <div class="footer-grid">
+
+            <!-- QUICK LINKS -->
+            <div class="column">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/about.html">About us</a></li>
+                    <li><a href="../"></a>Our Vision and Mission</li>
+                    <li> <a href="../"></a>PROJECTeducate</li>
+                    <li><a href="../"> Sponser a Centre</a> </li>
+                    <li><a href="../"></a>Sponsor a Kid</li>
+                    <li><a href="../"></a>Become a Volunteer</li>
+                    <li><a href="../">Blog/</a><a href="../">Newsletter</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+
+            <!-- QR -->
+            <div class="column qr-container">
+                <h2>Donate Now</h2><br>
+                <i>Scan & Donate</i>
+                <div class="qr-card">
+                    <img src="..\assets\img\paytm-1-raj7mhkr2r7dff5vfidhv0hudby18ptftk7inlwcbg.jpg" alt="QR">
+                    <div>
+                        Awdorg Foundation<br>
+                        <strong>+91 98113 01101</strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- BANK INDIA -->
+            <div class="column bank-info">
+                <h2>Bank Details ( CSR )</h2><br>
+                <i>Donation from Indians Only</i>
+                <div class="detail-row"><strong>Bank:</strong> SBI</div>
+                <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
+                <div class="detail-row"><strong>Branch:</strong> Gurgaon</div>
+                <div class="detail-row"><strong>A/C No:</strong> 39744031467</div>
+                <div class="detail-row"><strong>IFSC:</strong> SBIN0004449</div><br>
+                <p> <i>You Can Donate Through Paypal: info@anythingwilldo.org </i></p>
+
+            </div>
+
+            <!-- BANK FOREIGN -->
+            <div class="column bank-info">
+                <h2>Bank Details ( FCRA)</h2><br>
+                <i>Donation from Foreigners Only</i>
+                <div class="detail-row"><strong>Bank:</strong> SBI</div>
+                <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
+                <div class="detail-row"><strong>A/C No:</strong> 41569179177</div>
+                <div class="detail-row"><strong>IFSC:</strong> SBIN0000691</div>
+                <div class="detail-row"><strong>SWIFT:</strong> SBININBB104</div>
+                <div class="detail-row"><strong>FCRA:</strong> 231662112</div>
+            </div>
+
         </div>
 
 
-        <!-- BANK INDIA -->
-        <div class="column bank-info">
-            <h2>Bank Details ( CSR )</h2><br>
-            <i>Donation from Indians Only</i>
-            <div class="detail-row"><strong>Bank:</strong> SBI</div>
-            <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
-            <div class="detail-row"><strong>Branch:</strong> Gurgaon</div>
-            <div class="detail-row"><strong>A/C No:</strong> 39744031467</div>
-            <div class="detail-row"><strong>IFSC:</strong> SBIN0004449</div><br>
-            <p> <i>You Can Donate Through Paypal: info@anythingwilldo.org </i></p>
-            
+        <div class="bottom-info">
+            <p class="my-1 animate__animated animate__flash animate__infinite animate__slower">(If you are making a
+                payment via UPI, please share your Transaction ID, Name, PAN Number, Email ID, and Phone Number to
+                receive the receipt.)</p>
+            <p>
+                Your donation qualifies for tax exemption under Section 80G of the Income Tax Act, 1961. AWDORG
+                Foundation is a registered non-profit organization with 12A, 80G, and FCRA certifications. Every
+                contribution will be utilized to address on-ground needs in alignment with our organization’s
+                objectives.
+            </p>
         </div>
 
-        <!-- BANK FOREIGN -->
-        <div class="column bank-info">
-            <h2>Bank Details ( FCRA)</h2><br>
-            <i>Donation from Foreigners Only</i>
-            <div class="detail-row"><strong>Bank:</strong> SBI</div>
-            <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
-            <div class="detail-row"><strong>A/C No:</strong> 41569179177</div>
-            <div class="detail-row"><strong>IFSC:</strong> SBIN0000691</div>
-            <div class="detail-row"><strong>SWIFT:</strong> SBININBB104</div>
-            <div class="detail-row"><strong>FCRA:</strong> 231662112</div>
-        </div>
-
-    </div>
-      
-
-            <div class="bottom-info">
-            <p class="my-1 animate__animated animate__flash animate__infinite animate__slower">(If you are making a payment via UPI, please share your Transaction ID, Name, PAN Number, Email ID, and Phone Number to receive the receipt.)</p><p>
-               Your donation qualifies for tax exemption under Section 80G of the Income Tax Act, 1961. AWDORG Foundation is a registered non-profit organization with 12A, 80G, and FCRA certifications. Every contribution will be utilized to address on-ground needs in alignment with our organization’s objectives.
-            </p></div>
-          
-<div class="row w-100 text-centre fw-bold">
+        <div class="row w-100 text-centre fw-bold">
             <div class="col-3"><a href="../assets/pdf/FCRA Registration-Certificate-AWDORG.pdf" target="_blank">
-                FCRA Certificate</a>
+                    FCRA Certificate</a>
             </div>
             <div class="col-3"><a href="../assets/pdf/CSR1-AWDORG.pdf" target="_blank">CSR1 Certificate</a></div>
             <div class="col-3"><a href="../assets/pdf/80G.pdf" target="_blank">80G Certificate</a></div>
             <div class="col-3"><a href="../assets/pdf/12A.pdf" target="_blank">12A Certificate</a></div>
         </div>
-<hr class="w-100 my-1">
-<div class=" text-centre bottom-grid">
-      
+        <hr class="w-100 my-1">
+        <div class=" text-centre bottom-grid">
+
             <div class="copyright ">
                 Copyright © 2026 All rights reserved |
-                <a href="/privacy_policy.html">Privacy Policy</a> | <a href="/terms_conditions.html">Terms & Conditions</a>  | <a href="/cancellation_refund_policy.html">  Cancellation/Refund Policy</a> | Made with ❤️
+                <a href="/privacy_policy.html">Privacy Policy</a> | <a href="/terms_conditions.html">Terms &
+                    Conditions</a> | <a href="/cancellation_refund_policy.html"> Cancellation/Refund Policy</a> | Made
+                with ❤️
                 by Agencyeleven100
             </div>
-          
+
         </div>
     </div>
-</div>
-    </section>   
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+    </div>
+</section>
