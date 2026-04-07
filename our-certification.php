@@ -67,25 +67,25 @@
         title: "FCRA Certificate",
         number: "231662112",
         date: "30/07/2025 - 30/07/2030",
-        link: "assets/certificates/fcra-certificate.pdf"
+        link: "/assets/pdf/FCRA%20Registration-Certificate-AWDORG.pdf"
       },
       {
         title: "CSR1 Certificate",
         number: "CSR00056633",
         date: "No Expiry",
-        link: "assets/certificates/csr1-certificate.pdf"
+        link: "/assets/pdf/CSR1-AWDORG.pdf"
       },
       {
         title: "80G Certificate",
         number: "AATCA8551C23DL02",
         date: "(2027-28) - (2031-32)",
-        link: "assets/certificates/80g-certificate.pdf"
+        link: "/assets/pdf/80G.pdf"
       },
       {
         title: "12A Certificate",
         number: "AATCA8551C23DL02",
         date: "(2027-28) - (2036-37)",
-        link: "assets/certificates/12a-certificate.pdf"
+        link: "assets/pdf/12A.pdf"
       },
       {
         title: "MCA Certificate",
@@ -97,19 +97,19 @@
         title: "MSME Certificate",
         number: "UDYAM-DL-03-0017033",
         date: "26/04/2022 - No Expiry",
-        link: "assets/certificates/msme-certificate.pdf"
+        link: "assets/pdf/msmeAWDORG.PDF"
       },
       {
         title: "10AC Certificate",
         number: "AATCA8551CF2021401",
         date: "28/05/2021 - 2025",
-        link: "assets/certificates/10ac-certificate.pdf"
+        link: "assets/pdf/10ac-certificate.pdf"
       },
       {
         title: "Incorporation Certificate",
         number: "U85300DL2020NPL367989",
         date: "14/08/2020 - No Expiry",
-        link: "assets/certificates/incorporation-certificate.pdf"
+        link: "assets/pdf/CERTIFICATE%20OF%20INCORPORATION-%20AWDORG.pdf"
       }
     ];
 

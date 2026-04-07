@@ -63,7 +63,7 @@
                 <i>Donation from Indians Only</i>
                 <div class="detail-row"><strong>Bank:</strong> SBI</div>
                 <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
-                <div class="detail-row"><strong>Branch:</strong> Gurgaon</div>
+                <div class="detail-row"><strong>Branch:</strong>  Sushant Lok-1, Gurgaon, INDIA</div>
                 <div class="detail-row"><strong>A/C No:</strong> 39744031467</div>
                 <div class="detail-row"><strong>IFSC:</strong> SBIN0004449</div><br>
                 <p> <i>You Can Donate Through Paypal: info@anythingwilldo.org </i></p>
@@ -76,6 +76,7 @@
                 <i>Donation from Foreigners Only</i>
                 <div class="detail-row"><strong>Bank:</strong> SBI</div>
                 <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
+                                <div class="detail-row"><strong>Branch:</strong> Sansad Marg, New Delhi 110001</div>
                 <div class="detail-row"><strong>A/C No:</strong> 41569179177</div>
                 <div class="detail-row"><strong>IFSC:</strong> SBIN0000691</div>
                 <div class="detail-row"><strong>SWIFT:</strong> SBININBB104</div>

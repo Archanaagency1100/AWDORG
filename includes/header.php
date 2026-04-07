@@ -119,9 +119,7 @@
                                         Classes</a></li>
                                 <li><a class="dropdown-item" href="/project-educate/individual-projects.php">Individual
                                         Projects</a></li>
-                                <li><a class="dropdown-item" href="/project-educate/faculties.php">Faculties</a></li>
-                                <li><a class="dropdown-item" href="/project-educate/upcomming-request.php">Upcoming
-                                        Request</a></li>
+                                
                                 <li><a class="dropdown-item" href="/assets/pdf/Project-Educate-Profile-Proposal.pdf"
                                         target="_blank">PEC Catalogue</a></li>
                             </ul>

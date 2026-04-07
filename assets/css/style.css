@@ -1071,13 +1071,12 @@ a {
   background-color: #fff;
   color: #333;
 }
-
-.hero-section {
+.supporters-section .hero-section {
   background: url("../img/supporters/supporters-header-1.webp") center/cover no-repeat;
 }
-
-.supporters {
+.supporters-section .supporters {
   display: flex;
+  gap: 30px;
   flex-direction: column;
   border-radius: 12px;
   overflow: hidden;
@@ -1086,19 +1085,19 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.04);
 }
-.supporters:hover {
+.supporters-section .supporters:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
-.supporters:hover .supporters-card img {
+.supporters-section .supporters:hover .supporters-card img {
   transform: scale(1.05);
 }
-.supporters .supporters-card {
+.supporters-section .supporters .supporters-card {
   position: relative;
   overflow: hidden;
   background: #f8f9fa;
 }
-.supporters .supporters-card img {
+.supporters-section .supporters .supporters-card img {
   width: 100%;
   height: 320px;
   -o-object-fit: cover;
@@ -1108,7 +1107,7 @@ a {
   display: block;
   transition: transform 0.5s ease;
 }
-.supporters .supporters-card::after {
+.supporters-section .supporters .supporters-card::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1118,7 +1117,7 @@ a {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.05), transparent);
   pointer-events: none;
 }
-.supporters .supporters-info {
+.supporters-section .supporters .supporters-info {
   padding: 24px 20px;
   text-align: center;
   background: #fff;
@@ -1127,13 +1126,13 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.supporters .supporters-info h3 {
+.supporters-section .supporters .supporters-info h3 {
   margin: 0 0 8px 0;
   font-size: 1.35rem;
   color: #222;
   font-weight: 700;
 }
-.supporters .supporters-info .role {
+.supporters-section .supporters .supporters-info .role {
   color: #ab0302;
   font-weight: 600;
   font-size: 0.9rem;
@@ -1141,22 +1140,22 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.supporters .supporters-info .desc {
+.supporters-section .supporters .supporters-info .desc {
   font-size: 0.9rem;
   color: #666;
   margin-top: 10px;
 }
-
 @media (max-width: 900px) {
-  .team-grid {
+  .supporters-section .team-grid {
     grid-template-columns: repeat(2, minmax(280px, 1fr));
   }
 }
 @media (max-width: 600px) {
-  .team-grid {
+  .supporters-section .team-grid {
     grid-template-columns: 1fr;
   }
 }
+
 .hero-section .bg-video {
   position: absolute;
   inset: 0;
@@ -1944,27 +1943,24 @@ a {
 .contact-section {
   background: #f9f9f9;
 }
-
-.hero-section {
+.contact-section .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("../img/contactus-now-scaled.jpg") center/cover no-repeat;
 }
 @media (max-width: 768px) {
-  .hero-section {
+  .contact-section .hero-section {
     height: 300px;
   }
 }
 @media (max-width: 576px) {
-  .hero-section {
+  .contact-section .hero-section {
     height: 220px;
   }
 }
-
-.contact-section p {
+.contact-section .contact-section p {
   color: #666;
   font-size: 1.05rem;
 }
-
-.info-item {
+.contact-section .info-item {
   display: flex;
   align-items: flex-start;
   margin-bottom: 18px;
@@ -1974,26 +1970,25 @@ a {
   border: 1px solid #eee;
   transition: 0.3s;
 }
-.info-item:hover {
+.contact-section .info-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
-.info-item i {
+.contact-section .info-item i {
   color: #ab0303;
   font-size: 1.3rem;
   margin-right: 12px;
   margin-top: 3px;
 }
-.info-item div {
+.contact-section .info-item div {
   font-size: 0.95rem;
   color: #666;
 }
-.info-item div strong {
+.contact-section .info-item div strong {
   color: #333;
 }
-
-.btn-volunteer,
-.btn-donate {
+.contact-section .btn-volunteer,
+.contact-section .btn-donate {
   padding: 12px;
   font-weight: 600;
   border-radius: 8px;
@@ -2001,30 +1996,27 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-
-.btn-volunteer {
+.contact-section .btn-volunteer {
   border: 2px solid #ab0303;
   color: #ab0303;
   background: transparent;
 }
-.btn-volunteer:hover {
+.contact-section .btn-volunteer:hover {
   background: #ab0303;
   color: #fff;
   transform: translateY(-2px);
 }
-
-.btn-donate {
+.contact-section .btn-donate {
   background: #ab0303;
   color: #fff;
   border: 2px solid #ab0303;
 }
-.btn-donate:hover {
+.contact-section .btn-donate:hover {
   background: #fff;
   color: #ab0303;
   transform: translateY(-2px);
 }
-
-form {
+.contact-section form {
   background: #fff;
   padding: 30px;
   border-radius: 12px;
@@ -2032,25 +2024,25 @@ form {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.04);
 }
 @media (max-width: 576px) {
-  form {
+  .contact-section form {
     padding: 20px;
   }
 }
-form .form-control {
+.contact-section form .form-control {
   border-radius: 6px;
   padding: 12px 14px;
   border: 1px solid #ddd;
   font-size: 0.95rem;
   transition: 0.3s;
 }
-form .form-control:focus {
+.contact-section form .form-control:focus {
   border-color: #ab0303;
   box-shadow: 0 0 0 0.15rem rgba(171, 3, 3, 0.15);
 }
-form textarea {
+.contact-section form textarea {
   resize: none;
 }
-form .btn-submit {
+.contact-section form .btn-submit {
   background: #ab0303;
   color: #fff;
   padding: 12px 30px;
@@ -2059,18 +2051,17 @@ form .btn-submit {
   font-weight: 600;
   transition: 0.3s;
 }
-form .btn-submit:hover {
+.contact-section form .btn-submit:hover {
   background: rgb(120.8793103448, 2.1206896552, 2.1206896552);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(171, 3, 3, 0.3);
 }
 @media (max-width: 768px) {
-  form .btn-submit {
+  .contact-section form .btn-submit {
     width: 100%;
   }
 }
-
-.benefit-item {
+.contact-section .benefit-item {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -2082,26 +2073,26 @@ form .btn-submit:hover {
   height: 100%;
   transition: 0.3s;
 }
-.benefit-item:hover {
+.contact-section .benefit-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
-.benefit-item i {
+.contact-section .benefit-item i {
   color: #ab0303;
   margin-right: 10px;
   font-size: 1.2rem;
   margin-top: 2px;
 }
-.benefit-item span {
+.contact-section .benefit-item span {
   font-size: 0.95rem;
   color: #666;
 }
 @media (max-width: 768px) {
-  .benefit-item {
+  .contact-section .benefit-item {
     flex-direction: column;
     text-align: center;
   }
-  .benefit-item i {
+  .contact-section .benefit-item i {
     margin-bottom: 8px;
   }
 }
@@ -4588,4 +4579,4 @@ form .btn-submit:hover {
   color: #ff0000;
   font-weight: bold;
   text-decoration: none;
-}
+}/*# sourceMappingURL=style.css.map */
