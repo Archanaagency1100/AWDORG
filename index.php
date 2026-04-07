@@ -17,10 +17,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/img/awd-black-logo.webp" />
 
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
+        integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc=" crossorigin="anonymous"></script>
 </head>
 
 <body class="home">
@@ -518,7 +522,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- <script src="js/include.js"></script> -->
-    <script src="assets/js/header.js"></script>
+    <!-- <script src="assets/js/header.js"></script> -->
     <script>
         const counters = document.querySelectorAll('.impact-item__number');
 
@@ -853,6 +857,7 @@
             renderLogos();
         });
     </script>
+    <script type="text/javascript" src="/assets/slick/slick.min.js"></script>
 </body>
 
 </html>

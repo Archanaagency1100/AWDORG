@@ -52,14 +52,8 @@
             </div>
         </a> -->
 
-        <!-- MOBILE TOGGLER -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <!-- NAV LINKS -->
-        <div class="collapse navbar-collapse" id="mainNav">
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto align-items-lg-centre">
 
                 <li class="nav-item dropdown">
@@ -203,29 +197,35 @@
         <a href="../index.php">
             <img src="/assets/img/awdorg-foundation-logo.png" class="m-logo" alt="Logo"></a>
 
-        <button id="mToggle" class="m-hamburger">
+        <button class="m-hamburger" data-bs-toggle="offcanvas" data-bs-target="#moffcanvasRight"
+            aria-controls="offcanvasRight">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </div>
+</div>
 
-    <!-- OVERLAY -->
-    <div id="mOverlay" class="m-overlay"></div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="moffcanvasRight">
+    <div class="offcanvas-header">
+        <h5 class="text-black">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
 
-    <!-- MENU -->
-    <div class="m-menu" id="mMenu">
-        <a href="/index.php"><b> home</b></a>
+    <div class="offcanvas-body">
 
+        <a href="/index.php"><b>Home</b></a>
 
         <!-- WHO -->
-        <a href="#" class="m-link-toggle">Who we are <i class="fas fa-chevron-down"></i></a>
-        <div class="m-sub">
+        <a data-bs-toggle="collapse" href="#whoMenu" role="button">Who we are</a>
+        <div class="collapse ps-3" id="whoMenu">
+
             <a href="/logo_story.php">Our Logo Story</a>
             <a href="/about.php">About Us</a>
 
-            <a href="#" class="m-link-toggle">Governing Bodies <i class="fas fa-chevron-down"></i></a>
-            <div class="m-sub">
+            <!-- Governing Bodies -->
+            <a data-bs-toggle="collapse" href="#govMenu">Governing Bodies</a>
+            <div class="collapse ps-3" id="govMenu">
                 <a href="/executive_committee.php">Executive Committee</a>
                 <a href="/executive_members.php">Executive Members</a>
             </div>
@@ -237,18 +237,19 @@
         </div>
 
         <!-- HELP -->
-        <a href="#" class="m-link-toggle">How To Help <i class="fas fa-chevron-down"></i></a>
-        <div class="m-sub">
+        <a data-bs-toggle="collapse" href="#helpMenu">How To Help</a>
+        <div class="collapse ps-3" id="helpMenu">
             <a href="https://sos.anythingwilldo.org/campaign">Fundraise With Us</a>
             <a href="https://sos.anythingwilldo.org/campaign/list">Active Campaign</a>
             <a href="https://sos.anythingwilldo.org/campaign/list">Recent Campaign</a>
         </div>
 
         <!-- INITIATIVES -->
-        <a href="#" class="m-link-toggle">Our Initiatives <i class="fas fa-chevron-down"></i></a>
-        <div class="m-sub">
-            <a href="#" class="m-link-toggle">PROJECT educate <i class="fas fa-chevron-down"></i></a>
-            <div class="m-sub">
+        <a data-bs-toggle="collapse" href="#initMenu">Our Initiatives</a>
+        <div class="collapse ps-3" id="initMenu">
+
+            <a data-bs-toggle="collapse" href="#educateMenu">PROJECT educate</a>
+            <div class="collapse ps-3" id="educateMenu">
                 <a href="/project-educate/centres.php">PEC</a>
                 <a href="/project-educate/students.php">Students</a>
                 <a href="/project-educate/master-classes.php">Master Classes</a>
@@ -265,14 +266,15 @@
         </div>
 
         <!-- NEWS -->
-        <a href="#" class="m-link-toggle">News & Stories <i class="fas fa-chevron-down"></i></a>
-        <div class="m-sub">
+        <a data-bs-toggle="collapse" href="#newsMenu">News & Stories</a>
+        <div class="collapse ps-3" id="newsMenu">
+
             <a href="#">Photo Gallery</a>
             <a href="#">Video Gallery</a>
             <a href="#">Appreciation/Credential</a>
 
-            <a href="#" class="m-link-toggle">Media Release <i class="fas fa-chevron-down"></i></a>
-            <div class="m-sub">
+            <a data-bs-toggle="collapse" href="#mediaMenu">Media Release</a>
+            <div class="collapse ps-3" id="mediaMenu">
                 <a href="/media-release/print.php">Print</a>
                 <a href="/media-release/internet.php">Internet</a>
                 <a href="/media-release/tv.php">TV</a>
@@ -281,8 +283,8 @@
         </div>
 
         <!-- RESOURCE -->
-        <a href="#" class="m-link-toggle">Resource <i class="fas fa-chevron-down"></i></a>
-        <div class="m-sub">
+        <a data-bs-toggle="collapse" href="#resourceMenu">Resource</a>
+        <div class="collapse ps-3" id="resourceMenu">
             <a href="/our-certification.php">Our Certificates</a>
             <a href="/">Transparency</a>
             <a href="#">Annual Reports</a>
@@ -292,98 +294,22 @@
             <a href="/">Blog</a>
         </div>
 
-        <!-- CONTACT -->
-        <a href="/contact.php"><b> Contact</b></a>
+        <a href="/contact.php"><b>Contact</b></a>
 
         <!-- CTA -->
-        <div class="m-cta">
-            <a href="/volunteer.php" class="volunteer">Volunteer Now</a>
-            <a href="#" class="donate">Donate Now</a>
+        <div class="mt-3">
+            <a href="/volunteer.php" class="btn btn-primary w-100 mb-2">Volunteer Now</a>
+            <a href="#" class="btn btn-danger w-100">Donate Now</a>
         </div>
 
     </div>
 </div>
+<!-- 
 <script>
-    function initMobileMenu() {
-
-        const mToggle = document.getElementById("mToggle");
-        const mMenu = document.getElementById("mMenu");
-        const mOverlay = document.getElementById("mOverlay");
-
-        // 🛑 Safety check (important)
-        if (!mToggle || !mMenu || !mOverlay) return;
-
-        // ✅ HAMBURGER TOGGLE (WORKING)
-        mToggle.addEventListener("click", () => {
-            mMenu.classList.toggle("active");
-            mOverlay.classList.toggle("active");
-            mToggle.classList.toggle("active");
-        });
-
-        mOverlay.addEventListener("click", () => {
-            mMenu.classList.remove("active");
-            mOverlay.classList.remove("active");
-            mToggle.classList.remove("active");
-        });
-
-        // ✅ DROPDOWN FIXED
-        const toggles = document.querySelectorAll(".m-link-toggle");
-
-        toggles.forEach(item => {
-            item.addEventListener("click", function (e) {
-
-                e.preventDefault();
-                e.stopPropagation(); // 🔥 important
-
-                const currentSub = this.nextElementSibling;
-                if (!currentSub) return;
-
-                const parentSub = this.closest(".m-sub");
-
-                // ✅ CLOSE ONLY SAME LEVEL
-                let siblings;
-                if (parentSub) {
-                    siblings = parentSub.querySelectorAll(":scope > .m-sub");
-                } else {
-                    siblings = document.querySelectorAll(".m-menu > .m-sub");
-                }
-
-                siblings.forEach(sub => {
-                    if (sub !== currentSub) {
-                        sub.style.maxHeight = null;
-                    }
-                });
-
-                // ✅ REMOVE ACTIVE FROM SAME LEVEL
-                let siblingToggles;
-                if (parentSub) {
-                    siblingToggles = parentSub.querySelectorAll(":scope > .m-link-toggle");
-                } else {
-                    siblingToggles = document.querySelectorAll(".m-menu > .m-link-toggle");
-                }
-
-                siblingToggles.forEach(btn => {
-                    if (btn !== this) {
-                        btn.classList.remove("active");
-                    }
-                });
-
-                // ✅ TOGGLE CURRENT
-                this.classList.toggle("active");
-
-                if (currentSub.style.maxHeight) {
-                    currentSub.style.maxHeight = null;
-                } else {
-                    currentSub.style.maxHeight = currentSub.scrollHeight + "px";
-                }
-
-                // 🔥 UPDATE PARENT HEIGHTS (CRITICAL FIX)
-                let parent = this.parentElement.closest(".m-sub");
-                while (parent) {
-                    parent.style.maxHeight = parent.scrollHeight + "px";
-                    parent = parent.parentElement.closest(".m-sub");
-                }
-            });
+    function toggleNavHamburger() {
+        elements = document.querySelectorAll('.m-hamburger');
+        elements.forEach(element => {
+            element.classList.toggle('active');
         });
     }
-</script>
+</script> -->
