@@ -5318,3 +5318,72 @@ a {
     transform: translateY(0);
   }
 }
+.newsletter-page-wrapper .transition-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.newsletter-page-wrapper .transition-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+.newsletter-page-wrapper .newsletter-hero {
+  position: relative;
+  height: 480px;
+  background: url("/assets/img/Activity/Gemini_Generated_Image_otq6aeotq6aeotq6-1024x572.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-page-wrapper .newsletter-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(171, 3, 2, 0.85) 0%, rgba(0, 0, 0, 0.75) 100%);
+  z-index: 1;
+}
+.newsletter-page-wrapper .newsletter-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+.newsletter-page-wrapper .subscribe-section .subscribe-card .form-control {
+  border: 1px solid #dee2e6;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.newsletter-page-wrapper .subscribe-section .subscribe-card .form-control:focus {
+  border-color: #ab0302;
+  box-shadow: 0 0 0 0.25rem rgba(171, 3, 2, 0.25);
+}
+.newsletter-page-wrapper .subscribe-section .subscribe-card .btn-danger {
+  background-color: #ab0302;
+  border-color: #ab0302;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.newsletter-page-wrapper .subscribe-section .subscribe-card .btn-danger:hover {
+  box-shadow: 0 8px 25px rgba(171, 3, 2, 0.4) !important;
+  transform: translateY(-2px);
+}
+.newsletter-page-wrapper .highlights-section .highlight-card .highlight-img {
+  overflow: hidden;
+}
+.newsletter-page-wrapper .highlights-section .highlight-card .highlight-img img {
+  transition: transform 0.5s ease;
+}
+.newsletter-page-wrapper .highlights-section .highlight-card a {
+  transition: color 0.3s;
+}
+.newsletter-page-wrapper .highlights-section .highlight-card a:hover {
+  color: #8b0000 !important;
+}
+.newsletter-page-wrapper .highlights-section .highlight-card:hover .highlight-img img {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
