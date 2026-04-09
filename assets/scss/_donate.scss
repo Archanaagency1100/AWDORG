@@ -1,0 +1,19 @@
+// ============================================
+// Internet Page Styles (Media & Social)
+// ============================================
+@use "sass:color";
+
+.donate-section {
+    background-color: #fcfcfc;
+    color: #333;
+
+    .donate-hero-section {
+        height: 500px;
+        background: url('../img/newspaper/media-headera-bg.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
