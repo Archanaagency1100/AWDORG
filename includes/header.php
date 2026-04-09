@@ -1,4 +1,5 @@
 <!-- TOP BAR -->
+ <div id="header">
 <div class="top-bar sticky-top">
     <div class="container-fluid px-lg-5">
         <div class="top-bar__inner">
@@ -59,14 +60,14 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle align-items-centre gap-1" href="#" id="navWhoWeAre" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Who we are <i class="fas fa-chevron-down dropdown-indicator"></i>
+                        Who We are <i class="fas fa-chevron-down dropdown-indicator"></i>
                     </a>
                     <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navWhoWeAre">
                         <li><a class="dropdown-item" href="/logo_story.php">Our Logo Story</a></li>
                         <li><a class="dropdown-item" href="/about.php">About Us</a></li>
                         <li class="dropdown-submenu dropdown">
                             <a class="dropdown-item dropdown-toggle align-items-centre justify-content-between"
-                                href="/project-educate.php"><span class="me-3">Governing Bodies</span> <i
+                                href="/"><span class="me-3">Management</span> <i
                                     class="fas fa-chevron-right dropdown-indicator"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/executive_committee.php">Executive Committee</a>
@@ -79,13 +80,15 @@
                         <li><a class="dropdown-item" href="/supporters.php">Our Supporters</a></li>
                         <li><a class="dropdown-item" href="/partners.php">Our Partners</a></li>
                         <li><a class="dropdown-item" href="volunteers.php">Our Volunteers</a></li>
+                                                <li><a class="dropdown-item" href="/vision_mission.php"> Our Vision/Mission</a></li>
+
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle align-items-centre gap-1" href="#" id="navHowToHelp"
                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        How To Help <i class="fas fa-chevron-down dropdown-indicator"></i>
+                        How to Help <i class="fas fa-chevron-down dropdown-indicator"></i>
                     </a>
                     <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navHowToHelp">
                         <li><a class="dropdown-item" href="https://sos.anythingwilldo.org/campaign">Fundraise With
@@ -119,9 +122,7 @@
                                         Classes</a></li>
                                 <li><a class="dropdown-item" href="/project-educate/individual-projects.php">Individual
                                         Projects</a></li>
-                                <li><a class="dropdown-item" href="/project-educate/faculties.php">Faculties</a></li>
-                                <li><a class="dropdown-item" href="/project-educate/upcomming-request.php">Upcoming
-                                        Request</a></li>
+                                
                                 <li><a class="dropdown-item" href="/assets/pdf/Project-Educate-Profile-Proposal.pdf"
                                         target="_blank">PEC Catalogue</a></li>
                             </ul>
@@ -150,7 +151,7 @@
                                     class="fas fa-chevron-right dropdown-indicator"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/media-release/print.php">Print</a></li>
-                                <li><a class="dropdown-item" href="/media-release/internet.php">Internet</a></li>
+                                <!--<li><a class="dropdown-item" href="/media-release/internet.php">Internet</a></li>-->
                                 <li><a class="dropdown-item" href="/media-release/tv.php">TV</a></li>
                                 <li><a class="dropdown-item" href="/media-release/radio.php">Radio</a></li>
                             </ul>
@@ -171,7 +172,7 @@
                         <li><a class="dropdown-item" href="#">Audit Reports</a></li>
                         <li><a class="dropdown-item" href="#">Newsletters</a></li>
                         <li><a class="dropdown-item" href="#">Main Catalog</a></li>
-                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="/blog.php">Blog</a></li>
                     </ul>
                 </li>
 
@@ -186,6 +187,7 @@
         </div>
     </div>
 </nav>
+</div>
 
 <!-- Mobile header-------------- -->
 
@@ -217,14 +219,14 @@
         <a href="/index.php"><b>Home</b></a>
 
         <!-- WHO -->
-        <a data-bs-toggle="collapse" href="#whoMenu" role="button">Who we are</a>
+        <a data-bs-toggle="collapse" href="#whoMenu" role="button">Who We Are</a>
         <div class="collapse ps-3" id="whoMenu">
 
             <a href="/logo_story.php">Our Logo Story</a>
             <a href="/about.php">About Us</a>
 
             <!-- Governing Bodies -->
-            <a data-bs-toggle="collapse" href="#govMenu">Governing Bodies</a>
+            <a data-bs-toggle="collapse" href="#govMenu">Management</a>
             <div class="collapse ps-3" id="govMenu">
                 <a href="/executive_committee.php">Executive Committee</a>
                 <a href="/executive_members.php">Executive Members</a>
@@ -234,6 +236,7 @@
             <a href="/supporters.php">Our Supporters</a>
             <a href="/partners.php">Our Partners</a>
             <a href="/volunteers.php">Our Volunteers</a>
+            <a href="/vision_mission.php">Our Vision/mission</a>
         </div>
 
         <!-- HELP -->
@@ -276,7 +279,7 @@
             <a data-bs-toggle="collapse" href="#mediaMenu">Media Release</a>
             <div class="collapse ps-3" id="mediaMenu">
                 <a href="/media-release/print.php">Print</a>
-                <a href="/media-release/internet.php">Internet</a>
+                <!--<a href="/media-release/internet.php">Internet</a>-->
                 <a href="/media-release/tv.php">TV</a>
                 <a href="/media-release/radio.php">Radio</a>
             </div>
@@ -291,7 +294,7 @@
             <a href="/">Audit Reports</a>
             <a href="/">Newsletters</a>
             <a href="/">Main Catalog</a>
-            <a href="/">Blog</a>
+            <a href="/blog.php">Blog</a>
         </div>
 
         <a href="/contact.php"><b>Contact</b></a>

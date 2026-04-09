@@ -1,3 +1,4 @@
+
 <section class="footer">
     <div class="footer-wrapper">
         <div class="row  bottom-grid">
@@ -28,14 +29,14 @@
             <div class="column">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="/about.html">About us</a></li>
-                    <li><a href="../"></a>Our Vision and Mission</li>
-                    <li> <a href="../"></a>PROJECTeducate</li>
-                    <li><a href="../"> Sponser a Centre</a> </li>
-                    <li><a href="../"></a>Sponsor a Kid</li>
-                    <li><a href="../"></a>Become a Volunteer</li>
-                    <li><a href="../">Blog/</a><a href="../">Newsletter</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="/about.php">About us</a></li>
+                    <li><a href="/vision_mission.php">Our Vision and Mission</a></li>
+                    <li> <a href="/project-educate.php">PROJECTeducate</a></li>
+                    <li><a href="/sponsor-centre.php">Sponsor a Centre</a></li>
+                    <li><a href="/sponsor-kid.php">Sponsor a Kid</a></li>
+                    <li><a href="/volunteer.php">Become a Volunteer</a></li>
+                    <li><a href="/blog.php">Blog</a> | <a href="/newsletter.php">Newsletter</a></li>
+                    <li><a href="/contact.php">Contact</a></li>
                 </ul>
 
             </div>
@@ -63,7 +64,7 @@
                 <i>Donation from Indians Only</i>
                 <div class="detail-row"><strong>Bank:</strong> SBI</div>
                 <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
-                <div class="detail-row"><strong>Branch:</strong> Gurgaon</div>
+                <div class="detail-row"><strong>Branch:</strong>  Sushant Lok-1, Gurgaon, INDIA</div>
                 <div class="detail-row"><strong>A/C No:</strong> 39744031467</div>
                 <div class="detail-row"><strong>IFSC:</strong> SBIN0004449</div><br>
                 <p> <i>You Can Donate Through Paypal: info@anythingwilldo.org </i></p>
@@ -76,6 +77,7 @@
                 <i>Donation from Foreigners Only</i>
                 <div class="detail-row"><strong>Bank:</strong> SBI</div>
                 <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
+                                <div class="detail-row"><strong>Branch:</strong> Sansad Marg, New Delhi 110001</div>
                 <div class="detail-row"><strong>A/C No:</strong> 41569179177</div>
                 <div class="detail-row"><strong>IFSC:</strong> SBIN0000691</div>
                 <div class="detail-row"><strong>SWIFT:</strong> SBININBB104</div>
@@ -110,8 +112,8 @@
 
             <div class="copyright ">
                 Copyright © 2026 All rights reserved |
-                <a href="/privacy_policy.html">Privacy Policy</a> | <a href="/terms_conditions.html">Terms &
-                    Conditions</a> | <a href="/cancellation_refund_policy.html"> Cancellation/Refund Policy</a> | Made
+                <a href="/privacy_policy.php">Privacy Policy</a> | <a href="/terms_conditions.php">Terms &
+                    Conditions</a> | <a href="/cancellation_refund_policy.php"> Cancellation/Refund Policy</a> | Made
                 with ❤️
                 by Agencyeleven100
             </div>

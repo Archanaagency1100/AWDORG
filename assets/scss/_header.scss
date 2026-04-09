@@ -5,11 +5,18 @@
 
 // ── Top Bar ──────────────────────────────
 #header {
-  position: fixed;
+ position: sticky;
+  top: 0;
+  padding-top: 0px;
+  z-index: $z-fixed;
   width: 100%;
-  z-index: 99;
+  // z-index: 99;
 
 }
+// .nav-wrapper {
+//   position: fixed;
+//   width: 100%;
+// }
 
 // .m-header {
 //   display: block;

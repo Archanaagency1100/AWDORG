@@ -1,7 +1,7 @@
 <?php
 // volunteer.php
-require_once 'config/database.php'; // Commented out to prevent errors if not present
-require_once 'includes/mail.php'; // Commented out to prevent errors if not present
+require_once 'admin/config/database.php'; // Commented out to prevent errors if not present
+require_once 'admin/includes/mail.php'; // Commented out to prevent errors if not present
 
 $message = '';
 $error = '';
@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/scss/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
         .volunteer-main-card {
@@ -287,14 +287,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Your browser does not support the video tag.
             </video>
             <div class="hero-text-overlay pt-5">
-                <h1 class="mt-5">Become a Volunteer</h1>
+                <h1 class="">Become a Volunteer</h1>
                 <p class="lead mt-2">Join AWDORG's mission to make a difference</p>
             </div>
         </div>
 
-        <div class="volunteer-main-card">
-            <div class="container pt-5 pb-5" style="max-width: 900px;">
-                <div class="premium-form-card p-4 p-md-5">
+        <div class="main-card">
+            <div >
+                <div class="premium-form-card-x mt-4 ">
 
                     <?php if ($message): ?>
                         <div class="alert alert-success text-center pb-4 mb-4" style="border-radius: 12px;">
@@ -530,7 +530,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
 
                             <!-- Google reCAPTCHA widget -->
-                            <div class="mb-5 d-flex justify-content-center">
+                            <div class="mb-5 d-flex justify-content-center d-none">
                                 <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
                             </div>
 

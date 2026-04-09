@@ -53,9 +53,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/include.js"></script>
-    <script src="js/header.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- <script src="js/include.js"></script>
+    <script src="js/header.js"></script> -->
     <script>
         // 1. Your data - Just add more objects here!
         const masterclasses = [
@@ -110,6 +110,16 @@
                 "profileDesignation": "Radio City"
             },
             {
+                "image": "/assets/img/supporters/22.png",
+                "profileTitle": "Rj Simran K Sethi",
+                "profileDesignation": "BIG FM"
+            },
+            {
+                "image": "/assets/img/supporters/1.png",
+                "profileTitle": "Rj Nitin",
+                "profileDesignation": "BIG FM"
+            },
+            {
                 "image": "/assets/img/supporters/16.png",
                 "profileTitle": "Shibani Kashyap",
                 "profileDesignation": "Mumbai"
@@ -135,27 +145,14 @@
                 "profileTitle": "Dr. Nilay Nirupam",
                 "profileDesignation": "UAE"
             },
-            {
-                "image": "/assets/img/supporters/26.png",
-                "profileTitle": "Jasvinder Sohal",
-                "profileDesignation": "Canada"
-            },
+           
             {
                 "image": "/assets/img/supporters/25.png",
                 "profileTitle": "Ajaya Gummadi",
                 "profileDesignation": "USA"
             },
-            {
-                "image": "/assets/img/supporters/24.png",
-                "profileTitle": "Vipul Pandhi",
-                "profileDesignation": "INDIA"
-            },
+          
 
-            {
-                "image": "/assets/img/supporters/22.png",
-                "profileTitle": "Rj Simran K Sethi",
-                "profileDesignation": "BIG FM"
-            },
             {
                 "image": "/assets/img/supporters/21.png",
                 "profileTitle": "Shara Ashraf",
@@ -202,11 +199,7 @@
                 "profileTitle": "Rudrani Chettri",
                 "profileDesignation": "Transgender Activist"
             },
-            {
-                "image": "/assets/img/supporters/7.png",
-                "profileTitle": "Sanjeev Sarna",
-                "profileDesignation": "New Delhi"
-            },
+            
             {
                 "image": "/assets/img/supporters/6.png",
                 "profileTitle": "Mani Ratan Singh",
@@ -221,11 +214,6 @@
                 "image": "/assets/img/supporters/2.png",
                 "profileTitle": "Priyal Bhardwaj",
                 "profileDesignation": "New Delhi"
-            },
-            {
-                "image": "/assets/img/supporters/1.png",
-                "profileTitle": "Rj Nitin",
-                "profileDesignation": "BIG FM"
             }
         ];
 
@@ -234,7 +222,7 @@
 
         masterclasses.forEach(item => {
             const cardHTML = `
-            <div class="supporters col-sm-6 col-md-4 col-xxl-3 p-0">
+            <div class="supporters col-sm-6 col-md-4 col-xxl-3 p-2">
                 <div class="supporters-card p-2">
                     <img class="img-fluid" src="${item.image}">
                 </div>

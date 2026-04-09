@@ -27,7 +27,8 @@
                         are willing to teach or learn. Each one of us can educate so many around us; we can either teach
                         children or help them get an education.</h5>
                     <div class="clearfix">
-                        <button type="submit" class="btn btn-submit">How it Works</button>
+                                               <a href="/how-it-works/project-educate.php" class="btn btn-submit">How it Works</a>
+
                     </div>
                 </div>
 
