@@ -163,7 +163,8 @@
                                     <li><a class="dropdown-item" href="/media-release/radio.php">Radio</a></li>
                                 </ul>
                             </li>
-                            <li><a class="dropdown-item" href="#">Appreciation / Credential</a></li>
+                            <li><a class="dropdown-item" href="/appreciation-credential.php">Appreciation /
+                                    Credential</a></li>
                         </ul>
                     </li>
 
@@ -281,7 +282,7 @@
 
             <a href="#">Photo Gallery</a>
             <a href="#">Video Gallery</a>
-            <a href="#">Appreciation/Credential</a>
+            <a href="/appreciation-credential.php">Appreciation/Credential</a>
 
             <a data-bs-toggle="collapse" href="#mediaMenu">Media Release</a>
             <div class="collapse ps-3" id="mediaMenu">

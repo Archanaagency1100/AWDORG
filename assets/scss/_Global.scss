@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 body {
   margin: 0;
   padding: 0;
@@ -237,4 +239,74 @@ p {
       font-size: 20px;
     }
   }
+}
+
+
+
+
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      background-color: #20b954;
+      color: white;
+    }
+  }
+
+  &:hover .whatsapp-popup {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .whatsapp-popup {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: white;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+  }
+
+
+}
+
+/* Popup message */
+
+.donate-sidebar {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: right bottom;
+  background-color: $color-primary-bg;
+  color: $color-white;
+  padding: $spacing-sm 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: $radius-lg $radius-lg 0 0;
+  cursor: pointer;
+  z-index: $z-fixed;
 }

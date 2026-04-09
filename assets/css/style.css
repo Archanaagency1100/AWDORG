@@ -211,6 +211,66 @@ p {
     font-size: 20px;
   }
 }
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.whatsapp-container .whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.whatsapp-container .whatsapp-btn:hover {
+  background-color: #20b954;
+  color: white;
+}
+.whatsapp-container:hover .whatsapp-popup {
+  opacity: 1;
+  transform: translateY(0);
+}
+.whatsapp-container .whatsapp-popup {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: white;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+}
+
+/* Popup message */
+.donate-sidebar {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: right bottom;
+  background-color: #b30000;
+  color: #ffffff;
+  padding: 10px 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 @media (max-width: 1200px) {
   .section-title {
     font-size: 3rem;
@@ -5030,6 +5090,140 @@ a {
   from {
     opacity: 0;
     transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.appreciation-page-wrapper .tracking-widest {
+  letter-spacing: 3px;
+}
+.appreciation-page-wrapper .appreciation-hero {
+  position: relative;
+  height: 450px;
+  background: url("/assets/img/Activity/blanket-distribution-1-.webp") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appreciation-page-wrapper .appreciation-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(171, 3, 2, 0.8), rgba(0, 0, 0, 0.85));
+  z-index: 1;
+}
+.appreciation-page-wrapper .appreciation-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card .cred-img-wrapper {
+  overflow: hidden;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card .cred-img-wrapper img {
+  transition: transform 0.4s ease;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card .cred-img-wrapper .cred-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(171, 3, 2, 0.8);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card .cred-img-wrapper .cred-overlay i {
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card:hover .cred-img-wrapper img {
+  transform: scale(1.05);
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card:hover .cred-img-wrapper .cred-overlay {
+  opacity: 1;
+}
+.appreciation-page-wrapper .credential-gallery-section .cred-card:hover .cred-img-wrapper .cred-overlay i {
+  transform: scale(1);
+}
+.appreciation-page-wrapper .testimonials-section .testimonial-card {
+  transition: transform 0.3s ease;
+}
+.appreciation-page-wrapper .testimonials-section .testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.credential-lightbox {
+  background: rgba(0, 0, 0, 0.96);
+  backdrop-filter: blur(8px);
+}
+.credential-lightbox .modal-content {
+  height: 100%;
+}
+.credential-lightbox .modal-img {
+  max-height: 75vh;
+  max-width: 90vw;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+.credential-lightbox .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.credential-lightbox .nav-btn:hover {
+  background: #ab0302;
+  border-color: #ab0302;
+  color: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+.credential-lightbox .nav-btn.prev-btn {
+  left: 4%;
+}
+.credential-lightbox .nav-btn.next-btn {
+  right: 4%;
+}
+@media (max-width: 768px) {
+  .credential-lightbox .nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .credential-lightbox .nav-btn.prev-btn {
+    left: 10px;
+  }
+  .credential-lightbox .nav-btn.next-btn {
+    right: 10px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;

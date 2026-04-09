@@ -1,4 +1,19 @@
+<div class="whatsapp-container">
 
+    <!-- Popup Message -->
+    <div class="whatsapp-popup">
+        💬 Chat with us on WhatsApp!
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send/?phone=919811301101&text=This+is+Karmanya%2C+How+can+i+help+you%3F&type=phone_number&app_absent=0"
+        target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</div>
+<a href="https://razorpay.com/payment-button/pl_JP6l5x2NnbnlmP/view/?utm_source=payment_button&utm_medium=button&utm_campaign=payment_button"
+    target="_blank" class="donate-sidebar">DONATE NOW</a>
 <section class="footer">
     <div class="footer-wrapper">
         <div class="row  bottom-grid">
@@ -64,7 +79,7 @@
                 <i>Donation from Indians Only</i>
                 <div class="detail-row"><strong>Bank:</strong> SBI</div>
                 <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
-                <div class="detail-row"><strong>Branch:</strong>  Sushant Lok-1, Gurgaon, INDIA</div>
+                <div class="detail-row"><strong>Branch:</strong> Sushant Lok-1, Gurgaon, INDIA</div>
                 <div class="detail-row"><strong>A/C No:</strong> 39744031467</div>
                 <div class="detail-row"><strong>IFSC:</strong> SBIN0004449</div><br>
                 <p> <i>You Can Donate Through Paypal: info@anythingwilldo.org </i></p>
@@ -77,7 +92,7 @@
                 <i>Donation from Foreigners Only</i>
                 <div class="detail-row"><strong>Bank:</strong> SBI</div>
                 <div class="detail-row"><strong>A/C Name:</strong> AWDORG FOUNDATION</div>
-                                <div class="detail-row"><strong>Branch:</strong> Sansad Marg, New Delhi 110001</div>
+                <div class="detail-row"><strong>Branch:</strong> Sansad Marg, New Delhi 110001</div>
                 <div class="detail-row"><strong>A/C No:</strong> 41569179177</div>
                 <div class="detail-row"><strong>IFSC:</strong> SBIN0000691</div>
                 <div class="detail-row"><strong>SWIFT:</strong> SBININBB104</div>

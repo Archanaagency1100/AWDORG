@@ -32,8 +32,7 @@
     <div id="mobile-header"></div> -->
     <!-- <div id="header"></div> -->
     <?php include 'includes/header.php'; ?>
-    
-     <a href="https://razorpay.com/payment-button/pl_JP6l5x2NnbnlmP/view/?utm_source=payment_button&utm_medium=button&utm_campaign=payment_button" target="_blank" class="donate-sidebar">DONATE NOW</a>
+
     <!----- hero-section ------>
     <section class="hero-section">
         <video autoplay muted loop playsinline class="hero-video">
@@ -63,8 +62,10 @@
                         require grand actions, but a willingness to help in any way possible. Guided by this philosophy,
                         we support education, community development, disaster relief and healthcare support, working as
                         an NGO in India through compassion, transparency, and collective action, working as an NGO in
-                        India through compassion, transparency, and collective action.<br> With a network of <strong>550+
-                            volunteers</strong> &  <strong> 52 centres</strong>, AWDORG Foundation continues to empower underprivileged communities and
+                        India through compassion, transparency, and collective action.<br> With a network of
+                        <strong>550+
+                            volunteers</strong> & <strong> 52 centres</strong>, AWDORG Foundation continues to empower
+                        underprivileged communities and
                         create opportunities for a more inclusive future.
 
                         <!--
@@ -310,8 +311,7 @@
 
 
     <section class="course-section py-5" id="new-course">
-        <div class="text-center"
-            style="margin-bottom: 20px; background-color: #ab0302; padding: 20px;">
+        <div class="text-center" style="margin-bottom: 20px; background-color: #ab0302; padding: 20px;">
             <p class="text-white fw-bold fs-2">New Course Added !</p>
             <p class="text-white">Now Introducing a Free English Language Course.</p>
         </div>
@@ -354,7 +354,8 @@
                         </div>
 
                         <div class="course-section__cta">
-                            <a href="/admission.php" disabled class="btn btn-primary d-inline-flex align-items-center enroll-btn-modern">
+                            <a href="/admission.php" disabled
+                                class="btn btn-primary d-inline-flex align-items-center enroll-btn-modern">
                                 <i class="fas fa-graduation-cap me-2"></i>
                                 <span>Coming Soon — Pre-register yourself</span>
                             </a>
@@ -409,7 +410,7 @@
                         <h3>Project Educate Centre - Kalkaji</h3>
                         <p>Raghunath Mandir, Kalkaji,
 
- New Delhi
+                            New Delhi
                         </p>
                     </div>
                 </div>
@@ -420,7 +421,7 @@
                         <h3>Project Educate Centre -Gurugram </h3>
                         <p>Micro School, Village Ghasola, Near Community center, Sector-49
 
-Gurgaon</p>
+                            Gurgaon</p>
                     </div>
                 </div>
 
@@ -428,10 +429,10 @@ Gurgaon</p>
                     <img src="assets/img/pec/chanakyapuricenter.jpg" alt="Certification">
                     <div class="edu-gallery__info">
                         <h3>Project Educate Centre - Chanakyapuri
-</h3>
+                        </h3>
                         <p>Chanakyapuri Police Station, Teen Murti Marg,
 
-New Delhi</p>
+                            New Delhi</p>
                     </div>
                 </div>
 
