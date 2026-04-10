@@ -28,14 +28,14 @@
             <div class="column">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="/about.html">About us</a></li>
-                    <li><a href="../"></a>Our Vision and Mission</li>
-                    <li> <a href="../"></a>PROJECTeducate</li>
-                    <li><a href="../"> Sponser a Centre</a> </li>
-                    <li><a href="../"></a>Sponsor a Kid</li>
-                    <li><a href="../"></a>Become a Volunteer</li>
-                    <li><a href="../">Blog/</a><a href="../">Newsletter</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="/about.php">About us</a></li>
+                    <li><a href="/vision_mission.php">Our Vision and Mission</a></li>
+                    <li> <a href="/project-educate.php">PROJECTeducate</a></li>
+                    <li><a href="/sponsor-centre.php">Sponsor a Centre</a></li>
+                    <li><a href="/sponsor-kid.php">Sponsor a Kid</a></li>
+                    <li><a href="/volunteer.php">Become a Volunteer</a></li>
+                    <li><a href="/blog.php">Blog</a> | <a href="/newsletter.php">Newsletter</a></li>
+                    <li><a href="/contact.php">Contact</a></li>
                 </ul>
 
             </div>
@@ -47,7 +47,7 @@
                 <h2>Donate Now</h2><br>
                 <i>Scan & Donate</i>
                 <div class="qr-card">
-                    <img src="..\assets\img\paytm-1-raj7mhkr2r7dff5vfidhv0hudby18ptftk7inlwcbg.jpg" alt="QR">
+                    <img src="\assets\img\paytm-1-raj7mhkr2r7dff5vfidhv0hudby18ptftk7inlwcbg.jpg" alt="QR">
                     <div>
                         Awdorg Foundation<br>
                         <strong>+91 98113 01101</strong>
@@ -99,20 +99,20 @@
         </div>
 
         <div class="row w-100 text-centre fw-bold">
-            <div class="col-3"><a href="../assets/pdf/FCRA Registration-Certificate-AWDORG.pdf" target="_blank">
+            <div class="col-3"><a href="/assets/pdf/FCRA Registration-Certificate-AWDORG.pdf" target="_blank">
                     FCRA Certificate</a>
             </div>
-            <div class="col-3"><a href="../assets/pdf/CSR1-AWDORG.pdf" target="_blank">CSR1 Certificate</a></div>
-            <div class="col-3"><a href="../assets/pdf/80G.pdf" target="_blank">80G Certificate</a></div>
-            <div class="col-3"><a href="../assets/pdf/12A.pdf" target="_blank">12A Certificate</a></div>
+            <div class="col-3"><a href="/assets/pdf/CSR1-AWDORG.pdf" target="_blank">CSR1 Certificate</a></div>
+            <div class="col-3"><a href="/assets/pdf/80G.pdf" target="_blank">80G Certificate</a></div>
+            <div class="col-3"><a href="/assets/pdf/12A.pdf" target="_blank">12A Certificate</a></div>
         </div>
         <hr class="w-100 my-1">
         <div class=" text-centre bottom-grid">
 
             <div class="copyright ">
                 Copyright © 2026 All rights reserved |
-                <a href="/privacy_policy.html">Privacy Policy</a> | <a href="/terms_conditions.html">Terms &
-                    Conditions</a> | <a href="/cancellation_refund_policy.html"> Cancellation/Refund Policy</a> | Made
+                <a href="/privacy_policy.php">Privacy Policy</a> | <a href="/terms_conditions.php">Terms &
+                    Conditions</a> | <a href="/cancellation_refund_policy.php"> Cancellation/Refund Policy</a> | Made
                 with ❤️
                 by Agencyeleven100
             </div>

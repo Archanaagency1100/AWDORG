@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWDORG Foundation — Serving Humanity Through Compassion & Action</title>
+    <title>AWDORG Foundation — Non profit organization in Delhi NCR</title>
     <meta name="description"
         content="Anything Will Do (AWDORG) is a registered non-profit in India empowering underprivileged communities through free education, digital training, and volunteer-driven impact across 50+ villages." />
     <meta name="keywords"
@@ -56,13 +56,13 @@
 
                     <p class="about-card__desc">
                         AWDORG Foundation is a registered non-profit organization in India, founded in 2020 by
-                        <strong>Charanjeet Dhiman</strong> and <strong>Deeksha Sati</strong>.The name AWDORG is derived
+                        <strong>Charanjeet Dhiman</strong> & <strong>Deeksha Sati</strong>.The name AWDORG is derived
                         from the foundation’s core philosophy—Anything Will Do—a belief that meaningful change doesn’t
                         require grand actions, but a willingness to help in any way possible. Guided by this philosophy,
                         we support education, community development, disaster relief and healthcare support, working as
                         an NGO in India through compassion, transparency, and collective action, working as an NGO in
-                        India through compassion, transparency, and collective action. With a network of <strong>550+
-                            volunteers</strong>, AWDORG Foundation continues to empower underprivileged communities and
+                        India through compassion, transparency, and collective action.<br> With a network of <strong>550+
+                            volunteers</strong> &  <strong> 52 centres</strong>, AWDORG Foundation continues to empower underprivileged communities and
                         create opportunities for a more inclusive future.
 
                         <!--
@@ -99,7 +99,7 @@
         <div class="container">
             <div class="campaign-section__header">
                 <p class="campaign-section__label">Make a Difference</p>
-                <h2 class="campaign-section__title">Active Campaigns</h2>
+                <h2 class="campaign-section__title">Support the Cause</h2>
                 <p class="campaign-section__subtitle">Every contribution counts. Support a cause close to your heart.
                 </p>
             </div>
@@ -309,13 +309,13 @@
     <a href="/admission.php" target="_blank" class="donate-sidebar">FOR STUDENTS</a>
 
     <section class="course-section py-5" id="new-course">
+        <div class="text-center"
+            style="margin-bottom: 20px; background-color: #ab0302; padding: 20px;">
+            <p class="text-white fw-bold fs-2">New Course Added !</p>
+            <p class="text-white">Now Introducing a Free English Language Course.</p>
+        </div>
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="text-center"
-                    style="margin-bottom: 20px; background-color: #ab0302; padding: 20px; border-radius: 10px;">
-                    <p class="text-white fw-bold fs-2">New Course Added !</p>
-                    <p class="text-white">Now Introducing a Free English Language Course.</p>
-                </div>
                 <!-- Text Content -->
                 <div class="col-lg-7 order-2 order-lg-1">
                     <div class="course-section__content">
@@ -355,10 +355,10 @@
                         <div class="course-section__cta">
                             <a disabled class="btn btn-primary d-inline-flex align-items-center enroll-btn-modern">
                                 <i class="fas fa-graduation-cap me-2"></i>
-                                <span>Coming Soon — It's Free</span>
+                                <span>Coming Soon — Pre-register yourself</span>
                             </a>
                             <p class="small text-muted mt-3 fst-italic">
-                                "Frame Your Future with us."
+                                "It's Free- Frame Your Future with us."
                             </p>
                         </div>
                     </div>
@@ -405,8 +405,10 @@
                 <div class="edu-gallery__item">
                     <img src="assets/img/pec/PECkalkaji-certification5.jpg" alt="Students Group">
                     <div class="edu-gallery__info">
-                        <h3>Our Students</h3>
-                        <p>Project Educate is empowering bright young minds to build a better future.
+                        <h3>Project Educate Centre - Kalkaji</h3>
+                        <p>Raghunath Mandir, Kalkaji,
+
+ New Delhi
                         </p>
                     </div>
                 </div>
@@ -414,16 +416,21 @@
                 <div class="edu-gallery__item">
                     <img src="assets/img/pec/gurugram.jpg" alt="Computer Lab">
                     <div class="edu-gallery__info">
-                        <h3>Computer Lab</h3>
-                        <p>A digital learning center powered by modern equipment.</p>
+                        <h3>Project Educate Centre -Gurugram </h3>
+                        <p>Micro School, Village Ghasola, Near Community center, Sector-49
+
+Gurgaon</p>
                     </div>
                 </div>
 
                 <div class="edu-gallery__item">
                     <img src="assets/img/pec/chanakyapuricenter.jpg" alt="Certification">
                     <div class="edu-gallery__info">
-                        <h3>Certification</h3>
-                        <p>Students receive certificates upon course completion.</p>
+                        <h3>Project Educate Centre - Chanakyapuri
+</h3>
+                        <p>Chanakyapuri Police Station, Teen Murti Marg,
+
+New Delhi</p>
                     </div>
                 </div>
 
@@ -436,10 +443,10 @@
                 <a href="/admission.php" class="btn btn-primary edu-centers-section__btn me-md-3 mb-3 mb-md-0">
                     <i class="fas fa-user-plus me-2"></i> Take Admission
                 </a>
-                <a href="/project-educate/centers.php" class="btn btn-outline-dark edu-centers-section__btn">
+                <a href="/project-educate/centres.php" class="btn btn-outline-dark edu-centers-section__btn">
                     <i class="fas fa-map-marker-alt me-2"></i> View All Centres
                 </a>
-            </div>
+            </div>  
         </div>
     </section>
 

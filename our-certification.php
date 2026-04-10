@@ -85,31 +85,31 @@
         title: "12A Certificate",
         number: "AATCA8551C23DL02",
         date: "(2027-28) - (2036-37)",
-        link: "assets/pdf/12A.pdf"
+        link: "/assets/pdf/12A.pdf"
       },
       {
         title: "MCA Certificate",
         number: "367989",
         date: "30/09/2022 - No Expiry",
-        link: "assets/certificates/mca-certificate.pdf"
+        link: "/assets/pdf/Ministry%20Of%20Corporate%20Affairs%20-%20MCA%20Services.pdf"
       },
       {
         title: "MSME Certificate",
         number: "UDYAM-DL-03-0017033",
         date: "26/04/2022 - No Expiry",
-        link: "assets/pdf/msmeAWDORG.PDF"
+        link: "/assets/pdf/msmeAWDORG.PDF"
       },
       {
         title: "10AC Certificate",
         number: "AATCA8551CF2021401",
         date: "28/05/2021 - 2025",
-        link: "assets/pdf/10ac-certificate.pdf"
+        link: "/assets/pdf/10AC%20Form.pdf"
       },
       {
         title: "Incorporation Certificate",
         number: "U85300DL2020NPL367989",
         date: "14/08/2020 - No Expiry",
-        link: "assets/pdf/CERTIFICATE%20OF%20INCORPORATION-%20AWDORG.pdf"
+        link: "/assets/pdf/CERTIFICATE%20OF%20INCORPORATION-%20AWDORG.pdf"
       }
     ];
 

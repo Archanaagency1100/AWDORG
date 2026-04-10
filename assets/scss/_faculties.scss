@@ -9,122 +9,68 @@
 
 .hero-section {
     // height: 500px;
-    background: url('../img/faculties/faculties_banner.jpg') center/cover no-repeat;
+    background: url('/assets/img/faculties/faculties_banner.jpg') center/cover no-repeat;
     // display: flex;
     // align-items: center;
     // justify-content: center;
 }
 
-// .faculties-main-card {
-//     max-width: 1400px;
-//     margin: -50px auto 40px;
-//     background-color: #fff;
-//     position: relative;
-//     z-index: 10;
-//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-//     border-radius: 12px;
-//     padding-bottom: 2rem;
+// MEMBER CARD
+.member-card {
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
 
-//     .header-title {
-//         border-left: 4px solid #b30000;
-//         padding-left: 15px;
-//         margin: 40px 0 20px;
-//         color: #444;
-//         font-weight: 700;
-//         font-size: 2rem;
+    img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        object-position: top center;
+        display: block;
+        transition: transform 0.5s ease;
+    }
 
-//         h2 {
-//             font-size: 24px;
-//             // text-decoration: underline;
-//             text-underline-offset: 8px;
-//             margin: 0;
-//             color: #222;
-//         }
-//     }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.05), transparent);
+        pointer-events: none;
+    }
+}
 
-    // .team-grid {
-    //     display: grid;
-    //     grid-template-columns: repeat(3, minmax(280px, 1fr));
-    //     gap: 30px;
-    //     max-width: 1200px;
-    //     margin: 0 auto 40px;
-    //     padding: 0 1rem;
+// MEMBER INFO
+.member-info {
+    padding: 24px 20px;
+    text-align: center;
+    background: #fff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-        // .member {
-        //     display: flex;
-        //     flex-direction: column;
-        //     border-radius: 12px;
-        //     overflow: hidden;
-        //     background: #fff;
-        //     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        //     transition: transform 0.3s ease, box-shadow 0.3s ease;
-        //     border: 1px solid rgba(0, 0, 0, 0.04);
+    h3 {
+        margin: 0 0 8px 0;
+        font-size: 1.35rem;
+        color: #222;
+        font-weight: 700;
+    }
 
-        //     &:hover {
-        //         transform: translateY(-8px);
-        //         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    .role {
+        color: #ab0302;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 
-        //         .member-card img {
-        //             transform: scale(1.05);
-        //         }
-        //     }
-        
-
-        .member-card {
-            position: relative;
-            overflow: hidden;
-            background: #f8f9fa;
-
-            img {
-                width: 100%;
-                height: 320px;
-                object-fit: cover;
-                object-position: top center;
-                display: block;
-                transition: transform 0.5s ease;
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 30%;
-                background: linear-gradient(to top, rgba(0, 0, 0, 0.05), transparent);
-                pointer-events: none;
-            }
-        }
-
-        .member-info {
-            padding: 24px 20px;
-            text-align: center;
-            background: #fff;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h3 {
-                margin: 0 0 8px 0;
-                font-size: 1.35rem;
-                color: #222;
-                font-weight: 700;
-            }
-
-            .role {
-                color: #ab0302;
-                font-weight: 600;
-                font-size: 0.9rem;
-                margin: 0;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-
-            .desc {
-                font-size: 0.9rem;
-                color: #666;
-                margin-top: 10px;
-            }
-        }
-    
+    .desc {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 10px;
+    }
+}

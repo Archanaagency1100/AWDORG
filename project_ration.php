@@ -22,9 +22,12 @@
     <div class="main-card">
       <div class="header-title">
         <h2>"Our Dream - No One Sleeps Hungry”</h2>
-        <h5 class="pt-4">This is an initiative to create and spread awareness about basic hygiene especially during the
-          difficult phase of COVID pandemic. Under this project we counsel people about the importance of clean
-          surroundings, personal hygiene and maintaining social distancing to ensure safety</h5>
+        <h5 class="pt-4">ProjectRation is an initiative focused on providing essential food support to individuals and families in need. Through this program, we distribute dry ration and freshly cooked meals to ensure access to basic nutrition, especially during times of crisis and financial hardship.
+
+By addressing immediate food requirements and supporting vulnerable communities, ProjectRation aims to reduce hunger and bring relief to those who need it the most.</h5>
+      </div>
+       <div class="clearfix">
+                        <a href="/how-it-works/project-ration.php" class="btn btn-submit">How it Works</a>
       </div>
       <div class="container mt-5">
         <div id="card-container" class="row g-4"></div>

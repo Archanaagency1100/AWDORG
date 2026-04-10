@@ -20,11 +20,11 @@
             <div class="header-title">
                 <h2>"Bridging the Gap between Problem and Solution”</h2>
 
-                <h5>Everyone deserves a shot of redemption. Every life matters & we are committed to help everyone around.
-                    One stop solution for all issues related to any sort of paperwork that is required during & post
-                    lockdown. Our volunteers are working round the clock to help people resettle in the new normal
-                    environment by clearing all obstacles related to administrative matters & its paper work. We helped over
-                    200 people getting the Ration Card/Adhaar Card made.</h5>
+                <h5>ProjectElevate is an initiative focused on helping individuals overcome administrative and documentation challenges, especially during and after the lockdown. Our volunteers assist people with essential paperwork such as ration cards, Aadhaar cards, and other important documents required to access basic services.
+
+So far, we have supported over 200 individuals in securing essential documentation, helping them move forward with stability and dignity.
+
+ProjectElevate aims to uplift lives by removing barriers and empowering individuals to rebuild their future with confidence..</h5>
 
                 <h5>PROJECTelevate is all about uplifting the soul, we welcome you all here to bring change in atleast one
                     person’s life.</h5>

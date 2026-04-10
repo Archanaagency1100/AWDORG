@@ -19,12 +19,9 @@
     <div class="projectpro-hero-section"></div>
 
     <div class="main-card">
-      <div class="header-title pt-5">
+      <div class="header-title">
         <h2>PROJECTpro</h2>
-        <h5>Under this project our highly skilled professional volunteers with expertise in various backgrounds
-          and from different parts of the world, are contributing by imparting knowledge remotely through
-          online sessions and workshops to help individuals who are facing professional challenges to upgrade
-          their skills.</h5>
+        <h5>Under this initiative, experienced professionals and volunteers from diverse industries and global backgrounds share their expertise through structured online sessions and workshops. ProjectPro aims to empower individuals by enhancing their skills, strengthening their knowledge, and supporting their professional growth in an evolving world.</h5>
       </div>
       <div class="container mt-5">
         <div id="card-container" class="row g-4"></div>

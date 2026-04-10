@@ -18,14 +18,14 @@
     <div class="feedme-hero-section"></div>
 
     <div class="main-card">
-      <div class="container pt-5">
-        <h1>"Animals Do Speak, But The Question Is” - Can We Hear Them?”</h1>
+      <div class="container header-title pt-5">
+        <h2>"Animals Do Speak, But The Question Is” - Can We Hear Them?”</h1>
       </div>
       <h5 class="pt-4">Every living species matters. This project is based on the beautiful concept that helps us to
         reach the species who cannot reach us. Our aim is to reach the right place, at the right time and save lives. We
         feed abandoned animals, provide medical facility.<h5>
           <div class="clearfix">
-            <button type="submit" class="btn btn-submit">How it Works</button>
+                        <a href="/how-it-works/project-feedme.php" class="btn btn-submit">How it Works</a>
           </div>
           <div class="my-5">
             <div id="card-container" class="row g-4"></div>

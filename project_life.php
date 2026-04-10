@@ -20,11 +20,13 @@
     <div class="life-hero-section"></div>
 
     <div class="main-card">
-      <div class="header-title pt-5 text-center">
+      <div class="header-title text-center">
         <h2>PROJECT<i>life</i></h2>
-        <p>This is an initiative to create and spread awareness about basic hygiene especially during the difficult
-          phase of COVID pandemic. Under this project we counsel people about the importance of clean surroundings,
-          personal hygiene and maintaining social distancing to ensure safety</p>
+        <p>ProjectLife is an initiative focused on creating awareness around basic hygiene and preventive health practices, especially during critical periods such as the COVID-19 pandemic. The project aims to educate individuals and communities on the importance of maintaining clean surroundings, practicing personal hygiene, and following safety measures such as social distancing.
+
+Along with awareness and counselling, the initiative also involved the distribution of essential hygiene supplies, including sanitary pads, face masks, and health kits, to support communities in maintaining safety and well-being during challenging times.
+
+Through awareness drives, community engagement, and on-ground support, ProjectLife works towards building responsible habits and reducing health risks. The initiative contributes to creating safer, healthier, and more informed communities.</p>
       </div>
       <div class="container my-5">
         <div id="card-container" class="row g-4"></div>
