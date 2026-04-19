@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWDORG Foundation - contact</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/assets/css/style.css" />
@@ -20,13 +20,11 @@
     <div class="life-hero-section"></div>
 
     <div class="main-card">
-      <div class="header-title text-center">
+      <div class="header-title pt-5 text-center">
         <h2>PROJECT<i>life</i></h2>
-        <p>ProjectLife is an initiative focused on creating awareness around basic hygiene and preventive health practices, especially during critical periods such as the COVID-19 pandemic. The project aims to educate individuals and communities on the importance of maintaining clean surroundings, practicing personal hygiene, and following safety measures such as social distancing.
-
-Along with awareness and counselling, the initiative also involved the distribution of essential hygiene supplies, including sanitary pads, face masks, and health kits, to support communities in maintaining safety and well-being during challenging times.
-
-Through awareness drives, community engagement, and on-ground support, ProjectLife works towards building responsible habits and reducing health risks. The initiative contributes to creating safer, healthier, and more informed communities.</p>
+        <p>This is an initiative to create and spread awareness about basic hygiene especially during the difficult
+          phase of COVID pandemic. Under this project we counsel people about the importance of clean surroundings,
+          personal hygiene and maintaining social distancing to ensure safety</p>
       </div>
       <div class="container my-5">
         <div id="card-container" class="row g-4"></div>

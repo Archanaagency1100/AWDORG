@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Ration — AWDORG Foundation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="/assets/css/style.css" />
@@ -22,12 +22,9 @@
     <div class="main-card">
       <div class="header-title">
         <h2>"Our Dream - No One Sleeps Hungry”</h2>
-        <h5 class="pt-4">ProjectRation is an initiative focused on providing essential food support to individuals and families in need. Through this program, we distribute dry ration and freshly cooked meals to ensure access to basic nutrition, especially during times of crisis and financial hardship.
-
-By addressing immediate food requirements and supporting vulnerable communities, ProjectRation aims to reduce hunger and bring relief to those who need it the most.</h5>
-      </div>
-       <div class="clearfix">
-                        <a href="/how-it-works/project-ration.php" class="btn btn-submit">How it Works</a>
+        <h5 class="pt-4">This is an initiative to create and spread awareness about basic hygiene especially during the
+          difficult phase of COVID pandemic. Under this project we counsel people about the importance of clean
+          surroundings, personal hygiene and maintaining social distancing to ensure safety</h5>
       </div>
       <div class="container mt-5">
         <div id="card-container" class="row g-4"></div>

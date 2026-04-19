@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/scss/style.css" />
 </head>
 <body>
             <?php include '../includes/header.php'; ?>
 <section>
-     <div class="hero-section">
+     <div class="how-it-work-hero-section">
          <video autoplay muted loop playsinline class="bg-video">
         <source src="/assets/img/awd-about-video.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>
     </div>
 <div class="container-fluid pt-4"></div>
-    <div class="main-card">
+    <div class="how-it-work-main-card">
         <div class="header-title">
             <h2>“<span class="hand-drawn-underline">Our Promise</span> to a Child to Have a Day - Milky Way”</h2>
             <p  style="font-size:18px;">Children are the future of any country and in India we care for them, we ensured that ½ litre milk per child per poor household was provided to children up to 5 years of age during Lockdown. Our volunteers used to get a monthly milk card made at the nearest milk booth and advance payment was made for the entire month.</p>
@@ -34,35 +34,35 @@
                             <div class="step-marker ">1</div>
                             <div class="step-content d-md-flex justify-content-start flex-row-reverse gap-3">
                                 <h4>Step 1: We identify kids in needy families</h4>
-                                <img class="step-image" src="/assets/img/project_milkyway/how_it_works5.jpg" alt="Calling helpline"> 
+                                <img class="step-image" src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.0-1.jpg" alt="Calling helpline"> 
                             </div>
                         </div>
                         <div class="ration-step">
                             <div class="step-marker ">2</div>
                             <div class="step-content d-md-flex flex-row-reverse gap-3">
                                 <h4>Step 2: We send them to nearest milk shop</h4>
-                                <img src="/assets/img/project_milkyway/how_it_works5.jpg" alt="Volunteer taking call"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.1-1.jpg" alt="Volunteer taking call"> 
                             </div>
                         </div>
                         <div class="ration-step">
                             <div class="step-marker">3</div>
                             <div class="step-content  d-md-flex flex-row-reverse gap-3">
                                 <h4>Step 3: We request Milk shop owner to maintain a record for daily supply to kid</h4>
-                                <img src="/assets/img/project_milkyway/how_it_works5.jpg" alt="Gathering ration at store"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.2-1.jpg" alt="Gathering ration at store"> 
                             </div>
                         </div>
                         <div class="ration-step">
                             <div class="step-marker">4</div>
                             <div class="step-content d-md-flex flex-row-reverse gap-3">
                                 <h4>Step 4: we make a pre payment for falling month in advance.</h4>
-                                <img src="/assets/img/project_milkyway/how_it_works4.jpg" alt="Digital payment"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.3-1.jpg" alt="Digital payment"> 
                             </div>
                         </div>
                         <div class="ration-step ">
                             <div class="step-marker">5</div>
                             <div class="step-content  d-md-flex flex-row-reverse justify-content-left gap-3">
                                 <h4>Step 5: Mother gets 1/2 litre milk per child from booth everyday.</h4>
-                                <img src="/assets/img/project_milkyway/how_it_works5.jpg" alt="Receiver holding ration"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.4-1.jpg" alt="Receiver holding ration"> 
                             </div>
                         </div>
                     </div>

@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/scss/style.css" />
 </head>
 <body>
             <?php include '../includes/header.php'; ?>
 <section>
-     <div class="hero-section">
+     <div class="how-it-work-hero-section">
          <video autoplay muted loop playsinline class="bg-video">
         <source src="/assets/img/awd-about-video.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>
     </div>
 <div class="container-fluid pt-4"></div>
-    <div class="main-card">
+    <div class="how-it-work-main-card">
         <div class="header-title">
             <h2>“<span class="hand-drawn-underline">Our Dream</span> - No One Sleeps Hungry”</h2>
             <p  style="font-size:18px;">We help to arrange the basic necessities of food for the needy under this project. We identify needy families through our volunteers and enquire about their family size and requirements and send them to the nearest grocery shop to fetch basic groceries; the payment is made to the shopkeeper through Paytm/UPI/Phonepe by our volunteers/donors. We are also running bulk Dry Ration drives for economical weaker section clusters & much delighted to announce that during Lockdown 1 & 2 due to Covid19 pandemic over 17000 families were helped with Dry Ration Kits pan India consisting of the following:</p>
@@ -36,35 +36,35 @@
                             <div class="step-marker ">1</div>
                             <div class="step-content d-md-flex justify-content-start flex-row-reverse gap-3">
                                 <h4>Step 1: Distressed calls our helpline</h4>
-                                <img class="step-image" src="/assets/img/project_ration/how_it_works_ration1.jpg" alt="Calling helpline"> 
+                                <img class="step-image" src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.0.jpg" alt="Calling helpline"> 
                             </div>
                         </div>
                         <div class="ration-step">
                             <div class="step-marker ">2</div>
                             <div class="step-content d-md-flex flex-row-reverse gap-3">
                                 <h4>Step 2: Call recieved by Volunteer on duty</h4>
-                                <img src="/assets/img/project_ration/how_it_works_ration2.jpg" alt="Volunteer taking call"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.1.jpg" alt="Volunteer taking call"> 
                             </div>
                         </div>
                         <div class="ration-step">
                             <div class="step-marker">3</div>
                             <div class="step-content  d-md-flex flex-row-reverse gap-3">
                                 <h4>Step 3: Caller sent to nearest Grocery Store, & based on number of family member asked to get the ration.</h4>
-                                <img src="/assets/img/project_ration/how_it_works_ration3.jpg" alt="Gathering ration at store"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.2.jpg" alt="Gathering ration at store"> 
                             </div>
                         </div>
                         <div class="ration-step">
                             <div class="step-marker">4</div>
                             <div class="step-content d-md-flex flex-row-reverse gap-3">
                                 <h4>Step 4: Anything Will Do team make the payment directly to Ration Shop.</h4>
-                                <img src="/assets/img/project_ration/how_it_works_ration4.jpg" alt="Digital payment"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.3.jpg" alt="Digital payment"> 
                             </div>
                         </div>
                         <div class="ration-step ">
                             <div class="step-marker">5</div>
                             <div class="step-content  d-md-flex flex-row-reverse justify-content-left gap-3">
                                 <h4>Step 5: Ration Shop Owner is requested to click a picture of receiver and send to us.</h4>
-                                <img src="/assets/img/project_ration/how_it_works_ration5.jpg" alt="Receiver holding ration"> 
+                                <img src="https://www.anythingwilldo.org/wp-content/uploads/2022/02/0.4.jpg" alt="Receiver holding ration"> 
                             </div>
                         </div>
                     </div>

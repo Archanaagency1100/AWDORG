@@ -1,0 +1,107 @@
+// ============================================
+// Newsletter Page SCSS
+// ============================================
+
+.newsletter-page-wrapper {
+
+    // Core Utilities
+    .transition-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+        }
+    }
+
+    // Hero Section
+    .newsletter-hero {
+        position: relative;
+        height: 480px;
+        background: url('/assets/img/Activity/Gemini_Generated_Image_otq6aeotq6aeotq6-1024x572.png') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(171, 3, 2, 0.85) 0%, rgba(0, 0, 0, 0.75) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+    }
+
+    // Subscribe Form Area
+    .subscribe-section {
+        .subscribe-card {
+            .form-control {
+                border: 1px solid #dee2e6;
+                transition: border-color 0.3s, box-shadow 0.3s;
+
+                &:focus {
+                    border-color: #ab0302;
+                    box-shadow: 0 0 0 0.25rem rgba(171, 3, 2, 0.25);
+                }
+            }
+
+            .btn-danger {
+                background-color: #ab0302;
+                border-color: #ab0302;
+                transition: transform 0.3s, box-shadow 0.3s;
+
+                &:hover {
+                    box-shadow: 0 8px 25px rgba(171, 3, 2, 0.4) !important;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+
+    // Highlights Section
+    .highlights-section {
+        .highlight-card {
+            .highlight-img {
+                overflow: hidden;
+
+                img {
+                    transition: transform 0.5s ease;
+                }
+            }
+
+            a {
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #8b0000 !important;
+                }
+            }
+
+            &:hover {
+                .highlight-img {
+                    img {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

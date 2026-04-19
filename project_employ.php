@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWDORG Foundation - contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -22,11 +22,10 @@
         <div class="main-card">
             <div class="header-title">
                 <h2>"Use Your Networking in Favour of Mankind”</h2>
-                <h5 class="">ProjectEmploy is an initiative focused on creating sustainable livelihood opportunities for individuals affected by economic challenges, especially post-lockdown. Through strong volunteer networks and industry connections, we help individuals secure employment and regain financial stability.
-
-The program follows a structured approach, supporting candidates not only in job placement but also in preparing them for opportunities through guidance and recommendations.
-
-In addition, ProjectEmploy actively promotes women empowerment by engaging women artisans in meaningful work. Under the initiative “Ek Chaadar Meri Bhi”, women karigars create shopping bags from reused bed sheets, enabling them to earn with dignity while promoting sustainability.</h5>
+                <h5 class="">Our volunteers are using their resources and networking to provide employment to people
+                    post lockdown so that there are able to earn a living once again. Under this multi level process we
+                    not
+                    only help to provide jobs but also with prepare and recommend candidates for job interviews.</h5>
                 <br>
 
                 <h5>PROJECTemploy is working towards women empowerment and currently engaging women karigars to make

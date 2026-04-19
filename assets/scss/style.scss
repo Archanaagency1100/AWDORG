@@ -36,15 +36,15 @@
 @use 'our_certificate' as *;
 @use 'privacy_policy' as *;
 @use 'terms_conditions' as *;
-@use 'how_it_works' as *;
-// @use 'vision_mission' as *;
+@use 'video_gallery' as *;
+@use 'photo_gallery' as *;
+@use 'for_student' as *;
+@use 'appreciation_credential' as *;
+@use 'donate' as *;
+@use 'newsletter' as *;
 
 //////////// INDEX PAGE SCSS ////////////////
 // ── Hero Section ────────────────────────────
 // ============================================
 // COMMON MAIN CARD (GLOBAL)
 // ============================================
-
-// *{
-//     border: 1px solid red;
-// }

@@ -21,7 +21,7 @@
 
 
             <div class="main-card">
-                <div class="container  pb-4">
+                <div class="container pt-5 pb-4">
                     <div class="header-title">
                         <h2>Meet our <span tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
                                 title="COCO Model"
@@ -29,80 +29,43 @@
                                 data-bs-placement="top">PEC COCO</span> center faculties</h2>
                     </div>
 
-                       
+                    <div class="row">
 
-      
-      <div class="container">
-        <div class="row g-0 profile-row">
-          <div class="col-md-6">
-            <img
-              src="/assets/img/faculties/shilpa_awd_teacher.png"
-              alt="narvbir-ahluwalia"
-              class="profile-img"
-            />
-          </div>
-          <div class="col-md-6 info-panel bg-navbair">
-            <div class="content">
-              <h2>Shilpa</h2>
-              <div class="role">Computer Faculty</div>
-              <p class="quote">
-                "Project Educate Centre Kalkaji."
-              </p>
-              <!-- <p class="quote">
-                "Project Educate's COCO centers are more than just classrooms; they are beacons of hope, where the community comes together to empower every child with the gift of education."
-              </p> -->
-            </div>
-          </div>
-        </div>
+                        <div class="member col-md-4 col-sm-6 col-lg-3">
+                            <div class="member-card">
+                                <img class="img-fluid" src="/assets/img/faculties/shilpa-teacher.jpg">
+                            </div>
+                            <div class="member-info">
+                                <h3>Shilpa</h3>
+                                <p class="role">Computer Faculty</p>
+                            </div>
+                        </div>
 
-        <div class="row g-0 profile-row">
-          <div class="col-md-6 info-panel bg-ambrish order-2 order-md-1">
-            <div class="content">
-              <h2>Shubham</h2>
-              <div class="role">Computer Faculty</div>
-              <p class="quote">
-                "Project Educate Centre Chanakyapuri."
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 order-1 order-md-2">
-            <img
-              src="/assets/img/faculties/shubham_awd_teacher.png"
-              alt="ambrish-chopra"
-              class="profile-img"
-            />
-          </div>
-        </div>
 
-        <div class="row g-0 profile-row">
-          <div class="col-md-6">
-            <img
-              src="/assets/img/faculties/puja_awd_teacher.png"
-              alt="khancham-jha"
-              class="profile-img"
-            />
-          </div>
-          <div class="col-md-6 info-panel bg-kanchan">
-            <div class="content">
-              <h2>Puja Chaudhary</h2>
-              <div class="role">Computer Faculty</div>
-              <p class="quote">
-                "Project Educate Centre Gurgaon."
-              </p>
-            </div>
-          </div>
-        </div>
+                        <div class=" member col-md-4 col-sm-6 col-lg-3">
+                            <div class="member-card">
+                                <img class="img-fluid" src="/assets/img/faculties/subham.png">
+                            </div>
+                            <div class="member-info">
+                                <h3>Shubham</h3>
+                                <p class="role">Computer Faculty</p>
+                            </div>
+                        </div>
 
-      
 
-      
-         
-        </div>
-      </div>
-    <
+                        <div class=" member col-md-4 col-sm-6 col-lg-3">
+                            <div class="member-card">
+                                <img class="img-fluid" src="/assets/img/faculties/puja.png">
+                            </div>
+                            <div class="member-info">
+                                <h3>Puja</h3>
+                                <p class="role">Computer Faculty</p>
+                            </div>
+                        </div>
 
-                
-              
+                    </div>
+
+                </div>
 
                 <div class="container pb-4">
                     <div class="header-title">
@@ -142,9 +105,8 @@
 
                 </div>
             </div>
-  </div>
-        </section>
 
+        </section>
 
         <!-- ------------- Call to Action Strip--------------- -->
         <section class="cta-strip">

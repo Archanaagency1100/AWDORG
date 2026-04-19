@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWDORG Foundation - contact</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -19,9 +19,12 @@
     <div class="projectpro-hero-section"></div>
 
     <div class="main-card">
-      <div class="header-title">
+      <div class="header-title pt-5">
         <h2>PROJECTpro</h2>
-        <h5>Under this initiative, experienced professionals and volunteers from diverse industries and global backgrounds share their expertise through structured online sessions and workshops. ProjectPro aims to empower individuals by enhancing their skills, strengthening their knowledge, and supporting their professional growth in an evolving world.</h5>
+        <h5>Under this project our highly skilled professional volunteers with expertise in various backgrounds
+          and from different parts of the world, are contributing by imparting knowledge remotely through
+          online sessions and workshops to help individuals who are facing professional challenges to upgrade
+          their skills.</h5>
       </div>
       <div class="container mt-5">
         <div id="card-container" class="row g-4"></div>

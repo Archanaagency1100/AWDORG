@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AWDORG Foundation - contact</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -22,14 +22,13 @@
     <div class="main-card">
       <div class="header-title">
         <h2>"Our Promise to a Child to Have a Day -Milky Way”</h2>
-        <h5>ProjectMilkyWay is an initiative dedicated to supporting the nutritional needs of children from underprivileged families, up to the age of 5. Under this program, free milk is provided daily to ensure healthy growth and early development.
-
-To ensure consistency and accessibility, advance monthly payments are made to local milk booths, where registered children are maintained in verified records. Each child can collect milk from their nearest booth on a daily basis.
-
-Through this initiative, ProjectMilkyWay aims to strengthen early childhood nutrition and contribute to building a healthier future for young children.</h5>
+        <h5>Children from underprivileged families, up to the age of 5, are provided free milk. Under
+          this program we make advance monthly payment to milk booths and the owners maintain a record of the
+          registered children in their log books. Each verified child can take milk from their nearest booth
+          daily.</h5>
       </div>
       <div class="clearfix">
-                        <a href="/how-it-works/project-milky-way.php" class="btn btn-submit">How it Works</a>
+        <button type="submit" class="btn btn-submit">How it Works</button>
       </div>
       <div class="container mt-5">
         <div id="card-container" class="row g-4"></div>

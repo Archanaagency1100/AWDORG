@@ -1,0 +1,29 @@
+[07-Apr-2026 12:31:03 UTC] PHP Warning:  require_once(config/database.php): Failed to open stream: No such file or directory in /home/bgcje2k19jv9/public_html/volunteer.php on line 3
+[07-Apr-2026 12:31:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bgcje2k19jv9/public_html/volunteer.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/bgcje2k19jv9/public_html/volunteer.php on line 3
+[07-Apr-2026 12:31:10 UTC] PHP Warning:  require_once(config/database.php): Failed to open stream: No such file or directory in /home/bgcje2k19jv9/public_html/volunteer.php on line 3
+[07-Apr-2026 12:31:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bgcje2k19jv9/public_html/volunteer.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/bgcje2k19jv9/public_html/volunteer.php on line 3
+[07-Apr-2026 12:50:28 UTC] PHP Parse error:  syntax error, unexpected token "<" in /home/bgcje2k19jv9/public_html/admission.php on line 214
+[07-Apr-2026 12:50:29 UTC] PHP Parse error:  syntax error, unexpected token "<" in /home/bgcje2k19jv9/public_html/admission.php on line 214
+[09-Apr-2026 11:01:45 UTC] [CMS MAIL SIMULATION] Vol Received To: navneetk9922@gmail.com
+[09-Apr-2026 11:01:49 UTC] [CMS MAIL SIMULATION] Admin Vol Notification To: admin@awdorg.com
+[09-Apr-2026 12:25:51 UTC] PHP Warning:  require_once(/admin/config/database.php): Failed to open stream: No such file or directory in /home/bgcje2k19jv9/public_html/blog.php on line 3
+[09-Apr-2026 12:25:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/admin/config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bgcje2k19jv9/public_html/blog.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/bgcje2k19jv9/public_html/blog.php on line 3
+[09-Apr-2026 12:29:08 UTC] PHP Warning:  require_once(/admin/config/database.php): Failed to open stream: No such file or directory in /home/bgcje2k19jv9/public_html/blog.php on line 3
+[09-Apr-2026 12:29:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/admin/config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bgcje2k19jv9/public_html/blog.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/bgcje2k19jv9/public_html/blog.php on line 3
+[09-Apr-2026 12:31:02 UTC] PHP Warning:  require_once(../config/database.php): Failed to open stream: No such file or directory in /home/bgcje2k19jv9/public_html/blog_detail.php on line 3
+[09-Apr-2026 12:31:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../config/database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bgcje2k19jv9/public_html/blog_detail.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/bgcje2k19jv9/public_html/blog_detail.php on line 3

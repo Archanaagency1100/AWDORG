@@ -13,14 +13,14 @@
 <body>
             <?php include '../includes/header.php'; ?>
 <section>
-     <div class="hero-section">
+     <div class="how-it-work-hero-section">
          <video autoplay muted loop playsinline class="bg-video">
         <source src="/assets/img/awd-about-video.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>
     </div>
 <div class="container-fluid pt-4"></div>
-    <div class="main-card">
+    <div class="how-it-work-main-card">
         <div class="header-title">
             <h2>“<span class="hand-drawn-underline">Animals Do</span> Speak, But The Question Is - Can We Hear Them?”</h2>
             <p  style="font-size:18px;">Many stray dogs and other animals have been fed and their emergency medical needs taken care of under this project. We carry hygienic food and clean water for these animals and drive around the city to feed them. We place earthen bowls filled with water for these animals on the streets.</p>
